@@ -33,14 +33,14 @@ const Graph = () => {
         <img className="graph-data__picture" src={graph} />
         <span className="graph-data__price">
           <span className="graph-data__price-sum">+133.2</span>
-          <img src={won} className="graph-data__price-won" />
+          <img src={won} alt="won" className="graph-data__price-won" />
         </span>
       </div>
       <div className="ui grid">
         <div className="two column row graph-block__all">
-          {graphInfo.map((graph) => {
+          {graphInfo.map((graph, index) => {
             return (
-              <div className="column graph-block">
+              <div className="column graph-block" key={index}>
                 <p className="graph-block__title">{graph.title}</p>
                 <p className="graph-block__subtitle">{graph.subtitle}</p>
                 <div className="graph-block__divider"></div>

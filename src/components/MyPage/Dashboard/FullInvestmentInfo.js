@@ -32,9 +32,9 @@ const info = [
 const FullInvestmentInfo = () => {
   return (
     <div className="info-container">
-      {info.map((el) => {
+      {info.map((el, index) => {
         return (
-          <div className="info-block">
+          <div className="info-block" key={index}>
             <p className="info-block__title">{el.title}</p>
             {el.subtitle && (
               <p className="info-block__subtitle">{el.subtitle}</p>

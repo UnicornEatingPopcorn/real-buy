@@ -3,6 +3,9 @@ import FullInvestmentInfo from "./FullInvestmentInfo";
 import "./Dashboard.sass";
 import ReturnCount from "./ReturnCount";
 import Graph from "./Graph";
+import Deposit from "./Deposit";
+import InvestmentLimit from "./InvestmentLimit";
+import InvestmentStatus from "./InvestmentStatus";
 
 const dividedReturn = [
   {
@@ -58,9 +61,15 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="three column row">
-        <div className="column">1</div>
-        <div className="column">2</div>
-        <div className="column">3</div>
+        <div className="column">
+          <Deposit />
+        </div>
+        <div className="column">
+          <InvestmentLimit />
+        </div>
+        <div className="column">
+          <InvestmentStatus />
+        </div>
       </div>
     </div>
   );
