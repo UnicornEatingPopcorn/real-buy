@@ -1,6 +1,8 @@
 .mypage
-  margin: 89px 185px 0px 185px
-
+  padding: 89px 185px 0px 185px
+  &-container
+    background-color: #FAFBFE
+    height: 90vh
 
 .navigate
   &-bar
@@ -22,6 +24,7 @@
       font-size: 14px
       text-decoration: none
       text-align: center
+      font-family: "NanumSquare"
 
       &:last-child
         margin-bottom: 0px
@@ -103,16 +106,20 @@
   height: 23px
   display: flex
   justify-content: space-around
-  align-items: flex-end
+  align-items: center
 
   &-padding
     padding: 6px 16px 0px 16px !important
 
   &-title
-    margin-right: 13px
+    margin-right: 11px
     color: #7A7A7A
     font-size: 7px
     font-family: "NanumSquareRegular"
     display: flex
     align-self: center
-    
+
+  &-icon
+    width: 13px
+    height: 11px
+    margin-left: 11px

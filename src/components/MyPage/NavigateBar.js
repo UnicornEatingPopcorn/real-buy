@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
+import heart from "./../../assets/icons/heart.png";
 
 const links = [
   {
@@ -51,7 +52,7 @@ const NavigateBar = () => {
         </div>
         <div className="row product-padding">
           <span className="product">
-            <img src="#" />
+            <img src={heart} alt="heart" className="product-icon" />
             <p className="product-title">찜한 투자 상품</p>
           </span>
         </div>
