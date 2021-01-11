@@ -104,7 +104,7 @@
   &-column
     padding-left: 0px
     @media(max-width: 399px)
-      padding-left: 80px
+      padding-left: 47px
     @media(min-width: 400px)
       padding-left: 45px
     @media(min-width: 576px)
@@ -398,6 +398,7 @@
 
 .limit
   &-container
+    height: 217px
     background: #FFFFFF 0% 0%
     box-shadow: 0px 7px 20px #0F143129
     padding: 19px 16px
@@ -412,6 +413,8 @@
     justify-content: space-between
     height: 34px
     border-bottom: 0.5px solid #BFBFBF
+    @media(max-width: 331px)
+      font-size: 13px
 
     &-button
       width: 52px
@@ -472,7 +475,6 @@
 
 .status
   &-container
-    width: 214px
     height: 217px
     background: #FFFFFF 0% 0%
     box-shadow: 0px 7px 20px #0F143129
@@ -484,11 +486,23 @@
     justify-content: space-between
     height: 34px
     border-bottom: 0.5px solid #BFBFBF
+    @media(max-width: 379px)
+      font-size: 11px
+    @media(min-width: 380px)
+      font-size: 15px
+    @media(min-width: 576px)
+      font-size: 13px
+    @media(min-width: 992px)
+      font-size: 15px
 
   &__dots
     width: 57px
     display: flex
     justify-content: space-between
+    @media(min-width: 576px)
+      width: 40px
+    @media(min-width: 992px)
+      width: 57px
 
 button
   outline: none
@@ -502,12 +516,24 @@ button
   background-repeat: no-repeat
   width: 9px
   height: 9px
+  @media(max-width: 379px)
+    margin-top: 5px
 
   &--selected
     background-image: url("./../../../assets/icons/slider-active.png")
 
 .first-slide
+  position: absolute
   margin: 14px 20px 0px 20px
+  @media(max-width: 379px)
+    margin: 8px 0px 0px 8px
+  @media(min-width: 380px)
+    margin: 9px 0px 0px 12px
+  @media(min-width: 576px)
+    margin: 5px 0px 0px 5px
+  @media(min-width: 992px)
+    margin: 14px 20px 0px 20px
+
   &__info
     display: grid
     
@@ -546,12 +572,24 @@ button
     margin-top: 3px
 
   &__row
-    padding-left: 5px !important
-    padding-right: 5px !important
+    padding: 0px 5px !important
+    @media(max-width: 379px)
+      padding: 15px 0px 0px 0px !important
+    @media(min-width: 380px)
+      padding: 6px 0px 0px 5px !important
+    @media(min-width: 576px)
+      padding: 13px 0px 0px 0px !important
+    @media(min-width: 992px)  
+      padding: 0px 5px !important
 
   &__description
     border-right: 0.5px solid #BFBFBF
     padding: 3px !important
+    @media(max-width: 379px)
+      padding: 0px !important
+    @media(min-width: 380px)
+      padding: 3px !important
+
     &:last-child
       border-right: none
 
@@ -560,6 +598,12 @@ button
       font-size: 12px
       text-align: center
       margin-bottom: 3px
+      @media(max-width: 379px)
+        font-size: 10px
+      @media(min-width: 576px)
+        font-size: 10px
+      @media(min-width: 992px)  
+        font-size: 12px
 
     &-subtitle
       color: #383838
@@ -567,13 +611,26 @@ button
       text-align: center
       font-family: "NanumSquareRegular"
       margin-bottom: 0px
+      @media(max-width: 379px)
+        font-size: 9px
+      @media(min-width: 576px)
+        font-size: 8px
+      @media(min-width: 992px)  
+        font-size: 11px
 
 .circular_progress 
-    height: 65px
-    position: absolute
-    top: 10px
-    left: 38px
-    margin-bottom: 10px
+  height: 65px
+  margin-top: 13px
+  @media(max-width: 379px)
+    height: 56px
+  @media(min-width: 576px)
+    margin-top: 7px
+  @media(min-width: 992px)  
+    margin-top: 13px
+
+  &-container
+    display: flex
+    justify-content: center
 
 .circular-progress-bar
   height: 80px
@@ -613,4 +670,5 @@ button
     display: grid !important
     justify-items: center
     margin-top: 10px !important
+    padding: 0px
   
