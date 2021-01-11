@@ -1,11 +1,23 @@
 import React from "react";
 import temp_for_2_slide from "./../../../assets/icons/temp_2-slide.png";
+import temp_for_3_slide from "./../../../assets/icons/temp_3-slide.png";
+import temp_for_4_slide from "./../../../assets/icons/temp_4-slide.png";
 
-const SecondSlide = () => {
+const Slide = ({ index }) => {
+  const checkSrc = () => {
+    if (index === "1") {
+      return temp_for_2_slide;
+    } else if (index === "2") {
+      return temp_for_3_slide;
+    } else {
+      return temp_for_4_slide;
+    }
+  };
+
   return (
     <>
       <div className="slide">
-        <img src={temp_for_2_slide} alt="temporarily for 2 slide" />
+        <img src={checkSrc()} alt="temporarily for 2 slide" />
       </div>
       <div className="container">
         <div className="row">
@@ -27,4 +39,4 @@ const SecondSlide = () => {
   );
 };
 
-export default SecondSlide;
+export default Slide;

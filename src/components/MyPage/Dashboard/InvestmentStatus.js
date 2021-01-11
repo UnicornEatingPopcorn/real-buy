@@ -2,9 +2,7 @@ import React from "react";
 import { CarouselProvider, Dot, Slide, Slider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import FirstSlide from "./FirstSlide";
-import SecondSlide from "./SecondSlide";
-import ThirdSlide from "./ThirdSlide";
-import FourthSlide from "./FourthSlide";
+import SlidePart from "./SlidePart";
 
 const InvestmentStatus = () => {
   return (
@@ -28,13 +26,13 @@ const InvestmentStatus = () => {
             <FirstSlide />
           </Slide>
           <Slide index={1}>
-            <SecondSlide />
+            <SlidePart index="1" />
           </Slide>
           <Slide index={2}>
-            <ThirdSlide />
+            <SlidePart index="2" />
           </Slide>
           <Slide index={3}>
-            <FourthSlide />
+            <SlidePart index="4" />
           </Slide>
         </Slider>
       </div>
