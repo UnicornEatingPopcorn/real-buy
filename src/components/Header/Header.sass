@@ -1,29 +1,63 @@
 .header
   height: 70px
-  background: #FFFFFF
-  display: flex
-  align-items: center
-  justify-content: space-between
+  background: #FFFFFF !important
   padding-left: 184px
   padding-right: 184px
+  @media(max-width: 399px)
+    padding-left: 23px
+    padding-right: 23px
+  @media(min-width: 400px)
+    padding-left: 35px
+    padding-right: 24px
+  @media(min-width: 576px)
+    padding-left: 60px
+    padding-right: 60px
+  @media(min-width: 768px)
+    padding-left: 120px
+    padding-right: 120px
+  @media(min-width: 992px)
+    padding-left: 184px
+    padding-right: 184px
+
+  &-container
+    justify-content: center
   
   &-list
-    display: flex
+    width: 140%
+    background: #FFFFFF
+    z-index: 2
+    justify-content: center
+    margin-left: 5px
 
     a
-      margin-right: 54px
       text-decoration: none
       font-family: "NanumSquare"
       font-weight: bold
       color: #555555    
       font-size: 14px
 
-      &:last-child
-        margin-right: 0px
+  &-end
+    width: 60%  
+    a   
+      text-decoration: none
+      font-family: "NanumSquare"
+      font-weight: bold    
+      font-size: 14px
 
-  &-end a
-    color: #0540FF
-    text-decoration: none
-    font-family: "NanumSquare"
-    font-weight: bold    
-    font-size: 14px
+  &-collapse
+    display: flex
+    justify-content: center
+
+  &-logo
+    margin-right: 138px
+
+  &-item
+    width: 130px
+
+  &-long-item
+    width: 150px
+
+.navlink-end
+  display: flex
+  justify-content: flex-end
+  color: #0540FF !important

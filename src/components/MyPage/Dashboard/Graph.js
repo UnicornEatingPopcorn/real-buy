@@ -30,7 +30,7 @@ const Graph = () => {
       </div>
       <div className="graph-decoration"></div>
       <div className="graph-data">
-        <img className="graph-data__picture" src={graph} />
+        <img className="graph-data__picture" alt="graphic" src={graph} />
         <span className="graph-data__price">
           <span className="graph-data__price-sum">+133.2</span>
           <img src={won} alt="won" className="graph-data__price-won" />
