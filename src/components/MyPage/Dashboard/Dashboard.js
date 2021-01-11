@@ -44,33 +44,31 @@ const totalReturn = [
 const Dashboard = () => {
   return (
     <div className="container">
-      <div className="row dashboard-full-investment-info">
-        <div className="col-12">
+      <div className="row dashboard-info-row">
+        <div className="col-12 dashboard-column">
           <FullInvestmentInfo />
         </div>
       </div>
-      {/*<div className="row">
-        <div className="col-4">
+      <div className="row dashboard-row">
+        <div className="col-sm-6 col-md-4">
           <ReturnCount returnAmount={dividedReturn} />
         </div>
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4">
           <ReturnCount returnAmount={totalReturn} />
         </div>
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4">
           <Graph />
         </div>
-      </div>
-      <div className="row">
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4">
           <Deposit />
         </div>
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4">
           <InvestmentLimit />
         </div>
-        <div className="col-4">
+        <div className="col-sm-6 col-md-4 dashboard-column">
           <InvestmentStatus />
         </div>
-      </div>*/}
+      </div>
     </div>
   );
 };

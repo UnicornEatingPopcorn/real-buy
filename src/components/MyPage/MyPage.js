@@ -16,7 +16,7 @@ const MyPage = () => {
           <div className="col-2">
             <NavigateBar />
           </div>
-          <div className="col-10">
+          <div className="col-10 ">
             <Route path="/mypage/dashboard" component={Dashboard} />
             <Route
               path="/mypage/investment-details"
