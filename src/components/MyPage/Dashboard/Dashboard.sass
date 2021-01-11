@@ -1,20 +1,82 @@
 .info
   &-container
-    width: 686px
-    height: 110px
     background: #FAFBFE
-    border: solid 1px rgba(133, 162, 255, 0.4)
-    display: flex
+
+    @media(max-width: 576px)
+      margin-left: 15px
+    @media(min-width: 576px)
+      margin-left: 45px
+    @media(min-width: 768px)
+      margin-left: 15px
+    @media(min-width: 992px)
+      margin-left: 0px
 
   &-block
-    width: 114px
-    height: 100%
-    border-right: solid 1px rgba(133, 162, 255, 0.4)
+    min-width: 114px
+    height: 110px
+    border-top: solid 1px rgba(133, 162, 255, 0.4)
+    border-bottom: solid 1px rgba(133, 162, 255, 0.4)
+    border-left: solid 1px rgba(133, 162, 255, 0.4)
     padding: 21px 0px 20px 0px
     display: grid
     background-color: #FFFFFF
     &:last-child
-      border-right: none
+      border-right: solid 1px rgba(133, 162, 255, 0.4)
+    
+    @media(max-width: 399px)
+      border-bottom: none
+      border-right: solid 1px rgba(133, 162, 255, 0.4)
+      &:last-child
+        border-bottom: solid 1px rgba(133, 162, 255, 0.4)
+
+    @media(min-width: 400px)
+      &:nth-child(3)
+        border-top: none
+        border-bottom: none
+      &:nth-child(4)
+        border-top: none
+        border-bottom: none
+      &:nth-child(even)
+        border-right: solid 1px rgba(133, 162, 255, 0.4)
+
+    @media(min-width: 537px)
+      &:nth-child(3)
+        border-top: solid 1px rgba(133, 162, 255, 0.4)
+        border-right: solid 1px rgba(133, 162, 255, 0.4)
+        border-left: none
+        border-bottom: solid 1px rgba(133, 162, 255, 0.4)
+      &:nth-child(4)
+        border-left: solid 1px rgba(133, 162, 255, 0.4)
+        border-bottom: solid 1px rgba(133, 162, 255, 0.4)
+        border-right: none
+      &:nth-child(5)       
+        border-left: solid 1px rgba(133, 162, 255, 0.4)
+        border-top: none
+      &:last-child
+        border-top: none
+
+    @media(min-width: 768px)
+      &:last-child
+        border-bottom: solid 1px rgba(133, 162, 255, 0.4)
+        border-right: solid 1px rgba(133, 162, 255, 0.4)
+      &:nth-child(3)
+        border-top: solid 1px rgba(133, 162, 255, 0.4)
+      &:nth-child(4)
+        border-top: solid 1px rgba(133, 162, 255, 0.4)
+        border-right: solid 1px rgba(133, 162, 255, 0.4)
+        border-left: none
+
+    @media(min-width: 992px)
+      &:nth-last-child(2)
+        border-left: none
+        border-right: solid 1px rgba(133, 162, 255, 0.4)
+        border-top: solid 1px rgba(133, 162, 255, 0.4)
+
+    @media(min-width: 1200px)
+      border-bottom: solid 1px rgba(133, 162, 255, 0.4) !important
+      &:last-child
+        border-left: none
+        border-top: solid 1px rgba(133, 162, 255, 0.4) !important
 
     &__title
       color: #555555
@@ -38,6 +100,9 @@
 .dashboard
   &-full-investment-info
     padding-top: 0px !important
+
+    @media(max-width: 576px)
+      padding-left: 45px
 
 .return
   &-count-container

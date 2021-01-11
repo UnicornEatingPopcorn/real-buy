@@ -31,18 +31,20 @@ const info = [
 
 const FullInvestmentInfo = () => {
   return (
-    <div className="info-container">
-      {info.map((el, index) => {
-        return (
-          <div className="info-block" key={index}>
-            <p className="info-block__title">{el.title}</p>
-            {el.subtitle && (
-              <p className="info-block__subtitle">{el.subtitle}</p>
-            )}
-            <p className="info-block__amount">{el.amount}</p>
-          </div>
-        );
-      })}
+    <div className="info-container container">
+      <div className="row">
+        {info.map((el, index) => {
+          return (
+            <div className="info-block col" key={index}>
+              <p className="info-block__title">{el.title}</p>
+              {el.subtitle && (
+                <p className="info-block__subtitle">{el.subtitle}</p>
+              )}
+              <p className="info-block__amount">{el.amount}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

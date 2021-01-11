@@ -34,7 +34,7 @@ const NavigateBar = () => {
 
   return (
     <div className="navigate-bar">
-      <div className="ui grid navigate-bar-margin">
+      <div className="container navigate-bar-margin">
         <div className="row name-padding">
           <span className="name">홍길동</span>
           <span className="name-title">님</span>

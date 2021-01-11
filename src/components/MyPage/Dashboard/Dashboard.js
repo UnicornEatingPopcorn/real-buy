@@ -43,34 +43,34 @@ const totalReturn = [
 
 const Dashboard = () => {
   return (
-    <div className="ui relaxed grid">
+    <div className="container">
       <div className="row dashboard-full-investment-info">
-        <div className="column">
+        <div className="col-12">
           <FullInvestmentInfo />
         </div>
       </div>
-      <div className="three column row">
-        <div className="column">
+      {/*<div className="row">
+        <div className="col-4">
           <ReturnCount returnAmount={dividedReturn} />
         </div>
-        <div className="column">
+        <div className="col-4">
           <ReturnCount returnAmount={totalReturn} />
         </div>
-        <div className="column">
+        <div className="col-4">
           <Graph />
         </div>
       </div>
-      <div className="three column row">
-        <div className="column">
+      <div className="row">
+        <div className="col-4">
           <Deposit />
         </div>
-        <div className="column">
+        <div className="col-4">
           <InvestmentLimit />
         </div>
-        <div className="column">
+        <div className="col-4">
           <InvestmentStatus />
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };
