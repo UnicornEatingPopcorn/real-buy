@@ -50,22 +50,22 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="row dashboard-row">
-        <div className="col-sm-6 col-md-4">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <ReturnCount returnAmount={dividedReturn} />
         </div>
-        <div className="col-sm-6 col-md-4">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <ReturnCount returnAmount={totalReturn} />
         </div>
-        <div className="col-sm-6 col-md-4">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <Graph />
         </div>
-        <div className="col-sm-6 col-md-4">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <Deposit />
         </div>
-        <div className="col-sm-6 col-md-4">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <InvestmentLimit />
         </div>
-        <div className="col-sm-6 col-md-4 dashboard-column">
+        <div className="col-sm-6 col-md-4 dashboard-info-column">
           <InvestmentStatus />
         </div>
       </div>

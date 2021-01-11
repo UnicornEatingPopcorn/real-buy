@@ -6,7 +6,7 @@ const ReturnCount = ({ returnAmount }) => {
       {returnAmount.map((amount, index) => {
         return (
           <div className="return-block" key={index}>
-            <div className="return-block__all-names">
+            <div className="return-block">
               <p className="return-block__title">{amount.title}</p>
               {amount.subtitle && (
                 <p className="return-block__subtitle">{amount.subtitle}</p>
