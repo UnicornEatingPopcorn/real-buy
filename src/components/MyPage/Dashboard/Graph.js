@@ -36,11 +36,11 @@ const Graph = () => {
           <img src={won} alt="won" className="graph-data__price-won" />
         </span>
       </div>
-      <div className="ui grid">
-        <div className="two column row graph-block__all">
+      <div className="container">
+        <div className="row">
           {graphInfo.map((graph, index) => {
             return (
-              <div className="column graph-block" key={index}>
+              <div className="col graph-block" key={index}>
                 <p className="graph-block__title">{graph.title}</p>
                 <p className="graph-block__subtitle">{graph.subtitle}</p>
                 <div className="graph-block__divider"></div>
