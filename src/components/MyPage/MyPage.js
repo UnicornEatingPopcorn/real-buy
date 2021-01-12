@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./MyPage.sass";
 import InvestmentDetails from "./InvestmentDetails/InvestmentDetails";
 import NavigateBar from "./NavigateBar/NavigateBar";
-import Schedule from "./Schedule";
+import PaymentSchedule from "./PaymentSchedule/PaymentSchedule";
 import MyAccount from "./MyAccount";
 import MemberInfo from "./MemberInfo";
 import Dashboard from "./Dashboard/Dashboard";
@@ -22,7 +22,7 @@ const MyPage = () => {
               path="/mypage/investment-details"
               component={InvestmentDetails}
             />
-            <Route path="/mypage/schedule" component={Schedule} />
+            <Route path="/mypage/schedule" component={PaymentSchedule} />
             <Route path="/mypage/my-account" component={MyAccount} />
             <Route path="/mypage/member-information" component={MemberInfo} />
           </div>
