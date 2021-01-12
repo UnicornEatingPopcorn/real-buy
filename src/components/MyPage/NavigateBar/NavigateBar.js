@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import heart from "./../../assets/icons/heart.png";
+import heart from "./../../../assets/icons/heart.png";
+import "./NavigateBar.sass";
 
 const links = [
   {

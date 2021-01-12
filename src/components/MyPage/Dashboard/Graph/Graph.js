@@ -1,6 +1,7 @@
 import React from "react";
-import graph from "./../../../assets/icons/graph.png";
-import won from "./../../../assets/icons/won.svg";
+import graph from "./../../../../assets/icons/graph.png";
+import won from "./../../../../assets/icons/won.svg";
+import "./Graph.sass";
 
 const graphInfo = [
   {

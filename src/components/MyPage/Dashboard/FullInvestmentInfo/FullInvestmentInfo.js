@@ -1,4 +1,5 @@
 import React from "react";
+import "./FullInvestmentInfo.sass";
 
 const info = [
   {

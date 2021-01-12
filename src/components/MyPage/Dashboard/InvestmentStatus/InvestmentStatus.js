@@ -1,8 +1,9 @@
 import React from "react";
 import { CarouselProvider, Dot, Slide, Slider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import FirstSlide from "./FirstSlide";
-import SlidePart from "./SlidePart";
+import FirstSlide from "./FirstSlide/FirstSlide";
+import SlidePart from "./SlidePart/SlidePart";
+import "./InvestmentStatus.sass";
 
 const InvestmentStatus = () => {
   return (

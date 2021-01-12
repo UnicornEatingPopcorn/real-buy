@@ -1,7 +1,8 @@
 import React from "react";
-import temp_for_2_slide from "./../../../assets/icons/temp_2-slide.png";
-import temp_for_3_slide from "./../../../assets/icons/temp_3-slide.png";
-import temp_for_4_slide from "./../../../assets/icons/temp_4-slide.png";
+import temp_for_2_slide from "./../../../../../assets/icons/temp_2-slide.png";
+import temp_for_3_slide from "./../../../../../assets/icons/temp_3-slide.png";
+import temp_for_4_slide from "./../../../../../assets/icons/temp_4-slide.png";
+import "./SlidePart.sass";
 
 const Slide = ({ index }) => {
   const checkSrc = () => {

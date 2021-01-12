@@ -1,5 +1,6 @@
 import React from "react";
-import circular_progress from "./../../../assets/icons/circular_progress.png";
+import circular_progress from "./../../../../../assets/icons/circular_progress.png";
+import "./FirstSlide.sass";
 
 const FirstSlide = () => {
   return (

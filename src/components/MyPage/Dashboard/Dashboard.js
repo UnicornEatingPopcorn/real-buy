@@ -1,11 +1,11 @@
 import React from "react";
-import FullInvestmentInfo from "./FullInvestmentInfo";
+import FullInvestmentInfo from "./FullInvestmentInfo/FullInvestmentInfo";
 import "./Dashboard.sass";
-import ReturnCount from "./ReturnCount";
-import Graph from "./Graph";
-import Deposit from "./Deposit";
-import InvestmentLimit from "./InvestmentLimit";
-import InvestmentStatus from "./InvestmentStatus";
+import ReturnCount from "./ReturnCount/ReturnCount";
+import Graph from "./Graph/Graph";
+import Deposit from "./Deposit/Deposit";
+import InvestmentLimit from "./InvestmentLimit/InvestmentLimit";
+import InvestmentStatus from "./InvestmentStatus/InvestmentStatus";
 
 const dividedReturn = [
   {

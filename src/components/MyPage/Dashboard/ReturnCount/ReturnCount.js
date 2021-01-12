@@ -1,4 +1,5 @@
 import React from "react";
+import "./ReturnCount.sass";
 
 const ReturnCount = ({ returnAmount }) => {
   return (

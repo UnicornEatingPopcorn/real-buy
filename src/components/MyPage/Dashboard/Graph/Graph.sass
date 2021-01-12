@@ -1,0 +1,130 @@
+.graph
+  &-container
+    height: 275px
+    background: #FFFFFF
+    box-shadow: 0px 7px 20px #0F143129
+    position: relative
+    
+    @media(max-width: 331px)
+      height: 365px
+
+  &-info
+    height: 159px
+    width: 100%
+    //TODO include real graph, change background according to design
+    background: transparent linear-gradient(146deg, #1CA9E9 0%, #0154C8 78%)
+
+    &__title
+      color: #FFFFFF
+      font-size: 12px
+      font-family: "NanumSquare"
+      float: left
+
+    &__amount
+      color: #FFFFFF
+      font-size: 12px
+      font-family: "SFProDisplayThin"
+
+    &__won
+      font-size: 9px
+      color: #FFFFFF
+
+    &__money
+      float: left
+      padding: 28px 0px 0px 14px
+
+    &__period
+      color: #9ECCF0
+      font-size: 7px
+      font-family: "NanumSquareRegular"
+
+  &-decoration
+    width: 25px
+    height: 100%
+    background: transparent linear-gradient(180deg, #FFFFFF5F 0%, #FFFFFF07 100%)
+    opacity: 0.5
+    position: absolute
+    top: 0
+    right: 40px
+
+  &-data
+    &__picture
+      width: 91%
+      margin-left: 10px
+      position: absolute
+      top: 85px
+      @media(min-width: 400px)
+        width: 73%
+        margin-left: 40px
+      @media(min-width: 500px)
+        width: 55%
+        margin-left: 123px
+      @media(min-width: 576px)
+        width: 139px
+        margin-left: 3px
+      @media(min-width: 992px)
+        width: 223px
+      @media(min-width: 1200px)
+        width: 198px
+
+    &__price
+      width: 64px
+      height: 25px
+      background: #1CA9E9 0% 0%
+      border-radius: 15px
+      position: absolute
+      top: 60px
+      right: 21px
+      display: flex
+      align-items: center
+
+      &-sum
+        color: #FFFFFF
+        font-size: 13px
+        margin-left: 7px
+
+      &-won
+        color: white
+        margin: 0px 7px -3px 4px
+  
+  &-block
+    @media(max-width: 331px)
+      padding: 0px 15px
+    @media(min-width: 332px)
+      padding: 5px 2px
+    @media(min-width: 399px)
+      padding: 5px 17px 0px 17px
+    @media(min-width: 576px)
+      padding: 7px 8px
+    @media(min-width: 992px)
+      padding: 5px 15px
+    @media(min-width: 992px)
+      padding: 7px 11px
+
+    &__divider
+      border-bottom: 0.5px solid #BFBFBF
+
+    &__title
+      color: #555555
+      font-size: 12px
+      text-align: center
+      margin: 17px 0px 0px 0px
+      font-family: "NanumSquare"
+      @media(min-width: 576px)
+        font-size: 10px
+      @media(min-width: 992px)
+        font-size: 12px
+
+    &__subtitle
+      color: #555555
+      font-size: 10px
+      text-align: center
+      font-family: "NanumSquareRegular"
+      margin-left: 5px
+
+    &__amount
+      color: #3769FC
+      font-size: 17px
+      text-align: center
+      margin: 12px 0px 17px 0px
+

@@ -1,0 +1,95 @@
+.deposit
+  &-container
+    height: 217px
+    background: #FFFFFF 0% 0%
+    box-shadow: 0px 7px 20px #0F143129
+    padding: 19px 16px
+    display: grid
+    @media(min-width: 576px)
+      height: 275px
+    @media(min-width: 768px)
+      height: 217px
+
+  &__header
+    display: flex
+    justify-content: space-between
+    height: 34px
+    border-bottom: 0.5px solid #BFBFBF
+
+    &-button
+      width: 40px
+      height: 18px
+      background: #FFFFFF 0% 0%
+      border: 0.5px solid #7A7A7A
+      border-radius: 4px
+      color: #7A7A7A
+      font-size: 11px
+      font-family: "NanumSquareRegular"
+
+  &__info
+    height: 100px
+    border-bottom: 0.5px solid #BFBFBF
+    @media(min-width: 576px)
+      height: 156px
+    @media(min-width: 768px)
+      height: 100px
+    
+    &-account
+      display: flex
+      justify-content: space-between
+      margin: 13px 0px
+      @media(min-width: 576px)
+        margin: 32px 0px
+      @media(min-width: 768px)
+        margin: 13px 0px
+
+
+    &-title
+      @media(max-width: 399px)
+        font-size: 9px
+      @media(min-width: 576px)
+        font-size: 11px
+      @media(min-width: 768px)
+        font-size: 10px
+      @media(min-width: 992px)
+        font-size: 12px
+               
+      color: #7A7A7A
+      font-size: 12px
+      font-family: "NanumSquareRegular"
+
+    &-subtitle
+      @media(max-width: 399px)
+        font-size: 9px
+      @media(min-width: 576px)
+        font-size: 10px
+      @media(min-width: 768px)
+        font-size: 11px
+      @media(min-width: 992px)
+        font-size: 12px
+
+      color: #2E2E2E
+      font-size: 12px
+      font-family: "NanumSquareRegular"
+
+    &-bank-logo
+      width: 10px
+      height: 10px
+      margin: 4px 3px 0px 0px
+
+    &-text
+      color: #2E2E2E
+      font-size: 9px
+      font-family: "NanumSquareRegular"
+      
+  &__total
+    color: #3769FC
+    font-size: 18px
+    display: flex
+    justify-self: end
+    margin-top: 5px
+    @media(min-width: 576px)
+      margin-top: 10px
+    @media(min-width: 768px)
+      margin-top: 5px
+

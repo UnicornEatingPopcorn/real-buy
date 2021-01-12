@@ -1,5 +1,6 @@
 import React from "react";
-import bank from "./../../../assets/icons/bank.png";
+import bank from "./../../../../assets/icons/bank.png";
+import "./Deposit.sass";
 
 const Deposit = () => {
   return (
