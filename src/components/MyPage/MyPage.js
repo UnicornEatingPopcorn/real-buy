@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./MyPage.sass";
-import InvestmentDetails from "../InvestmentDetails/InvestmentDetails";
+import InvestmentDetails from "./InvestmentDetails/InvestmentDetails";
 import NavigateBar from "./NavigateBar/NavigateBar";
 import Schedule from "./Schedule";
 import MyAccount from "./MyAccount";

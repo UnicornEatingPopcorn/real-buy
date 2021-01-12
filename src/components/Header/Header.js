@@ -45,7 +45,7 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav-item header-end">
-            <Link className="nav-link navlink-end" to="/mypage">
+            <Link className="nav-link navlink-end" to="/mypage/dashboard">
               홍길동님 마이페이지
             </Link>
           </li>

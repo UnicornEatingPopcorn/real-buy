@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import heart from "./../../../assets/icons/heart.png";
 import "./NavigateBar.sass";
 
@@ -10,7 +10,7 @@ const links = [
   },
   {
     title: "투자내역",
-    path: "/mypage/investment-details",
+    path: "/mypage/investment-details/all",
   },
   {
     title: "지급스케쥴",
@@ -27,12 +27,6 @@ const links = [
 ];
 
 const NavigateBar = () => {
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push("/mypage/dashboard");
-  });
-
   return (
     <div className="navigate-bar">
       <div className="container navigate-bar-margin">
