@@ -24,7 +24,7 @@ const InvestmentDetails = () => {
   return (
     <BrowserRouter>
       <div className="container investment-details-container">
-        <div className="row investment-details-row">
+        <div className="row">
           {links.map((link, index) => {
             return (
               <div

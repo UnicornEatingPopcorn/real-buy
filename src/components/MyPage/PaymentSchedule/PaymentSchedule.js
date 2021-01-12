@@ -38,7 +38,7 @@ const PaymentSchedule = () => {
           />
         </div>
       </div>
-      <div className="row">
+      <div className="row schedule-row">
         <div className="col today">
           <img src={goBack} alt="go back" className="schedule_arrow" />
           <span className="schedule-year">&nbsp; 2020년 12월 &nbsp;</span>

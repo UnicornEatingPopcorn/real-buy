@@ -13,10 +13,10 @@ const MyPage = () => {
     <BrowserRouter>
       <div className="mypage-container container">
         <div className="mypage row">
-          <div className="col-2">
+          <div className="col-4 col-md-2 col-lg-2">
             <NavigateBar />
           </div>
-          <div className="col-10 ">
+          <div className="col-8 col-md-10 col-lg-10">
             <Route path="/mypage/dashboard" component={Dashboard} />
             <Route
               path="/mypage/investment-details"
