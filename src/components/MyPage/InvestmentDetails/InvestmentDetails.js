@@ -25,9 +25,12 @@ const InvestmentDetails = () => {
     <BrowserRouter>
       <div className="container investment-details-container">
         <div className="row investment-details-row">
-          {links.map((link) => {
+          {links.map((link, index) => {
             return (
-              <div className="col-12 col-sm-4 col-md-3 col-lg-2 navlink-column">
+              <div
+                className="col-12 col-sm-4 col-md-3 col-lg-2 navlink-column"
+                key={index}
+              >
                 <NavLink
                   to={link.path}
                   className="investment-details-navlink"

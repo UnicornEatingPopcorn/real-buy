@@ -61,14 +61,14 @@ const Header = () => {
         </button>
       </div>
       <div
-        className={`${
+        className={`navbar-collapse ${
           isToggle ? "header-collapse-visible" : "header-collapse"
         }`}
       >
         <ul className="navbar-nav header-list">
           {links.map((link) => {
             return (
-              <li className={link.liClass}>
+              <li className={link.liClass} key={link.title}>
                 <Link
                   className={link.linkClass}
                   to={link.path}

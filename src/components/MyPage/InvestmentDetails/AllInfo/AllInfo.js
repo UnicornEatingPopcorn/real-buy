@@ -37,9 +37,12 @@ const AllInfo = () => {
         </div>
       </div>
       <div className="row all-info-row">
-        {all.map((el) => {
+        {all.map((el, index) => {
           return (
-            <div className="col-10 col-sm-6 col-lg-4 all-info__card">
+            <div
+              className="col-10 col-sm-6 col-lg-4 all-info__card"
+              key={index}
+            >
               <img
                 src={el.image}
                 alt="main"
