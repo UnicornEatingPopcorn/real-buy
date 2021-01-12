@@ -42,18 +42,18 @@ const AllInfo = () => {
             <div className="col-10 col-sm-6 col-lg-4 all-info__card">
               <img
                 src={el.image}
-                alt="image1"
+                alt="main"
                 className="all-info__card-picture"
               />
               <div className="all-info__card-body container">
                 <div className="row">
                   <div className="col-4 all-info__card-small-box">
                     <p className="card-small-title">수익성</p>
-                    <img src={stars5} className="card-picture" />
+                    <img src={stars5} alt="5 stars" className="card-picture" />
                   </div>
                   <div className="col-4 all-info__card-small-box">
                     <p className="card-small-title">수익성</p>
-                    <img src={stars4} className="card-picture" />
+                    <img src={stars4} alt="4 stars" className="card-picture" />
                   </div>
                   <div className="col-4 all-info__card-small-box">
                     <p className="card-small-title">투자 만기</p>
