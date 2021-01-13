@@ -1,98 +1,105 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyAccount.sass";
 import bank from "./../../../assets/icons/bank.png";
 import logoGray from "./../../../assets/icons/logo-gray.svg";
+import NoAccount from "./NoAccount/NoAccount";
 
 const MyAccount = () => {
+  const [isAccount, setIsAccount] = useState(false);
+
   return (
     <div className="container">
       <div className="row">
-        <div className="my-account-box">
-          <div className="row my-account-header">
-            <div className="col-12 col-md-10">
-              <p className="header-title">보유 예치금</p>
-              <div className="bank-info">
-                <img src={bank} className="bank-picture" />
-                <span className="header-subtitle">
-                  고객님의 예치금과 투자금은 신한은행 신탁관리시스템에 의해
-                  보호받고 있습니다.
-                </span>
+        {isAccount ? (
+          <div className="my-account-box">
+            <div className="row my-account-header">
+              <div className="col-12 col-md-10">
+                <p className="header-title">보유 예치금</p>
+                <div className="bank-info">
+                  <img src={bank} className="bank-picture" />
+                  <span className="header-subtitle">
+                    고객님의 예치금과 투자금은 신한은행 신탁관리시스템에 의해
+                    보호받고 있습니다.
+                  </span>
+                </div>
+              </div>
+              <div className="col-12 col-md-2">
+                <span className="sum">0 원</span>
               </div>
             </div>
-            <div className="col-12 col-md-2">
-              <span className="sum">0 원</span>
-            </div>
-          </div>
-          <div className="row account-info">
-            <div className="col-12 col-md-4">
-              <span className="account-info-title">나의 가상계좌</span>
-            </div>
-            <div className="col-12 col-md-8">
-              <div className="icon-input-container">
+            <div className="row account-info">
+              <div className="col-12 col-md-4">
+                <span className="account-info-title">나의 가상계좌</span>
+              </div>
+              <div className="col-12 col-md-8">
+                <div className="icon-input-container">
+                  <input
+                    type="text"
+                    className="account-info-input"
+                    value="신한은행"
+                  />
+                  <img src={bank} className="icon" />
+                </div>
                 <input
                   type="text"
                   className="account-info-input"
-                  value="신한은행"
+                  value="834-9273-2323-45"
                 />
-                <img src={bank} className="icon" />
-              </div>
-              <input
-                type="text"
-                className="account-info-input"
-                value="834-9273-2323-45"
-              />
-              <input
-                type="text"
-                className="account-info-input"
-                value="리얼바이 (홍길동)"
-              />
-            </div>
-          </div>
-          <div className="row account-info">
-            <div className="col-12 col-md-4">
-              <span className="account-info-title">나의 출금계좌</span>
-            </div>
-            <div className="col-12 col-md-8">
-              <div className="icon-input-container">
                 <input
                   type="text"
                   className="account-info-input"
-                  value="신한은행"
+                  value="리얼바이 (홍길동)"
                 />
-                <img src={bank} className="icon" />
               </div>
-              <input
-                type="text"
-                className="account-info-input"
-                value="234847363***4"
-              />
-              <div className="input-button-container">
+            </div>
+            <div className="row account-info">
+              <div className="col-12 col-md-4">
+                <span className="account-info-title">나의 출금계좌</span>
+              </div>
+              <div className="col-12 col-md-8">
+                <div className="icon-input-container">
+                  <input
+                    type="text"
+                    className="account-info-input"
+                    value="신한은행"
+                  />
+                  <img src={bank} className="icon" />
+                </div>
                 <input
                   type="text"
                   className="account-info-input"
-                  value="홍길동"
+                  value="234847363***4"
                 />
-                <button type="button">변경하기</button>
+                <div className="input-button-container">
+                  <input
+                    type="text"
+                    className="account-info-input"
+                    value="홍길동"
+                  />
+                  <button type="button">변경하기</button>
+                </div>
+              </div>
+            </div>
+            <div className="row account-info">
+              <div className="col-12 col-md-4">
+                <span className="account-info-title">출금 신청금액</span>
+              </div>
+              <div className="col-12 col-md-8">
+                <div className="input-button-container-last">
+                  <input type="text" className="amount-input" value="0 원" />
+                  <button type="button" className="whole">
+                    전액
+                  </button>
+                  <button type="button" className="withdrawal">
+                    출금신청
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="row account-info">
-            <div className="col-12 col-md-4">
-              <span className="account-info-title">출금 신청금액</span>
-            </div>
-            <div className="col-12 col-md-8">
-              <div className="input-button-container-last">
-                <input type="text" className="amount-input" value="0 원" />
-                <button type="button" className="whole">
-                  전액
-                </button>
-                <button type="button" className="withdrawal">
-                  출금신청
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        ) : (
+          <NoAccount />
+        )}
       </div>
       <div className="row account-row">
         <div className="col">
