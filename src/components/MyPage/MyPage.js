@@ -5,7 +5,7 @@ import InvestmentDetails from "./InvestmentDetails/InvestmentDetails";
 import NavigateBar from "./NavigateBar/NavigateBar";
 import PaymentSchedule from "./PaymentSchedule/PaymentSchedule";
 import MyAccount from "./MyAccount/MyAccount";
-import MemberInfo from "./MemberInfo";
+import MemberInfo from "./MemberInfo/MemberInfo";
 import Dashboard from "./Dashboard/Dashboard";
 
 const MyPage = () => {
