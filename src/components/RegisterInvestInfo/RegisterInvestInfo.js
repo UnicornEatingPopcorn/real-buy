@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./RegisterInvestInfo.sass";
+import bankSelect from "./../../assets/icons/bank-select.png";
 
 const RegisterInvestInfo = () => {
   return (
@@ -20,6 +21,7 @@ const RegisterInvestInfo = () => {
                 value="은행 선택"
                 className="register-investment__input-bank"
               />
+              <img src={bankSelect} className="register-investment__icon" />
               <input
                 type="text"
                 value="000 - 0000 - 0000 - 00"
