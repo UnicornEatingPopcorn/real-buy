@@ -1,5 +1,6 @@
 import React from "react";
 import "./NoAccount.sass";
+import { Link } from "react-router-dom";
 import noAccount from "./../../../../assets/icons/no-account.png";
 
 const NoAccount = () => {
@@ -13,7 +14,9 @@ const NoAccount = () => {
             마이페이지에서 나의 투자 현황과 포인트를 확인하실 수 있습니다.
           </p>
           <img src={noAccount} alt="no account" className="picture" />
-          <button className="no-account__button">계좌 계설하기</button>
+          <Link to="/register-investment-info">
+            <button className="no-account__button">계좌 계설하기</button>
+          </Link>
         </div>
       </div>
     </div>
