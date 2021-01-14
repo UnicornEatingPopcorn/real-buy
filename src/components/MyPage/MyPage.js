@@ -7,6 +7,7 @@ import PaymentSchedule from "./PaymentSchedule/PaymentSchedule";
 import MyAccount from "./MyAccount/MyAccount";
 import MemberInfo from "./MemberInfo/MemberInfo";
 import Dashboard from "./Dashboard/Dashboard";
+import Cart from "./Dashboard/Cart/Cart";
 import LogoutModal from "./NavigateBar/LogoutModal/LogoutModal";
 
 const MyPage = () => {
@@ -38,6 +39,7 @@ const MyPage = () => {
               <Route path="/mypage/schedule" component={PaymentSchedule} />
               <Route path="/mypage/my-account" component={MyAccount} />
               <Route path="/mypage/member-information" component={MemberInfo} />
+              <Route path="/mypage/cart" component={Cart} />
             </Switch>
           </div>
         </div>

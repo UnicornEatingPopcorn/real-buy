@@ -54,10 +54,12 @@ const NavigateBar = ({ logOut, logOutValue }) => {
           <span className="ammount-currency">원</span>
         </div>
         <div className="row product-padding">
-          <span className="product">
-            <img src={heart} alt="heart" className="product-icon" />
-            <p className="product-title">찜한 투자 상품</p>
-          </span>
+          <NavLink className="navigate-bar__cart" to="/mypage/cart">
+            <span className="product">
+              <img src={heart} alt="heart" className="product-icon" />
+              <p className="product-title">찜한 투자 상품</p>
+            </span>
+          </NavLink>
         </div>
       </div>
       <div className="navigate-divider"></div>
