@@ -10,12 +10,12 @@ const PaymentSchedule = () => {
   return (
     <div className="container schedule-container">
       <div className="row schedule-row no-gutters">
-        <div className="col-12 col-md-2 col-lg-2">
+        <div className="col-12 col-md-3 col-lg-2">
           <img src={goBack} alt="go back" className="schedule_arrow" />
           <span className="schedule-year">&nbsp; 2020 &nbsp;</span>
           <img src={goFurther} alt="go further" className="schedule_arrow" />
         </div>
-        <div className="col-12 col-md-3">
+        <div className="col-12 col-md-3 schedule-graph-name">
           <span className="graph-name">월별 상환 그래프</span>
         </div>
         <div className="col-12 col-md-3 info-column-center">
@@ -24,7 +24,7 @@ const PaymentSchedule = () => {
           <img src={grayPointer} alt="gray pointer" className="pointer-gray" />
           <span className="legend">예정금액</span>
         </div>
-        <div className="col-12 col-md-3 offset-md-1 offset-lg-0 col-lg-4 info-column">
+        <div className="col-12 col-md-3 offset-lg-0 col-lg-4 info-column">
           <span className="profit-repayment">수익금 상환</span>
           <span className="principal-payment">원금상환</span>
         </div>
