@@ -31,8 +31,10 @@ const NavigateBar = () => {
     <div className="navigate-bar">
       <div className="container navigate-bar-margin">
         <div className="row name-padding">
-          <span className="name">홍길동</span>
-          <span className="name-title">님</span>
+          <div className="name__block">
+            <span className="name">홍길동</span>
+            <span className="name-title">님</span>
+          </div>
           <button className="logout-button">로그아웃</button>
         </div>
         <div className="row email-padding">

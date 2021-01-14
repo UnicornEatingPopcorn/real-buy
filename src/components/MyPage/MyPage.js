@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./MyPage.sass";
 import InvestmentDetails from "./InvestmentDetails/InvestmentDetails";
 import NavigateBar from "./NavigateBar/NavigateBar";
