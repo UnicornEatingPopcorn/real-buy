@@ -21,7 +21,11 @@ const RegisterInvestInfo = () => {
                 value="은행 선택"
                 className="register-investment__input-bank"
               />
-              <img src={bankSelect} className="register-investment__icon" />
+              <img
+                src={bankSelect}
+                className="register-investment__icon"
+                alt="icon"
+              />
               <input
                 type="text"
                 value="000 - 0000 - 0000 - 00"

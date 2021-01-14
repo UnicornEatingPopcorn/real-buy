@@ -16,7 +16,7 @@ const MyAccount = () => {
               <div className="col-12 col-md-10">
                 <p className="header-title">보유 예치금</p>
                 <div className="bank-info">
-                  <img src={bank} className="bank-picture" />
+                  <img src={bank} className="bank-picture" alt="bank" />
                   <span className="header-subtitle">
                     고객님의 예치금과 투자금은 신한은행 신탁관리시스템에 의해
                     보호받고 있습니다.
@@ -38,7 +38,7 @@ const MyAccount = () => {
                     className="account-info-input"
                     value="신한은행"
                   />
-                  <img src={bank} className="icon" />
+                  <img src={bank} className="icon" alt="icon" />
                 </div>
                 <input
                   type="text"
@@ -63,7 +63,7 @@ const MyAccount = () => {
                     className="account-info-input"
                     value="신한은행"
                   />
-                  <img src={bank} className="icon" />
+                  <img src={bank} className="icon" alt="icon" />
                 </div>
                 <input
                   type="text"
