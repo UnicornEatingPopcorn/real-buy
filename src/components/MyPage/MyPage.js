@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./MyPage.sass";
 import InvestmentDetails from "./InvestmentDetails/InvestmentDetails";
@@ -7,28 +7,42 @@ import PaymentSchedule from "./PaymentSchedule/PaymentSchedule";
 import MyAccount from "./MyAccount/MyAccount";
 import MemberInfo from "./MemberInfo/MemberInfo";
 import Dashboard from "./Dashboard/Dashboard";
+import LogoutModal from "./NavigateBar/LogoutModal/LogoutModal";
 
 const MyPage = () => {
+  const [isLogout, setIsLogout] = useState(false);
+  const [isModalOpen, setModalClose] = useState(true);
+
   return (
-    <div className="mypage-container container">
-      <div className="mypage row">
-        <div className="col-4 col-md-2 col-lg-2">
-          <NavigateBar />
-        </div>
-        <div className="col-8 col-md-10 col-lg-10">
-          <Switch>
-            <Route path="/mypage/dashboard" component={Dashboard} />
-            <Route
-              path="/mypage/investment-details"
-              component={InvestmentDetails}
-            />
-            <Route path="/mypage/schedule" component={PaymentSchedule} />
-            <Route path="/mypage/my-account" component={MyAccount} />
-            <Route path="/mypage/member-information" component={MemberInfo} />
-          </Switch>
+    <>
+      {(isLogout && isModalOpen) || (!isLogout && !isModalOpen) ? (
+        <LogoutModal
+          displayModal={setModalClose}
+          modalOpenValue={isModalOpen}
+        />
+      ) : (
+        <div></div>
+      )}
+      <div className="mypage-container container">
+        <div className="mypage row">
+          <div className="col-4 col-md-2 col-lg-2">
+            <NavigateBar logOut={setIsLogout} logOutValue={isLogout} />
+          </div>
+          <div className="col-8 col-md-10 col-lg-10">
+            <Switch>
+              <Route path="/mypage/dashboard" component={Dashboard} />
+              <Route
+                path="/mypage/investment-details"
+                component={InvestmentDetails}
+              />
+              <Route path="/mypage/schedule" component={PaymentSchedule} />
+              <Route path="/mypage/my-account" component={MyAccount} />
+              <Route path="/mypage/member-information" component={MemberInfo} />
+            </Switch>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

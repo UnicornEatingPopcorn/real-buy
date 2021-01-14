@@ -26,7 +26,11 @@ const links = [
   },
 ];
 
-const NavigateBar = () => {
+const NavigateBar = ({ logOut, logOutValue }) => {
+  const onLogout = () => {
+    logOut(!logOutValue);
+  };
+
   return (
     <div className="navigate-bar">
       <div className="container navigate-bar-margin">
@@ -35,7 +39,9 @@ const NavigateBar = () => {
             <span className="name">홍길동</span>
             <span className="name-title">님</span>
           </div>
-          <button className="logout-button">로그아웃</button>
+          <button className="logout-button" onClick={onLogout}>
+            로그아웃
+          </button>
         </div>
         <div className="row email-padding">
           <p className="email">hong3@gmail.com</p>

@@ -3,6 +3,51 @@
   height: 100vh
   position: absolute
   z-index: 2
-  opacity: 1
-  backdrop-filter: blur(9px)
-  -webkit-backdrop-filter: blur(9px)
+  backdrop-filter: blur(9px) brightness(0.6)
+  -webkit-backdrop-filter: blur(9px) brightness(0.6)
+  display: grid
+  justify-content: center
+  align-content: baseline
+  
+  &__title
+    color: #FFFFFF
+    font-size: 30px
+    font-family: "NanumSquareRegular"
+    text-align: center
+    margin-top: 79px
+    margin-bottom: 51px
+
+  &__box
+    max-width: 411px
+    height: 313px
+    background: #FFFFFF
+    box-shadow: 8px 13px 10px #C6D3E526
+    border: 1px solid #C6D3E5
+    border-radius: 3px
+    padding: 85px 26px 36px 26px
+    display: grid
+    align-content: space-between
+
+  &__text
+    text-align: center
+    font-size: 17px
+    font-family: "NanumSquareExtraBold"
+
+  &__blue-text
+    color: #0540FF
+    font-size: 17px
+
+  &__button
+    width: 168px
+    height: 55px
+    background: #FFFFFF
+    box-shadow: 8px 13px 10px #3182F533
+    border: 1px solid #85A2FF66
+    color: #3182F5
+    font-size: 18px
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+
+
