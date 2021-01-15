@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.sass";
 import logo from "./../../assets/icons/real-buy-logo.svg";
 
@@ -53,9 +53,9 @@ const Header = () => {
       role="navigation"
     >
       <div className="container-fluid header-container">
-        <Link to="/">
+        <NavLink to="/">
           <img alt="logo" className="header-logo" src={logo} />
-        </Link>
+        </NavLink>
         <button className="navbar-toggler" type="button" onClick={handleClick}>
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -69,13 +69,14 @@ const Header = () => {
           {links.map((link) => {
             return (
               <li className={link.liClass} key={link.title}>
-                <Link
+                <NavLink
                   className={link.linkClass}
                   to={link.path}
                   onClick={closeNav}
+                  activeClassName="header__link-active"
                 >
                   {link.title}
-                </Link>
+                </NavLink>
               </li>
             );
           })}
