@@ -1,5 +1,5 @@
 import React from "react";
-import circular_progress from "./../../../../../assets/icons/circular_progress.png";
+import CircularProgressMain from "../../../../ui-kit/CircularProgressMain/CircularProgressMain";
 import "./FirstSlide.sass";
 
 const FirstSlide = () => {
@@ -22,11 +22,7 @@ const FirstSlide = () => {
         </div>
       </div>
       <div className="circular_progress-container">
-        <img
-          src={circular_progress}
-          alt="circular_progress"
-          className="circular_progress"
-        />
+        <CircularProgressMain />
       </div>
       <div className="row first-slide__row">
         <div className="col-4 first-slide__description">

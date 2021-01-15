@@ -1,24 +1,25 @@
 import React from "react";
-import temp_for_2_slide from "./../../../../../assets/icons/temp_2-slide.png";
-import temp_for_3_slide from "./../../../../../assets/icons/temp_3-slide.png";
-import temp_for_4_slide from "./../../../../../assets/icons/temp_4-slide.png";
+import CircularProgress from "../../../../ui-kit/CircularProgress/CircularProgress";
 import "./SlidePart.sass";
 
 const Slide = ({ index }) => {
-  const checkSrc = () => {
-    if (index === "1") {
-      return temp_for_2_slide;
-    } else if (index === "2") {
-      return temp_for_3_slide;
-    } else {
-      return temp_for_4_slide;
-    }
-  };
+  let text;
+  switch (index) {
+    case "1":
+      text = "안정형";
+      break;
+    case "2":
+      text = "밸런스형";
+      break;
+    case "3":
+      text = "고수익형";
+  }
 
   return (
     <>
       <div className="slide">
-        <img src={checkSrc()} alt="temporarily for 2 slide" />
+        <CircularProgress />
+        <p className="slide__text-inside">{text}</p>
       </div>
       <div className="container">
         <div className="row">

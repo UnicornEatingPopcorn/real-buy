@@ -33,7 +33,7 @@ const InvestmentStatus = () => {
             <SlidePart index="2" />
           </Slide>
           <Slide index={3}>
-            <SlidePart index="4" />
+            <SlidePart index="3" />
           </Slide>
         </Slider>
       </div>
