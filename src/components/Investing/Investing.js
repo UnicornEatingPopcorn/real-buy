@@ -34,6 +34,17 @@ const allObjects = [
 ];
 
 const Investing = () => {
+  window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY;
+    const navbar = document.querySelector("nav");
+    const navbarHeight = navbar.offsetHeight;
+
+    if (scrollPos >= navbarHeight) {
+      const footer = document.querySelector(".footer");
+      footer.classList.add("footer-animation");
+    }
+  });
+
   return (
     <>
       <div className="investing-container">
@@ -54,7 +65,8 @@ const Investing = () => {
                 index={index}
                 stars5={stars5}
                 stars4={stars4}
-                style={{ maxHeight: "390px" }}
+                style={{ height: "400px" }}
+                key={index}
               >
                 <div className="investing__info">{el.text}</div>
               </InvestmentCard>
