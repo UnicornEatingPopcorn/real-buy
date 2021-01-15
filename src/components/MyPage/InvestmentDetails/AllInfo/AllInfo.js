@@ -5,6 +5,7 @@ import image2 from "./../../../../assets/icons/all-info-card2.png";
 import image3 from "./../../../../assets/icons/all-info-card3.png";
 import stars5 from "./../../../../assets/icons/5_stars.png";
 import stars4 from "./../../../../assets/icons/4_stars.png";
+import InvestmentCard from "./../../../ui-kit/InvestmentCard/InvestmentCard";
 
 const all = [
   {
@@ -39,49 +40,12 @@ const AllInfo = () => {
       <div className="row all-info-row">
         {all.map((el, index) => {
           return (
-            <div
-              className="col-10 col-sm-6 col-lg-4 all-info__card"
-              key={index}
-            >
-              <img
-                src={el.image}
-                alt="main"
-                className="all-info__card-picture"
-              />
-              <div className="all-info__card-body container">
-                <div className="row">
-                  <div className="col-4 all-info__card-small-box">
-                    <p className="card-small-title">수익성</p>
-                    <img src={stars5} alt="5 stars" className="card-picture" />
-                  </div>
-                  <div className="col-4 all-info__card-small-box">
-                    <p className="card-small-title">수익성</p>
-                    <img src={stars4} alt="4 stars" className="card-picture" />
-                  </div>
-                  <div className="col-4 all-info__card-small-box">
-                    <p className="card-small-title">투자 만기</p>
-                    <p>{el.year}</p>
-                  </div>
-                  <div className="col-6 all-info__card-large-box">
-                    <p className="card-small-title">배당수익률</p>
-                    <div className="card-info">
-                      <p className="count">연&nbsp; &nbsp;</p>
-                      <p className="percentage">{el.dividendYield}</p>
-                      <p className="count">%</p>
-                    </div>
-                  </div>
-                  <div className="col-6 all-info__card-large-box">
-                    <p className="card-small-title">총 수익률</p>
-                    <div className="card-info">
-                      <p className="count">연&nbsp; &nbsp;</p>
-                      <p className="percentage">{el.totalReturn}</p>
-                      <p className="count">%</p>
-                    </div>
-                  </div>
-                  <p className="comment">(매각차이 포함)</p>
-                </div>
-              </div>
-            </div>
+            <InvestmentCard
+              investmentObject={el}
+              index={index}
+              stars5={stars5}
+              stars4={stars4}
+            />
           );
         })}
       </div>
