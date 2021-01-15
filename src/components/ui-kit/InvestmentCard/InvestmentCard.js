@@ -9,8 +9,31 @@ const InvestmentCard = ({
   children,
   style,
 }) => {
+  const changeStyles = (event) => {
+    const investingInfo = event.target
+      .closest("div")
+      .querySelector(".investing__info");
+    if (investingInfo) {
+      investingInfo.classList.add("investing__info-hover");
+    }
+  };
+
+  const returnStyles = (event) => {
+    const investingInfo = event.target
+      .closest("div")
+      .querySelector(".investing__info");
+    if (investingInfo) {
+      investingInfo.classList.remove("investing__info-hover");
+    }
+  };
+
   return (
-    <div style={style}>
+    <div
+      style={style}
+      className="investment-card-container"
+      onMouseOver={changeStyles}
+      onMouseOut={returnStyles}
+    >
       <div
         className="col-10 col-sm-6 col-lg-4 investment-card__card"
         key={index}

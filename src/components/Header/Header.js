@@ -99,7 +99,7 @@ const Header = () => {
           </ul>
           <div
             onMouseOut={closeAdditionalMenu}
-            className="navbar__expand-links navbar__expand-links-visible col-lg-5 offset-lg-7 col-xl-4 offset-lg-4"
+            className="navbar__expand-links col-lg-5 offset-lg-7 col-xl-4 offset-lg-4"
           >
             <div className="row no-gutters">
               <div className="col-lg-3 col-xl-3 navbar__expand-column">

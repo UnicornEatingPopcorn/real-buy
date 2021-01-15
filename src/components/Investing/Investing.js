@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Investing.sass";
 import bell from "./../../assets/icons/bell.png";
 import image1 from "./../../assets/icons/all-info-card1.png";
@@ -8,6 +8,7 @@ import stars5 from "./../../assets/icons/5_stars.png";
 import stars4 from "./../../assets/icons/4_stars.png";
 import InvestmentCard from "./../../components/ui-kit/InvestmentCard/InvestmentCard";
 import Footer from "./../../components/Footer/Footer";
+import InvestmentNotifyModal from "./InvestmentNotifyModal/InvestmentNotifyModal";
 
 const allObjects = [
   {
@@ -34,6 +35,8 @@ const allObjects = [
 ];
 
 const Investing = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
   window.addEventListener("scroll", () => {
     const scrollPos = window.scrollY;
     const navbar = document.querySelector("nav");
@@ -45,13 +48,39 @@ const Investing = () => {
     }
   });
 
+  const bellBlock = document.querySelector(".investing__notify");
+  const bellPic = document.querySelector(".investing__bell");
+  const bellTitle = document.querySelector(".investing__notify-title");
+
+  const ringTheBell = () => {
+    bellBlock.classList.add("investing__notify-hover");
+    bellPic.classList.add("investing__bell-hover");
+    bellTitle.classList.add("investing__notify-title-hover");
+  };
+
+  const stopTheBell = () => {
+    bellBlock.classList.remove("investing__notify-hover");
+    bellPic.classList.remove("investing__bell-hover");
+    bellTitle.classList.remove("investing__notify-title-hover");
+  };
+
+  const openNotifyModal = () => {
+    console.log("notify");
+    setModalOpen(true);
+  };
+
   return (
     <>
       <div className="investing-container">
         <div className="row">
           <div className="col investing__title-col">
             <p className="investing__title">신규 투자 상품</p>
-            <div className="investing__notify">
+            <div
+              className="investing__notify"
+              onMouseOver={ringTheBell}
+              onMouseOut={stopTheBell}
+              onClick={openNotifyModal}
+            >
               <img src={bell} alt="bell" className="investing__bell" />
               <p className="investing__notify-title">투자 알림</p>
             </div>
@@ -75,6 +104,12 @@ const Investing = () => {
         </div>
       </div>
       <Footer />
+      {isModalOpen && (
+        <InvestmentNotifyModal
+          displayModal={setModalOpen}
+          modalOpenValue={isModalOpen}
+        />
+      )}
     </>
   );
 };
