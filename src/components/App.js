@@ -11,6 +11,8 @@ import InvestmentInsight from "./InvestmentInsight/InvestmentInsight";
 import AboutCompany from "./AboutCompany/AboutCompany";
 import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import "./App.sass";
+import InvestingMethod from "./InvestingMethod/InvestingMethod";
+import FAQ from "./FAQ/FAQ";
 
 var FontFaceObserver = require("fontfaceobserver");
 
@@ -76,6 +78,8 @@ const App = () => {
           <Route path="/investment-insight" component={InvestmentInsight} />
           <Route path="/company-introduction" component={AboutCompany} />
           <Route path="/customer-support" component={CustomerSupport} />
+          <Route path="/how-to-invest" component={InvestingMethod} />
+          <Route path="/faq" component={FAQ} />
         </Switch>
       </div>
     </BrowserRouter>

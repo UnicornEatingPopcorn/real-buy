@@ -28,7 +28,6 @@
     z-index: 2
     justify-content: center
     margin-left: 5px
-
     a
       text-decoration: none
       font-family: "NanumSquare"
@@ -71,3 +70,57 @@
   display: flex
   justify-content: flex-end
   color: #0540FF !important
+
+.navbar__expand
+  &-links
+    width: 100%
+    display: none
+    height: 103px
+    background: white
+    padding: 20px 28px
+    box-shadow: 0px 4px 15px #0540FF21
+    &-visible
+      display: block
+      position: absolute
+      top: 70px
+      right: 191px
+      z-index: 2
+      @media(max-width: 991px)
+        display: none
+      @media(min-width: 992px)
+        right: 232px
+      @media(min-width: 1100px)
+        right: 246px
+      @media(min-width: 1200px)
+        right: 364px
+      @media(min-width: 1300px)
+        right: 345px
+      @media(min-width: 1400px)
+        right: 318px
+
+  &_link
+    color: #232323
+    font-size: 11px
+    font-family: "NanumSquareRegular"
+    margin-bottom: 10px
+    padding: 0px 0px 0px 5px
+    border-left: 0.3px solid #707070
+    &:active
+      color: red
+
+    &-first
+      padding: 0px 0px 0px 5px
+      margin-bottom: 0px
+      padding-bottom: 10px
+      color: #232323
+      font-size: 11px
+      font-family: "NanumSquareRegular"
+      border-left: 0.3px solid #707070
+
+  &-column
+    display: grid
+    height: fit-content
+      
+    
+
+
