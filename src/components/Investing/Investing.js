@@ -7,6 +7,7 @@ import image3 from "./../../assets/icons/all-info-card3.png";
 import stars5 from "./../../assets/icons/5_stars.png";
 import stars4 from "./../../assets/icons/4_stars.png";
 import InvestmentCard from "./../../components/ui-kit/InvestmentCard/InvestmentCard";
+import Footer from "./../../components/Footer/Footer";
 
 const allObjects = [
   {
@@ -61,7 +62,7 @@ const Investing = () => {
           })}
         </div>
       </div>
-      <div className="investing__footer"></div>
+      <Footer />
     </>
   );
 };
