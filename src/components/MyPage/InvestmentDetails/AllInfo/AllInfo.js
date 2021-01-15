@@ -29,7 +29,7 @@ const all = [
 
 const AllInfo = () => {
   return (
-    <div className="container">
+    <div className="container all-info-container">
       <div className="row all-info-row">
         <div className="col all-info-box">
           <p className="all-info-title">총 투자 금액</p>

@@ -3,7 +3,7 @@ import "./Dividend.sass";
 
 const Dividend = () => {
   return (
-    <div className="container">
+    <div className="container dividend-container">
       <div className="row dividend-row">
         <div className="col dividend-box">
           <p className="dividend-title">배당 발생 금액 </p>

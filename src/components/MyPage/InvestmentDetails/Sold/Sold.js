@@ -3,7 +3,7 @@ import "./Sold.sass";
 
 const Sold = () => {
   return (
-    <div className="container">
+    <div className="container sold-container">
       <div className="row sold-row">
         <div className="col sold-box">
           <p className="sold-title">매각 완료 금액 </p>

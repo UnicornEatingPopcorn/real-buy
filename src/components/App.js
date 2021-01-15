@@ -6,6 +6,10 @@ import MyPage from "./MyPage/MyPage";
 import Header from "./Header/Header";
 import RegisterInvestInfo from "./RegisterInvestInfo/RegisterInvestInfo";
 import CompleteInvestInfo from "./RegisterInvestInfo/CompleteInvestInfo/CompleteInvestInfo";
+import Investing from "./Investing/Investing";
+import InvestmentInsight from "./InvestmentInsight/InvestmentInsight";
+import AboutCompany from "./AboutCompany/AboutCompany";
+import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import "./App.sass";
 
 var FontFaceObserver = require("fontfaceobserver");
@@ -68,6 +72,10 @@ const App = () => {
             exact
             component={CompleteInvestInfo}
           />
+          <Route path="/investing" component={Investing} />
+          <Route path="/investment-insight" component={InvestmentInsight} />
+          <Route path="/company-introduction" component={AboutCompany} />
+          <Route path="/customer-support" component={CustomerSupport} />
         </Switch>
       </div>
     </BrowserRouter>

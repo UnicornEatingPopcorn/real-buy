@@ -43,7 +43,7 @@ const totalReturn = [
 
 const Dashboard = () => {
   return (
-    <div className="container">
+    <div className="container dashboard-container">
       <div className="row dashboard-info-row">
         <div className="col-12 dashboard-column">
           <FullInvestmentInfo />

@@ -3,7 +3,7 @@ import "./MemberInfo.sass";
 
 const MemberInfo = () => {
   return (
-    <div className="container">
+    <div className="container member-info-container">
       <div className="member-info-box">
         <div className="row">
           <label className="col col-sm-4 form-label member-info__label">

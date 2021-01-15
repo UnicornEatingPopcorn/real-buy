@@ -8,7 +8,7 @@ const MyAccount = () => {
   const [isAccount, setIsAccount] = useState(false);
 
   return (
-    <div className="container">
+    <div className="container my-account-container">
       <div className="row">
         {isAccount ? (
           <div className="my-account-box">

@@ -6,25 +6,25 @@ import logo from "./../../assets/icons/real-buy-logo.svg";
 const links = [
   {
     title: "투자하기",
-    path: "#",
+    path: "/investing",
     liClass: "nav-item header-item",
     linkClass: "nav-link",
   },
   {
     title: "투자 인사이트",
-    path: "#",
+    path: "/investment-insight",
     liClass: "nav-item header-long-item",
     linkClass: "nav-link",
   },
   {
     title: "회사소개",
-    path: "#",
+    path: "/company-introduction",
     liClass: "nav-item header-item",
     linkClass: "nav-link",
   },
   {
     title: "고객지원",
-    path: "#",
+    path: "/customer-support",
     liClass: "nav-item header-item",
     linkClass: "nav-link",
   },
