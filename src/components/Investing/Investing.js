@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Investing.sass";
 import bell from "./../../assets/icons/bell.png";
 import image1 from "./../../assets/icons/all-info-card1.png";
@@ -89,16 +90,17 @@ const Investing = () => {
         <div className="row investing__row">
           {allObjects.map((el, index) => {
             return (
-              <InvestmentCard
-                investmentObject={el}
-                index={index}
-                stars5={stars5}
-                stars4={stars4}
-                style={{ height: "400px" }}
-                key={index}
-              >
-                <div className="investing__info">{el.text}</div>
-              </InvestmentCard>
+              <Link to="/investing/details" key={index}>
+                <InvestmentCard
+                  investmentObject={el}
+                  index={index}
+                  stars5={stars5}
+                  stars4={stars4}
+                  style={{ height: "400px" }}
+                >
+                  <div className="investing__info">{el.text}</div>
+                </InvestmentCard>
+              </Link>
             );
           })}
         </div>

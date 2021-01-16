@@ -13,6 +13,7 @@ import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import "./App.sass";
 import InvestingMethod from "./InvestingMethod/InvestingMethod";
 import FAQ from "./FAQ/FAQ";
+import InvestingDetails from "./Investing/InvestingDetails/InvestingDetails";
 
 var FontFaceObserver = require("fontfaceobserver");
 
@@ -74,12 +75,13 @@ const App = () => {
             exact
             component={CompleteInvestInfo}
           />
-          <Route path="/investing" component={Investing} />
+          <Route path="/investing" exact component={Investing} />
           <Route path="/investment-insight" component={InvestmentInsight} />
           <Route path="/company-introduction" component={AboutCompany} />
           <Route path="/customer-support" component={CustomerSupport} />
           <Route path="/how-to-invest" component={InvestingMethod} />
           <Route path="/faq" component={FAQ} />
+          <Route path="/investing/details" component={InvestingDetails} />
         </Switch>
       </div>
     </BrowserRouter>
