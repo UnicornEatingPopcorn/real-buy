@@ -6,8 +6,8 @@ const PresentationBlock = () => {
   return (
     <>
       <div className="details__presentation-block">
-        <div className="row">
-          <div className="col">
+        <div className="row no-gutters">
+          <div className="col col-sm-7 col-md-6 col-lg-6">
             <span className="details__safety">
               <p className="details__safety_text">투자 안전성</p>
               <img
@@ -19,7 +19,7 @@ const PresentationBlock = () => {
             <p className="details__name">독일 아마존 물류 센터</p>
             <span className="details__hashtags">#해외투자 #물류센터</span>
           </div>
-          <div className="col details__terms-col">
+          <div className="col col-md-5 offset-md-1 col-lg-4 offset-lg-2 details__terms-col">
             <div className="details__terms">
               <p className="details__terms_title">연수익률</p>
               <span className="details__terms-flex">

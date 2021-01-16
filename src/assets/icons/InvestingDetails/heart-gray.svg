@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="49.347" viewBox="0 0 60 49.347">
+    <g>
+        <text fill="#555" font-family="NanumSquare_acR, NanumSquare_ac" font-size="13px" transform="translate(0 .5) translate(0 45.847)">
+            <tspan x="0" y="0">투자 찜하기</tspan>
+        </text>
+        <path fill="none" stroke="#a0a5ac" stroke-linecap="round" stroke-linejoin="round" d="M15.722 8.248s-1.954-4.165-6.351-4.165c-4.8 0-7.329 4.072-7.329 8.142 0 6.759 13.68 15.145 13.68 15.145s13.6-8.306 13.6-15.145c0-4.153-2.605-8.142-7.247-8.142a7.074 7.074 0 0 0-6.353 4.165z" transform="translate(0 .5) translate(13.457 -4.083)"/>
+    </g>
+</svg>
