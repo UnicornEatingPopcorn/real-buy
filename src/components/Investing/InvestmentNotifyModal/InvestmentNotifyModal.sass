@@ -26,6 +26,8 @@
     border: 1px solid #C6D3E5
     border-radius: 3px
     padding: 42px 
+    @media(max-width: 340px)
+      height: 400px
 
 
   &__close
@@ -39,6 +41,8 @@
     color: #555555
     font-size: 18px
     margin-bottom: 22px
+    @media(max-width: 575px)
+      font-size: 16px
 
   &__kakao-button
     width: 203px
@@ -52,6 +56,9 @@
     border: none
     position: absolute
     bottom: 10px
+    @media(max-width: 575px)
+     width: 90%
+     font-size: 15px
 
   &__member
     width: 203px
@@ -65,18 +72,27 @@
     border: none
     position: absolute
     bottom: 10px
+    @media(max-width: 575px)
+      width: 90%
+      font-size: 15px
 
   &__text
     margin-bottom: 16px
     color: #555555
     font-size: 12px
     font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      font-size: 11px
 
   &__first-col
     border-right: 1px solid #788FD966
 
   &__row
     height: 100%
+
+  &__button-display
+    display: flex
+    justify-content: center
 
     
     

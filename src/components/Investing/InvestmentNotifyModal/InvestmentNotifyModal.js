@@ -35,9 +35,11 @@ const InvestmentNotifyModal = ({ displayModal, modalOpenValue }) => {
               지금 카카오톡 친구를 추가하고, 빠른투자 알림과 다양한 이벤트
               소식을 받아보세요.
             </p>
-            <button className="investment-notify-modal__kakao-button">
-              카카오톡 알람받기
-            </button>
+            <span className="investment-notify-modal__button-display">
+              <button className="investment-notify-modal__kakao-button">
+                카카오톡 알람받기
+              </button>
+            </span>
           </div>
           <div className="col">
             <p className="investment-notify-modal__name">리얼바이 회원가입</p>
@@ -48,9 +50,11 @@ const InvestmentNotifyModal = ({ displayModal, modalOpenValue }) => {
               간단한 회원 가입만으로, 투자에 대한 정보를 받아보고 투자할 수
               있습니다.
             </p>
-            <button className="investment-notify-modal__member">
-              회원가입하기
-            </button>
+            <span className="investment-notify-modal__button-display">
+              <button className="investment-notify-modal__member">
+                회원가입하기
+              </button>
+            </span>
           </div>
         </div>
       </div>
