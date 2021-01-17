@@ -1,4 +1,5 @@
 import React from "react";
+import AssetOverview from "./AssetOverview/AssetOverview";
 import "./InvestingDetails.sass";
 import Points from "./Points/Points";
 import PresentationBlock from "./PresentationBlock/PresentationBlock";
@@ -12,6 +13,7 @@ const InvestingDetails = () => {
       <QuickInvest />
       <Points />
       <ProfitGraph />
+      <AssetOverview />
     </>
   );
 };
