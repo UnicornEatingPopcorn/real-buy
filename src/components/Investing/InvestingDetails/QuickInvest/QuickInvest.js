@@ -31,7 +31,7 @@ const QuickInvest = () => {
           <div className="quick__pic-progress-bar">
             <span className="progress-done__label">{percentage} 달성</span>
             <span className="progress-done__label-line"></span>
-            <div className="progress-done" data-done="78"></div>
+            <div className="progress-done" data-done="45"></div>
           </div>
         </div>
         <div className="col-12 col-md-4 quick__invest-info">

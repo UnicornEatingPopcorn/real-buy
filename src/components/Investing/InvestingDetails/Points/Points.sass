@@ -1,0 +1,60 @@
+.points
+  &-container
+    @media(max-width: 575px)
+      padding: 30px 10px
+      justify-content: center
+    @media(min-width: 576px)
+      padding: 53px 45px
+      justify-content: space-around
+    @media(min-width: 992px)
+      padding: 66px 120px
+    @media(min-width: 1200px)
+      padding: 66px 215px
+      justify-content: space-between
+
+  &-col
+    max-width: 236px
+    height: 279px
+    background: #FFFFFF
+    box-shadow: 0px 10px 36px #0F143129
+    padding: 20px
+    @media(min-width: 492px) and (max-width: 575px)
+      margin-bottom: 20px
+      &:nth-child(even)
+        margin-left: 10px
+    @media(min-width: 576px)
+      margin-bottom: 20px
+
+    &__number
+      color: #7A7A7A
+      font-size: 18px
+      font-family: "JavaneseText"
+      text-align: center
+
+    &__title
+      color: #2E2E2E
+      font-size: 17px
+      padding-bottom: 5px
+      text-align: center
+
+    &__subtitle
+      color: #555555
+      font-size: 12px
+      font-family: "NanumSquareRegular"
+      &-first
+        margin-top: 24px
+        color: #555555
+        font-size: 12px
+        font-family: "NanumSquareRegular"
+
+    &__comment
+      color: #555555
+      font-size: 11px
+      font-family: "NanumSquareRegular"
+      margin-bottom: 20px
+      margin-left: 10px
+
+  &__divider
+    border-bottom: 1px solid #7A7A7A
+    display: flex
+    margin: 0px 14px

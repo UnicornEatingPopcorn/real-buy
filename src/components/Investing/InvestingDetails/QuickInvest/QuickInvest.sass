@@ -142,9 +142,14 @@
       border: none
       bottom: 0
       position: absolute
+      margin-bottom: 49px
       @media(max-width: 767px)
         position: unset
         margin-top: 15px
+      @media(min-width: 768px)
+        position: absolute
+        margin-bottom: 0
+        
 
       &-block
         display: flex
@@ -154,7 +159,7 @@
   background: transparent linear-gradient(270deg, #19A0E6 0%, #0154C8 100%)
   height: 100% 
   position: relative
-  bottom: 24px
+  bottom: 57px
   transition: 1s ease 0.3s
 
   &__label
@@ -167,11 +172,11 @@
     display: flex
     justify-content: center
     align-items: center
-    position: absolute
-    bottom: 32px
+    position: relative
+    bottom: 48px
     transition: 1s ease 0.1s
     @media(max-width: 575px)
-      right: 26px
+      right: 40px
     @media(min-width: 576px)
       right: 44px
 
@@ -181,7 +186,7 @@
       box-shadow: 0px 3px 6px #85A2FF66
       border: 1px solid #FFFFFF
       position: relative
-      bottom: 19px
+      bottom: 51px
       transition: 1s ease 0.1s
   
 
