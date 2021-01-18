@@ -12,6 +12,7 @@ import Structure from "./Structure/Structure";
 import Management from "./Management/Management";
 import FundOverview from "./FundOverview/FundOverview";
 import AssetManagement from "./AssetManagement/AssetManagement";
+import Precautions from "./Precautions/Precautions";
 
 const links = [
   {
@@ -69,6 +70,7 @@ const InvestingDetails = () => {
       </Switch>
       <FundOverview />
       <AssetManagement />
+      <Precautions />
     </>
   );
 };
