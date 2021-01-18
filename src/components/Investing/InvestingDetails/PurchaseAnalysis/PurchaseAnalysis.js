@@ -140,6 +140,21 @@ const PurchaseAnalysis = () => {
           </div>
         </div>
       </div>
+
+      <div className="purchase-analysis__row">
+        <div className="purchase-analysis__terms">
+          <p className="purchase-analysis__terms-title">*용어 정리</p>
+          <div className="purchase-analysis__terms-box">
+            <p className="purchase-analysis__terms-subtitle">
+              Cap rate (한국과 미국 내 자본 환원율): NOI / 부동산 가치 Net
+            </p>
+            <p className="purchase-analysis__terms-subtitle">
+              Initial Yield (유럽 내 자본 환원율): NOI / (부동산 가치 + 취득
+              비용)
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

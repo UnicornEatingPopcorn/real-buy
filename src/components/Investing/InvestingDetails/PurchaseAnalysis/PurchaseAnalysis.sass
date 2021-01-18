@@ -1,7 +1,7 @@
 .purchase-analysis
   &__container
     width: 100%
-    height: 967px
+    height: 100%
     background: #FAFBFE
     @media(max-width: 575px)
       display: none
@@ -48,6 +48,37 @@
     @media(min-width: 1200px)
       flex: 0 0 45%
       margin-left: 0
+
+  &__terms
+    flex: 0 0 50%
+    margin-left: 55%
+    margin-top: 24px
+    @media(max-width: 767px)
+      flex: 0 0 80%     
+      margin-left: 8%  
+    @media(min-width: 768px)
+      flex: 0 0 76%
+      margin-left: 5%      
+    @media(min-width: 992px)
+      flex: 0 0 50%
+      margin-left: 54%
+
+    &-title
+      color: #3769FC
+      font-size: 15px
+
+    &-box
+      width: 373px
+      height: 69px
+      border: 1px solid #788FD966
+      margin-top: 5px
+      padding-top: 15px
+      padding-left: 10px
+
+    &-subtitle
+      color: #3769fc
+      font-size: 12px
+      font-family: "NanumSquareRegular"
 
   &__row
     display: flex
@@ -111,7 +142,7 @@
     padding: 0px 22px 22px 22px
 
   &__graph2
-    width: 372px
+    width: 356px
     padding-top: 14px
 
 .carousel__next-button
