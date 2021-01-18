@@ -13,6 +13,7 @@ import Management from "./Management/Management";
 import FundOverview from "./FundOverview/FundOverview";
 import AssetManagement from "./AssetManagement/AssetManagement";
 import Precautions from "./Precautions/Precautions";
+import Footer from "./../../Footer/Footer";
 
 const links = [
   {
@@ -71,6 +72,7 @@ const InvestingDetails = () => {
       <FundOverview />
       <AssetManagement />
       <Precautions />
+      <Footer mode={"dark"} />
     </>
   );
 };
