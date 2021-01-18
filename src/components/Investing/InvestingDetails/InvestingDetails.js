@@ -11,6 +11,7 @@ import TenantAnalysis from "./TenantAnalysis/TenantAnalysis";
 import Structure from "./Structure/Structure";
 import Management from "./Management/Management";
 import FundOverview from "./FundOverview/FundOverview";
+import AssetManagement from "./AssetManagement/AssetManagement";
 
 const links = [
   {
@@ -67,6 +68,7 @@ const InvestingDetails = () => {
         <Route path="/investing/details/management" component={Management} />
       </Switch>
       <FundOverview />
+      <AssetManagement />
     </>
   );
 };
