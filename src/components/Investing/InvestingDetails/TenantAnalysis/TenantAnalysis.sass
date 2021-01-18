@@ -1,0 +1,75 @@
+.tenant-analysis
+  &__container
+    width: 100%
+    height: 100%
+    background: #FAFBFE
+    padding: 60px 216px
+
+  &__lessor
+    color: #555555
+    font-size: 22px
+    margin-bottom: 21px
+  
+  &__icons-box
+    display: flex
+    justify-content: space-between
+  
+  &__square
+    background: #FFFFFF
+    border: 1px solid #3769FC
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: #7A7A7A
+    font-size: 17px
+    @media(max-width: 575px)
+      width: 80px
+      height: 79px
+    @media(min-width: 576px)
+      width: 154px
+      height: 131px
+    @media(min-width: 900px)
+      width: 194px
+      height: 112px
+
+    &-sm
+      font-size: 11px
+      color: #7A7A7A
+
+    &-last
+      display: block
+      padding-top: 35px
+
+  &__arrow
+    position: relative
+    bottom: 13px
+    right: 414px
+    height: 25px
+    @media(max-width: 575px)
+      right: 124px
+      bottom: 14px
+    @media(min-width: 576px)
+      bottom: 14px
+
+  &__method
+    @media(max-width: 575px)
+      width: 39px
+      margin-top: 7px
+    @media(min-width: 576px)
+      margin-top: 24px
+      width: 70px
+    @media(min-width: 900px)  
+      margin-top: 54px 
+
+  &__label
+    width: 76px
+    height: 24px
+    background: #3769FC
+    border-radius: 12px
+    color: #FFFFFF
+    font-size: 13px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
