@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323" height="592" viewBox="0 0 323 592">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_1664" fill="#fff" stroke="#707070" d="M0 0H323V592H0z" transform="translate(-.185 .022)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Mask" d="M0 0H83.384V104.23H0z" class="cls-2"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <rect id="Mask-2" width="66.707" height="82.723" class="cls-3" rx="3"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect id="Mask-3" width="58.816" height="43.692" class="cls-3" rx="3"/>
+        </clipPath>
+        <clipPath id="clip-path-9">
+            <path id="Fill_1_Copy" d="M28 0C11.605 0 0 11.607 0 28v433.74c0 16.39 11.605 28 28 28h205.647c16.39 0 28-11.607 28-28V28c0-16.389-11.607-28-28-28z" class="cls-4"/>
+        </clipPath>
+        <filter id="Fill_1" width="326.81" height="554.81" x="1.738" y="16.808" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="7.5"/>
+            <feFlood flood-color="#5b5b5b" flood-opacity=".588"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Rectangle_2_Copy" width="265.263" height="134.23" x="32.765" y="115.691" filterUnits="userSpaceOnUse">
+            <feOffset dy="4"/>
+            <feGaussianBlur result="blur-2" stdDeviation="5"/>
+            <feFlood flood-opacity=".039"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="사각형_1318" width="296.258" height="96.311" x="18.263" y="147.013" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-3" stdDeviation="10"/>
+            <feFlood flood-color="#9dadde" flood-opacity=".4"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="사각형_1317" width="295.903" height="96.257" x="18.618" y="378.422" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur-4" stdDeviation="10"/>
+            <feFlood flood-color="#9dadde" flood-opacity=".4"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="linear-gradient" x1=".104" x2="1.356" y1="-.296" y2="2.156" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#8ea2ff"/>
+            <stop offset="1" stop-color="#557ac7"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1=".129" x2="1.214" y2="1.607" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#8ea2ff" stop-opacity=".502"/>
+            <stop offset="1" stop-color="#557ac7" stop-opacity=".502"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-7" x1=".009" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#3769fc"/>
+            <stop offset="1" stop-color="#43cbff"/>
+        </linearGradient>
+        <style>
+            .cls-15,.cls-39,.cls-4{fill:#fff}.cls-2{fill:url(#linear-gradient)}.cls-3,.cls-9{fill:#cfcfcf}.cls-3{opacity:.5}.cls-6{fill:#393939}.cls-8{fill:#e0e0e0}.cls-11{fill:#e7e7e7}.cls-12{fill:transparent}.cls-13,.cls-21,.cls-26,.cls-27{fill:none}.cls-14{fill:url(#linear-gradient-4)}.cls-15,.cls-28,.cls-29{font-size:5px}.cls-15{font-family:SegoeUI,Segoe UI}.cls-17{fill:#d7d7d7}.cls-20{fill:#0540ff}.cls-21{stroke:#333;stroke-linecap:round;stroke-width:2px}.cls-38{fill:#3182f5}.cls-25{font-size:7px}.cls-25,.cls-28{fill:#555}.cls-25,.cls-28,.cls-29,.cls-43,.cls-44{font-family:NanumSquare_acR,NanumSquare_ac}.cls-26{stroke:rgba(157,173,222,.4)}.cls-27{stroke:#bfbfbf}.cls-29,.cls-40{fill:#7a7a7a}.cls-44{font-size:4px}.cls-39{stroke:rgba(133,162,255,.4)}.cls-40{font-size:11px;font-family:NanumSquare_acB,NanumSquare_ac}.cls-43{font-size:6px}.cls-45{stroke:none}
+        </style>
+    </defs>
+    <g id="그룹_1507" transform="translate(-626 -3075)">
+        <g id="마스크_그룹_53" clip-path="url(#clip-path)" transform="translate(626.185 3074.978)">
+            <g id="그룹_1488" transform="translate(24.054 39.33)">
+                <g filter="url(#Fill_1)" transform="translate(-24.24 -39.31)">
+                    <path id="Fill_1-2" d="M32.844 0C15.632 0 0 15.633 0 32.843v444.122c0 17.211 15.632 32.844 32.844 32.844h216.121c17.211 0 32.844-15.633 32.844-32.844V32.843C281.81 15.633 266.176 0 248.965 0z" class="cls-6" transform="translate(24.24 39.31)"/>
+                </g>
+                <path id="Fill_1_Copy-2" d="M28 0C11.605 0 0 11.607 0 28v433.74c0 16.39 11.605 28 28 28h205.647c16.39 0 28-11.607 28-28V28c0-16.389-11.607-28-28-28z" class="cls-4" transform="translate(10.084 10.082)"/>
+                <g id="Product_bar" transform="translate(23.527 87.383)">
+                    <g id="product_bar-2">
+                        <g filter="url(#Rectangle_2_Copy)" transform="translate(-47.77 -126.69)">
+                            <rect id="Rectangle_2_Copy-2" width="235.263" height="104.23" class="cls-4" rx="1.329" transform="translate(47.77 126.69)"/>
+                        </g>
+                        <g id="Bitmap">
+                            <path id="Mask-8" d="M0 0H83.384V104.23H0z" class="cls-2"/>
+                        </g>
+                        <g id="Button" transform="translate(97.53 68.494)">
+                            <g id="button-2">
+                                <rect id="Rectangle_3" width="65.317" height="18.581" class="cls-2" rx="1.329"/>
+                                <rect id="Rectangle_2" width="35.289" height="5.041" class="cls-4" rx="2.521" transform="translate(15.124 6.722)"/>
+                            </g>
+                        </g>
+                        <g id="Group" transform="translate(98.181 51.787)">
+                            <g id="rating">
+                                <g id="rating-2">
+                                    <g id="stars">
+                                        <path id="Star" d="M3.315 4.779l-1.44.7a.372.372 0 0 1-.528-.4l.267-1.434-1.1-.99A.372.372 0 0 1 .711 2l1.552-.2.724-1.356a.372.372 0 0 1 .656 0L4.367 1.8 5.92 2a.372.372 0 0 1 .2.646l-1.1.99.267 1.434a.372.372 0 0 1-.528.4z" class="cls-8" transform="translate(-.387 -.248)"/>
+                                        <path id="Star_Copy" d="M3.315 4.779l-1.44.7a.372.372 0 0 1-.528-.4l.267-1.434-1.1-.99A.372.372 0 0 1 .711 2l1.552-.2.724-1.356a.372.372 0 0 1 .656 0L4.367 1.8 5.92 2a.372.372 0 0 1 .2.646l-1.1.99.267 1.434a.372.372 0 0 1-.528.4z" class="cls-8" transform="translate(7.486 -.248)"/>
+                                        <path id="Star_Copy_2" d="M3.315 4.779l-1.44.7a.372.372 0 0 1-.528-.4l.267-1.434-1.1-.99A.372.372 0 0 1 .711 2l1.552-.2.724-1.356a.372.372 0 0 1 .656 0L4.367 1.8 5.92 2a.372.372 0 0 1 .2.646l-1.1.99.267 1.434a.372.372 0 0 1-.528.4z" class="cls-8" transform="translate(15.359 -.248)"/>
+                                        <path id="Star_Copy_3" d="M3.315 4.779l-1.44.7a.372.372 0 0 1-.528-.4l.267-1.434-1.1-.99A.372.372 0 0 1 .711 2l1.552-.2.724-1.356a.372.372 0 0 1 .656 0L4.367 1.8 5.92 2a.372.372 0 0 1 .2.646l-1.1.99.267 1.434a.372.372 0 0 1-.528.4z" class="cls-8" transform="translate(23.232 -.248)"/>
+                                        <path id="Star_Copy_4" d="M3.315 4.779l-1.44.7a.372.372 0 0 1-.528-.4l.267-1.434-1.1-.99A.372.372 0 0 1 .711 2l1.552-.2.724-1.356a.372.372 0 0 1 .656 0L4.367 1.8 5.92 2a.372.372 0 0 1 .2.646l-1.1.99.267 1.434a.372.372 0 0 1-.528.4z" class="cls-8" transform="translate(31.105 -.248)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="Rectangle_2-2" width="92.425" height="11.763" class="cls-9" rx="5.882" transform="translate(97.466 15.124)"/>
+                        <rect id="Rectangle_2_Copy_2" width="52.094" height="6.722" class="cls-9" rx="3.361" transform="translate(97.466 36.97)"/>
+                        <rect id="Rectangle_2_Copy_3" width="20.165" height="5.041" class="cls-9" rx="2.521" transform="translate(139.477 52.094)"/>
+                    </g>
+                </g>
+                <g id="Group_6" transform="translate(23.527 260.47)">
+                    <rect id="Mask-9" width="66.707" height="82.723" class="cls-3" rx="3"/>
+                    <rect id="Rectangle_2_Copy_3-2" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(5.041 92.425)"/>
+                    <rect id="Rectangle_2_Copy_8" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(85.703 92.425)"/>
+                    <rect id="Rectangle_2_Copy_9" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(166.364 92.425)"/>
+                    <g id="Pricebox" transform="translate(5.377 5.335)">
+                        <path id="Pricebox_background" d="M0 0H25.015V15.954H0z" class="cls-12"/>
+                        <g id="Group_3">
+                            <g id="Rectangle_4">
+                                <rect id="Rectangle_4-2" width="25.015" height="15.954" class="cls-13" rx="3"/>
+                                <rect id="Rectangle_4-3" width="25.015" height="15.954" class="cls-14" rx="3"/>
+                            </g>
+                            <text id="Price" class="cls-15" transform="translate(9.837 9.401)">
+                                <tspan x="-4.043" y="0">$30</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group_6_Copy_3" transform="translate(23.527 421.793)">
+                    <rect id="Mask-10" width="58.816" height="43.692" class="cls-3" rx="3"/>
+                    <rect id="Rectangle_2_Copy_3-3" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(6.722 52.094)"/>
+                    <rect id="Rectangle_2_Copy_6" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(77.301 52.094)"/>
+                    <rect id="Rectangle_2_Copy_7" width="30.248" height="5.041" class="cls-11" rx="2.521" transform="translate(146.199 52.094)"/>
+                </g>
+                <g id="Group_6_Copy_5" transform="translate(163.005 421.793)">
+                    <rect id="Mask-11" width="58.816" height="43.692" class="cls-3" rx="3"/>
+                </g>
+                <g id="Group_6_Copy_2" transform="translate(183.17 260.47)">
+                    <rect id="Mask-12" width="66.707" height="82.723" class="cls-3" rx="3"/>
+                    <g id="Pricebox-2" transform="translate(5.377 5.335)">
+                        <path id="Pricebox_background-2" d="M0 0H25.015V15.954H0z" class="cls-12"/>
+                        <g id="Group_3-2">
+                            <g id="Rectangle_4-4">
+                                <rect id="Rectangle_4-5" width="25.015" height="15.954" class="cls-13" rx="3"/>
+                                <rect id="Rectangle_4-6" width="25.015" height="15.954" class="cls-14" rx="3"/>
+                            </g>
+                            <text id="Price-2" class="cls-15" transform="translate(9.837 9.401)">
+                                <tspan x="-4.043" y="0">$30</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle_2-3" width="92.425" height="11.763" class="cls-17" rx="5.882" transform="translate(31.929 60.496)"/>
+                <rect id="Rectangle_2_Copy_4" width="92.425" height="11.763" class="cls-17" rx="5.882" transform="translate(31.929 231.902)"/>
+                <rect id="Rectangle_2_Copy_5" width="92.425" height="11.763" class="cls-17" rx="5.882" transform="translate(31.929 393.225)"/>
+                <g id="Group_6_Copy_4" transform="translate(94.108 421.793)">
+                    <rect id="Mask-13" width="58.816" height="43.692" class="cls-3" rx="3"/>
+                </g>
+                <g id="Group_6_Copy" transform="translate(104.19 260.47)">
+                    <rect id="Mask-14" width="66.707" height="82.723" class="cls-3" rx="3"/>
+                    <g id="Pricebox-3" transform="translate(5.377 5.335)">
+                        <path id="Pricebox_background-3" d="M0 0H25.015V15.954H0z" class="cls-12"/>
+                        <g id="Group_3-3">
+                            <g id="Rectangle_4-7">
+                                <rect id="Rectangle_4-8" width="25.015" height="15.954" class="cls-13" rx="3"/>
+                                <rect id="Rectangle_4-9" width="25.015" height="15.954" class="cls-14" rx="3"/>
+                            </g>
+                            <text id="Price-3" class="cls-15" transform="translate(9.837 9.401)">
+                                <tspan x="-4.043" y="0">$30</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="마스크_그룹_55" clip-path="url(#clip-path-9)" transform="translate(660.322 3124.391)">
+            <g id="그룹_1506" transform="translate(-.955 7.131)">
+                <g id="그룹_1505">
+                    <path id="사각형_1331" d="M0 0H259V563H0z" class="cls-4" transform="translate(3.633 .478)"/>
+                    <path id="사각형_1329" fill="#fafbfe" d="M0 0H260V460H0z" transform="translate(3.633 103.478)"/>
+                    <g id="그룹_5" transform="translate(91.801 8.211)">
+                        <g id="그룹_3" transform="translate(20.9 4.504)">
+                            <path id="패스_329" d="M342.215 522.733a2.268 2.268 0 0 0-2.266-2.265h-4.569v8.3h.764V525h3.8a1.5 1.5 0 0 1 1.5 1.5v2.266h.764V526.5a2.261 2.261 0 0 1 0-3.767zm-2.265 1.5h-3.8v-3h3.8a1.5 1.5 0 1 1 0 3z" class="cls-20" transform="translate(-335.38 -520.426)"/>
+                            <path id="패스_330" d="M604.218 520.4h-.764v8.3h6.182l.652-.764h-6.071z" class="cls-20" transform="translate(-577.745 -520.367)"/>
+                            <path id="패스_331" d="M726.5 522.622a2.268 2.268 0 0 0-2.266-2.265h-4.569v8.3h4.569a16.323 16.323 0 0 1 2.264-6.034zm-2.264 5.27h-3.8v-3h3.8a1.5 1.5 0 1 1 0 3zm0-3.767h-3.805v-3h3.805a1.5 1.5 0 0 1 0 3z" class="cls-20" transform="translate(-682.809 -520.326)"/>
+                            <path id="패스_332" d="M815.094 525.206a2.653 2.653 0 1 1-5.307 0v-4.881h-.764v4.881a3.417 3.417 0 1 0 6.835 0v-4.881h-.764z" class="cls-20" transform="translate(-763.598 -520.297)"/>
+                            <path id="패스_333" d="M900.724 520.3l-2.851 3.541-2.854-3.54h-.981l3.453 4.283v4.016h.763v-4.013l3.452-4.287z" class="cls-20" transform="translate(-840.46 -520.272)"/>
+                            <path id="패스_334" d="M424.741 528.736h6.835v-.764h-6.071v-3h6.071v-.772h-6.071v-3h6.071v-.764h-6.835z" class="cls-20" transform="translate(-416.169 -520.397)"/>
+                            <g id="그룹_2" transform="translate(16.958)">
+                                <path id="패스_335" d="M516.047 520.03h-.486l-3.356 8.337h.824l1.517-3.768h2.519l1.519 3.767h.824zm-1.194 3.805l.951-2.363.953 2.363z" class="cls-20" transform="translate(-512.205 -520.03)"/>
+                            </g>
+                        </g>
+                        <g id="그룹_4">
+                            <path id="패스_336" d="M175.989 474.466l-3.257-1.4V485.8h1.583v-8.741h1.485z" class="cls-20" transform="translate(-167.431 -473.064)"/>
+                            <path id="패스_337" d="M117.459 474.466l.922 11.329-.527-11.03 4.7-1.7z" class="cls-20" transform="translate(-117.459 -473.064)"/>
+                            <path id="패스_338" d="M199.124 518.582h-5.976v8.366h2.8v-3.107h2.773a.427.427 0 0 1 .454.454.436.436 0 0 1-.454.466h-1.18l1.541 2.187h.045a2.48 2.48 0 0 0 2.737-2.653 2.687 2.687 0 0 0-.5-1.566 2.531 2.531 0 0 0 .5-1.506 2.471 2.471 0 0 0-2.74-2.641zm-.406 3.1h-2.773v-.908h2.773a.417.417 0 0 1 .454.442.436.436 0 0 1-.454.462z" class="cls-20" transform="translate(-185.889 -514.217)"/>
+                        </g>
+                    </g>
+                    <g id="그룹_6" transform="translate(22.864 12.212)">
+                        <path id="선_1" d="M0 0L13.164 0" class="cls-21"/>
+                        <path id="선_2" d="M0 0L13.164 0" class="cls-21" transform="translate(0 4.659)"/>
+                        <path id="선_3" d="M0 0L13.164 0" class="cls-21" transform="translate(0 9.319)"/>
+                    </g>
+                    <path id="선_673" fill="none" stroke="#3182f5" stroke-width="2px" d="M0 0L35.681 0" transform="translate(14.896 103.476)"/>
+                    <text id="매입_분석" fill="#3182f5" font-family="NanumSquare_acEB, NanumSquare_ac" font-size="7px" transform="translate(15.633 93.478)">
+                        <tspan x="0" y="0">매입 분석</tspan>
+                    </text>
+                    <text id="안전성_분석" fill="#3182f5" font-family="NanumSquare_acEB, NanumSquare_ac" font-size="8px" transform="translate(15.633 56.478)">
+                        <tspan x="0" y="0">안전성 분석</tspan>
+                    </text>
+                    <text id="임차인_분석" class="cls-25" transform="translate(77.633 93.478)">
+                        <tspan x="0" y="0">임차인 분석</tspan>
+                    </text>
+                    <text id="투자구조" class="cls-25" transform="translate(148.633 93.478)">
+                        <tspan x="0" y="0">투자구조</tspan>
+                    </text>
+                    <text id="공동투자자_및_운용사" class="cls-25" transform="translate(209.633 82.478)">
+                        <tspan x="0" y="0">공동투자자</tspan><tspan x="0" y="8"> 및 운용사</tspan>
+                    </text>
+                    <path id="선_370" d="M0 0L263.279 0" class="cls-26" transform="translate(0 104.516)"/>
+                    <path id="선_674" d="M0 0L263.279 0" class="cls-26" transform="translate(0 31.767)"/>
+                    <g id="구성_요소_38_2" transform="translate(15.633 116.478)">
+                        <path id="사각형_1305" d="M0 0H236V221H0z" class="cls-4"/>
+                        <g id="그룹_436" transform="translate(16.63 43.239)">
+                            <path id="선_402" d="M0 0L0 131.669" class="cls-27" transform="translate(29.778 15.316)"/>
+                            <g id="그룹_434" transform="translate(62.899 15.316)">
+                                <path id="선_403" d="M0 0L0 4.861" class="cls-27"/>
+                                <path id="선_404" d="M0 0L0 4.861" class="cls-27" transform="translate(33.12)"/>
+                                <path id="선_405" d="M0 0L0 4.861" class="cls-27" transform="translate(66.242)"/>
+                                <path id="선_406" d="M0 0L0 4.861" class="cls-27" transform="translate(99.362)"/>
+                                <path id="선_407" d="M0 0L0 4.861" class="cls-27" transform="translate(132.482)"/>
+                            </g>
+                            <text id="독일" class="cls-28" transform="translate(11.37 36.762)">
+                                <tspan x="0" y="0">독일</tspan>
+                            </text>
+                            <text id="영국" class="cls-28" transform="translate(11.37 61.762)">
+                                <tspan x="0" y="0">영국</tspan>
+                            </text>
+                            <text id="프랑스" class="cls-28" transform="translate(4.37 85.762)">
+                                <tspan x="0" y="0">프랑스</tspan>
+                            </text>
+                            <text id="네덜란드" class="cls-28" transform="translate(.37 107.762)">
+                                <tspan x="0" y="0">네덜란드</tspan>
+                            </text>
+                            <text id="폴란드" class="cls-28" transform="translate(4.37 131.762)">
+                                <tspan x="0" y="0">폴란드</tspan>
+                            </text>
+                            <g id="그룹_435" transform="translate(29.935)">
+                                <text id="_0" class="cls-29" transform="translate(.435 11.762)">
+                                    <tspan x="0" y="0">0</tspan>
+                                </text>
+                                <text id="_2" class="cls-29" transform="translate(31.435 11.762)">
+                                    <tspan x="0" y="0">2</tspan>
+                                </text>
+                                <text id="_4" class="cls-29" transform="translate(63.435 11.762)">
+                                    <tspan x="0" y="0">4</tspan>
+                                </text>
+                                <text id="_6" class="cls-29" transform="translate(97.435 11.762)">
+                                    <tspan x="0" y="0">6</tspan>
+                                </text>
+                                <text id="_8" class="cls-29" transform="translate(130.435 11.762)">
+                                    <tspan x="0" y="0">8</tspan>
+                                </text>
+                                <text id="_10" fill="#7a7a7a" font-family="NanumSquare_acR, NanumSquare_ac" font-size="4px" transform="translate(161.435 10.762)">
+                                    <tspan x="0" y="0">10</tspan>
+                                </text>
+                                <text id="_EUR_bn_" fill="#7a7a7a" font-family="NanumSquare_acR, NanumSquare_ac" font-size="1px" transform="translate(155.435 .762)">
+                                    <tspan x="0" y="0">(EUR bn)</tspan>
+                                </text>
+                            </g>
+                            <path id="선_408" d="M0 0L165.767 0" class="cls-27" transform="translate(29.761 15.316)"/>
+                            <path id="사각형_1319" fill="url(#linear-gradient-7)" d="M0 0h140a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H0V0z" transform="translate(30.37 30.762)"/>
+                            <path id="사각형_1320" fill="url(#linear-gradient-7)" d="M0 0h120a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H0V0z" opacity="0.802" transform="translate(30.37 54.762)"/>
+                            <path id="사각형_1321" fill="url(#linear-gradient-7)" d="M0 0h103a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H0V0z" opacity="0.649" transform="translate(30.37 79.761)"/>
+                            <path id="사각형_1322" fill="url(#linear-gradient-7)" d="M0 0h83a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H0V0z" opacity="0.521" transform="translate(30.37 101.761)"/>
+                            <path id="사각형_1323" fill="url(#linear-gradient-7)" d="M0 0h48a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H0V0z" opacity="0.382" transform="translate(30.37 126.761)"/>
+                        </g>
+                        <g id="구성_요소_40_1" transform="translate(7.736 123.598)">
+                            <path id="패스_705" fill="none" stroke="#c3c3c3" stroke-width="3px" d="M0 0l5.232 5.231L10.464 0" opacity="0.759" transform="rotate(90 2.615 2.616)"/>
+                        </g>
+                    </g>
+                    <g id="Group_3-4" transform="translate(115.645 320.395)">
+                        <g id="Group_3-5" transform="rotate(180 17.529 3.291)">
+                            <circle id="Oval" cx="3.291" cy="3.291" r="3.291" class="cls-38" transform="translate(28.477)"/>
+                            <circle id="Oval_Copy" cx="2.351" cy="2.351" r="2.351" class="cls-38" transform="translate(14.546 .94)"/>
+                            <circle id="Oval_Copy_2" cx="2.351" cy="2.351" r="2.351" class="cls-38" transform="translate(0 .94)"/>
+                        </g>
+                    </g>
+                    <g id="그룹_1213" transform="translate(14.896 115.491)">
+                        <g filter="url(#사각형_1318)" transform="translate(-48.26 -172.01)">
+                            <g id="사각형_1318-2" class="cls-39">
+                                <path d="M0 0H236.258V36.311H0z" class="cls-45" transform="translate(48.26 172.01)"/>
+                                <path d="M0.5 0.5H235.758V35.811H0.5z" class="cls-13" transform="translate(48.26 172.01)"/>
+                            </g>
+                        </g>
+                        <text id="유럽_최대의_물류센터_투자_시장" class="cls-40" transform="translate(50.492 20.307)">
+                            <tspan x="0" y="0">유럽 최대의 물류센터 투자 시장</tspan>
+                        </text>
+                    </g>
+                    <g id="구성_요소_39_2" transform="translate(234.511 239.318)">
+                        <path id="패스_704" fill="none" stroke="#3769fc" stroke-width="3px" d="M0 0l5.232 5.231L10.464 0" opacity="0.759" transform="rotate(-90 5.232 5.232)"/>
+                    </g>
+                    <g id="그룹_1215" transform="translate(15.251 346.9)">
+                        <path id="사각형_1306" d="M0 0H235V220H0z" class="cls-4" transform="translate(.382 .578)"/>
+                        <g filter="url(#사각형_1317)" transform="translate(-48.62 -403.42)">
+                            <g id="사각형_1317-2" class="cls-39">
+                                <path d="M0 0H235.903V36.257H0z" class="cls-45" transform="translate(48.62 403.42)"/>
+                                <path d="M0.5 0.5H235.403V35.757H0.5z" class="cls-13" transform="translate(48.62 403.42)"/>
+                            </g>
+                        </g>
+                        <text id="주요_Comments" class="cls-40" transform="translate(79.185 20.29)">
+                            <tspan x="0" y="0">주요 Comments</tspan>
+                        </text>
+                        <text id="_1._유럽_최대의_물류센터_투자_시장_-_독일_물류센터_투자_시장은_안정성과_수익성의_균형_갖춘_시장_-_유럽_내_최대의_투자_수요를_보유한_독일_물류센터_시장_2._독일_내_5대_물류_시장_뒤셀도르프_권역_-_Rhine-Ruhr권역은_뒤셀도로프_퀼른_도르트문트_등이_포함_-_독일_내_최대_경제_권역_Rhine-Ruhr_권역_3._수요_공급_균형_갖춘_뒤셀도르프의_물류센터_시장_-_물류센터_공급이_점차_감소_물류센터에_대" fill="#555" font-family="NanumSquare_acB, NanumSquare_ac" font-size="7px" transform="translate(18.382 63.579)">
+                            <tspan x="0" y="0">1. 유럽 최대의 물류센터 투자 시장</tspan><tspan class="cls-43"><tspan x="0" y="11"> - 독일 물류센터 투자 시장은 안정성과 수익성의 균형 갖춘 시장</tspan><tspan x="0" y="22"> - 유럽 내 최대의 투자 수요를 보유한 독일 물류센터 시장</tspan></tspan><tspan class="cls-44"/>
+<tspan x="0" y="44">2. 독일 내 5대 물류 시장 (뒤셀도르프 권역)</tspan><tspan class="cls-43"><tspan x="0" y="55"> - Rhine-Ruhr권역은 뒤셀도로프, 퀼른, 도르트문트 등이 포함</tspan><tspan x="0" y="66"> - 독일 내 최대 경제 권역 (Rhine-Ruhr 권역)</tspan></tspan><tspan class="cls-44"/>
+<tspan x="0" y="88">3. 수요 공급 균형 갖춘 뒤셀도르프의 물류센터 시장</tspan><tspan class="cls-43"><tspan x="0" y="99"> - 물류센터 공급이 점차 감소 (물류센터에 대해 신규 승인 제한)</tspan><tspan x="0" y="110"> - 향후 물류센터에 대한 수요는 계속 증가할 것</tspan></tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <path id="Rectangle" d="M0 0h75.62l-5.328 10.657a5.041 5.041 0 0 1-4.509 2.787H9.838a5.041 5.041 0 0 1-4.509-2.787z" class="cls-6" transform="translate(752.747 3122.71)"/>
+    </g>
+</svg>

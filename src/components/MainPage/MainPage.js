@@ -1,6 +1,12 @@
 import React from "react";
 import "./MainPage.sass";
 import main from "./../../assets/icons/MainPage/main.jpg";
+import whyReal from "./../../assets/icons/MainPage/why-real-buy.svg";
+import howTo from "./../../assets/icons/MainPage/how-to.svg";
+import phone from "./../../assets/icons/MainPage/phone.svg";
+import randMark from "./../../assets/icons/MainPage/rand-mark.svg";
+import innerPhone from "./../../assets/icons/MainPage/inner-phone.svg";
+import frame from "./../../assets/icons/MainPage/frame.svg";
 import Offers from "./Offers/Offers";
 // import toBuy1 from "./../../assets/icons/MainPage/to-buy-1.svg";
 // import toBuy2 from "./../../assets/icons/MainPage/to-buy-2.svg";
@@ -23,6 +29,59 @@ const MainPage = () => {
       <img className="main__to-buy-second" src={toBuy2} alt="main" />
       <img className="main__to-buy-third" src={toBuy3} alt="main" />*/}
       <Offers />
+      <div className="why-real-buy">
+        <p className="why-real-buy__title">Why Real Buy ?</p>
+        <p className="why-real-buy__subtitle">
+          왜 리얼바이와 함께 해야 할까요?
+        </p>
+        <img src={whyReal} alt="why real" className="why-real-buy__pic" />
+      </div>
+      <div className="how-to">
+        <p className="how-to__title">How to</p>
+        <p className="how-to__subtitle">
+          왜 상업용 부동산인가?
+          <br />
+          높은 위험보다 안정적인 투자 상품
+        </p>
+        <p className="how-to__sub">
+          예상 가능한 배당 수익과 매각차익을 누릴 수 있는 기회
+        </p>
+        <img src={howTo} alt="how to" className="how-to__pic" />
+      </div>
+      <div className="how-to__second">
+        <div className="how-to__second_text-block">
+          <p className="how-to__second_title">How to</p>
+          <p className="how-to__second_subtitle">
+            차곡차곡 임대료 받는
+            <br />
+            건물주가 되는 방법
+          </p>
+          <p className="how-to__second_sub">
+            연 6% 이상의 배당을 받는 안정적인 투자
+          </p>
+        </div>
+        <img src={phone} />
+      </div>
+      <div className="rand-mark">
+        <div className="how-to__second_text-block">
+          <p className="how-to__second_title">Rand Mark</p>
+          <p className="how-to__second_subtitle">
+            부동산 차익을 꿈꾸며
+            <br />
+            건물에 투자하자
+          </p>
+          <p className="rand-mark__title">
+            건물 값이 오르면 수익은 투자자에게!
+          </p>
+          <p className="rand-mark__subtitle">
+            - 주거용 부동산 지수: KB부동산 매매지수
+            <br />- 서울 상업용 부동산 지수: 이지스 (대신증권 지수)
+          </p>
+        </div>
+      </div>
+      <img src={randMark} alt="rand mark" className="rand-mark__pic" />
+      <img src={frame} className="rand-mark__frame" />
+      <img src={innerPhone} className="rand-mark__inner-phone" />
     </div>
   );
 };

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="326.81" height="554.81" viewBox="0 0 326.81 554.81">
+    <defs>
+        <filter id="casedd6oza" width="326.81" height="554.81" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="7.5"/>
+            <feFlood flood-color="#5b5b5b" flood-opacity=".588"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#casedd6oza)" transform="translate(22.5 22.5) translate(-22.5 -22.5)">
+            <path fill="#393939" d="M32.844 0C15.632 0 0 15.633 0 32.843v444.122c0 17.211 15.632 32.844 32.844 32.844h216.121c17.211 0 32.844-15.633 32.844-32.844V32.843C281.81 15.633 266.176 0 248.965 0z" transform="translate(22.5 22.5)"/>
+        </g>
+        <path fill="#fff" d="M28 0C11.605 0 0 11.607 0 28v433.74c0 16.39 11.605 28 28 28h205.647c16.39 0 28-11.607 28-28V28c0-16.389-11.607-28-28-28z" transform="translate(22.5 22.5) translate(10.084 10.082)"/>
+    </g>
+</svg>
