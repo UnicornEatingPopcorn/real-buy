@@ -90,7 +90,7 @@ const Investing = () => {
         <div className="row investing__row">
           {allObjects.map((el, index) => {
             return (
-              <Link to="/investing/details/purchase-analysis" key={index}>
+              <Link to="/investing/details" key={index}>
                 <InvestmentCard
                   investmentObject={el}
                   index={index}

@@ -13,6 +13,8 @@ import Management from "./Management/Management";
 import FundOverview from "./FundOverview/FundOverview";
 import AssetManagement from "./AssetManagement/AssetManagement";
 import Precautions from "./Precautions/Precautions";
+import Dividend from "./Dividend/Dividend";
+import Rent from "./Rent/Rent";
 import Footer from "./../../Footer/Footer";
 
 const links = [
@@ -34,7 +36,18 @@ const links = [
   },
 ];
 
-const InvestingDetails = () => {
+const profitLinks = [
+  {
+    title: "배당수익",
+    path: "/investing/details/dividend-income",
+  },
+  {
+    title: "임대료 상승",
+    path: "/investing/details/rent-increase",
+  },
+];
+
+const InvestingDetails = ({ match }) => {
   return (
     <>
       <PresentationBlock />
@@ -57,6 +70,7 @@ const InvestingDetails = () => {
           );
         })}
       </div>
+      <Route exact path={match.url} component={PurchaseAnalysis} />
       <Switch>
         <Route
           path="/investing/details/purchase-analysis"
@@ -68,6 +82,26 @@ const InvestingDetails = () => {
         />
         <Route path="/investing/details/structure" component={Structure} />
         <Route path="/investing/details/management" component={Management} />
+      </Switch>
+      <div className="investing-details__safety">수익성 분석</div>
+      <div className="investing-details__links">
+        {profitLinks.map((link) => {
+          return (
+            <NavLink
+              to={link.path}
+              key={link.title}
+              className="investing-details__link"
+              activeClassName="investing-details__link-active"
+            >
+              {link.title}
+            </NavLink>
+          );
+        })}
+      </div>
+      <Route exact path={match.url} component={Dividend} />
+      <Switch>
+        <Route path="/investing/details/dividend-income" component={Dividend} />
+        <Route path="/investing/details/rent-increase" component={Rent} />
       </Switch>
       <FundOverview />
       <AssetManagement />

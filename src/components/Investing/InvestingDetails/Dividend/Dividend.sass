@@ -1,0 +1,109 @@
+.dividend
+  width: 100%
+  height: 100%
+  background: #FAFBFE
+  padding: 60px 216px
+  @media(max-width: 575px)
+    padding: 10px
+  @media(min-width: 576px)
+    padding: 20px 20px
+  @media(min-width: 768px)
+    padding: 40px 80px
+  @media(min-width: 992px)
+    padding: 60px 120px
+  @media(min-width: 1200px)
+    padding: 60px 216px
+
+  &__row  
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__first-tables-col
+    flex: 0 0 99%
+    border-bottom: 1px solid #DEDEDE
+    padding-bottom: 30px
+
+  &__second-tables-col
+    flex: 0 0 99%
+    margin-top: 30px
+
+  &__title
+    color: #555555
+    font-size: 22px
+    margin-bottom: 30px
+    margin-top: 20px
+
+  &__table
+    border-top: 2px solid #55555582
+    width: 100%
+    @media(max-width: 704px)
+      display: none
+
+    &-small
+      display: none
+      margin-top: 20px
+      @media(max-width: 704px)
+        display: block
+
+  &__table-row
+    border-bottom: 1px solid #55555582
+    &:nth-child(1)
+      background-color: #E0E0E0BC
+      td
+         font-family: "NanumSquare"
+    &:nth-child(2)
+      background-color: #FFFFFF
+    &:nth-child(3)
+      background-color: #BACAF829
+
+    td
+      color: #555555
+      font-family: "NanumSquareRegular"
+      text-align: center
+      border-right: 1px solid #707070
+      @media(max-width: 575px)
+        font-size: 12px
+        padding: 5px 10px
+      @media(min-width: 576px)
+        font-size: 13px
+        padding: 10px 15px
+      @media(min-width: 768px)
+        font-size: 14px
+        padding: 5px 15px
+      @media(min-width: 992px)
+        font-size: 15px
+      
+      &:first-child
+        color: #555555      
+        font-family: "NanumSquare"
+        @media(max-width: 575px)
+          font-size: 13px
+        @media(min-width: 576px)
+          font-size: 14px
+        @media(min-width: 768px)
+          font-size: 15px
+        @media(min-width: 992px)
+          font-size: 16px
+
+      &:last-child
+        border-right: none
+
+  &__box
+    width: 407px
+    height: 100px
+    background: #FFFFFF
+    box-shadow: 0px 5px 20px #9DADDE66
+    border: 1px solid #85A2FF66
+    padding: 21px 26px
+
+    &-text
+      color: #555555
+      font-size: 13px
+      font-family: "NanumSquareRegular"
+
+    &-blue-text
+      color: #3769FC
+      font-size: 14px
+      text-decoration: underline
+       
