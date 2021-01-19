@@ -2,6 +2,8 @@ import React from "react";
 import "./PurchaseAnalysis.sass";
 import graph1 from "./../../../../assets/icons/PurchaseAnalysis/graph1.png";
 import graph2 from "./../../../../assets/icons/PurchaseAnalysis/graph2.png";
+import graph3 from "./../../../../assets/icons/PurchaseAnalysis/graph3.png";
+import graph4 from "./../../../../assets/icons/PurchaseAnalysis/graph4.png";
 import arrowLeft from "./../../../../assets/icons/PurchaseAnalysis/arrow-left.png";
 import arrowRight from "./../../../../assets/icons/PurchaseAnalysis/arrow-right.png";
 import {
@@ -19,9 +21,6 @@ const PurchaseAnalysis = () => {
     <div className="purchase-analysis__container">
       <div className="purchase-analysis__row">
         <div className="purchase-analysis__big-box">
-          <span className="purchase-analysis__title">
-            유럽 최대의 물류센터 투자 시장
-          </span>
           <CarouselProvider
             naturalSlideWidth={100}
             naturalSlideHeight={150}
@@ -30,6 +29,9 @@ const PurchaseAnalysis = () => {
             <div>
               <Slider className="purchase-analysis__slider">
                 <Slide index={0}>
+                  <span className="purchase-analysis__title">
+                    유럽 최대의 물류센터 투자 시장
+                  </span>
                   <img
                     src={graph1}
                     alt="graph"
@@ -37,15 +39,23 @@ const PurchaseAnalysis = () => {
                   />
                 </Slide>
                 <Slide index={1}>
+                  {" "}
+                  <span className="purchase-analysis__title">
+                    독일의 5대 물류센터 투자 시장
+                  </span>
                   <img
-                    src={graph1}
+                    src={graph3}
                     alt="graph"
                     className="purchase-analysis__picture"
                   />
                 </Slide>
                 <Slide index={2}>
+                  {" "}
+                  <span className="purchase-analysis__title">
+                    뒤셀도르프 시장 분석 (공급 시장)
+                  </span>
                   <img
-                    src={graph1}
+                    src={graph4}
                     alt="graph"
                     className="purchase-analysis__picture"
                   />

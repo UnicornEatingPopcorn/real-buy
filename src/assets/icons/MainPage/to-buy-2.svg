@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.743" height="138.833" viewBox="0 0 114.743 138.833">
+    <g>
+        <g>
+            <path fill="#fff" d="M1.434 126.576l.638-.146A3 3 0 0 1 0 123.576V3a3 3 0 0 1 3-3h108.742a3 3 0 0 1 3 3v120.576a3 3 0 0 1-2.4 2.94l.252.059-54.864 12.258z"/>
+            <text font-family="NanumSquare_acB, NanumSquare_ac" font-size="13px" letter-spacing="-0.04em" transform="translate(13.816 26.437)">
+                <tspan x="0" y="0">안정적인 오피스</tspan>
+            </text>
+            <text fill="#828a96" font-family="NanumSquare_acR, NanumSquare_ac" font-size="9px" letter-spacing="-0.025em" transform="translate(13.816 49.254)">
+                <tspan x="0" y="0">안정성 ★★★★</tspan><tspan x="0" y="15">수익성 ★★★★</tspan><tspan letter-spacing="-0.045em"><tspan x="0" y="30">예상 연 수익률 : 8.2%</tspan></tspan>
+            </text>
+            <rect width="86" height="19" fill="#033879" rx="1" transform="translate(14.055 98.086)"/>
+            <text fill="#fff" font-family="SegoeUI, Segoe UI" font-size="9px" transform="translate(55.724 110.138)">
+                <tspan x="-8.158" y="0">BUY</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

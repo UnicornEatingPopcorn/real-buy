@@ -1,23 +1,40 @@
 .header
   height: 70px
   background: #FFFFFF !important
-  padding-left: 184px
-  padding-right: 184px
+  
+
   @media(max-width: 399px)
-    padding-left: 23px
-    padding-right: 23px
+    // padding-left: 23px
+    // padding-right: 23px
   @media(min-width: 400px)
-    padding-left: 35px
-    padding-right: 24px
-  @media(min-width: 576px)
-    padding-left: 60px
-    padding-right: 60px
-  @media(min-width: 768px)
-    padding-left: 120px
-    padding-right: 120px
-  @media(min-width: 992px)
-    padding-left: 184px
-    padding-right: 184px
+
+    // padding-left: 35px
+    // padding-right: 24px
+  // @media(min-width: 576px)
+    // padding-left: 60px
+    // padding-right: 60px
+  // @media(min-width: 768px)
+    // padding-left: 120px
+    // padding-right: 120px
+  // @media(min-width: 992px)
+    // padding-left: 184px
+    // padding-right: 184px
+
+  &-centered
+    display: flex
+    justify-content: center
+
+  &-transparent
+    justify-content: center
+    position: absolute
+    border-bottom: 1px solid white
+    background-color: #f0f8ff00 !important
+    @media(max-width: 575px)
+      margin: 0px
+    @media(min-width: 576px)
+      margin: 0px 40px
+    @media(min-width: 768px)
+      margin: 0px 50px
 
   &-container
     justify-content: center
@@ -38,11 +55,21 @@
       &:hover
         color: #0540FF !important
 
+    &-transparent
+      background-color: #f0f8ff00 !important
+      a
+        text-decoration: none
+        font-family: "NanumSquare"
+        font-weight: bold
+        color: white !important 
+        font-size: 14px
+
+
   &__link-active
     color: #0540FF !important
 
   &-end
-    width: 60%  
+    width: 67%  
     a   
       text-decoration: none
       font-family: "NanumSquare"
@@ -58,7 +85,6 @@
       width: 100%
 
   &-logo
-    margin-right: 138px
 
   &-item
     width: 130px
@@ -97,6 +123,9 @@
         right: 345px
       @media(min-width: 1400px)
         right: 318px
+
+  &-transparent
+    background-color: #f0f8ff00 !important
 
   &_link
     color: #232323
