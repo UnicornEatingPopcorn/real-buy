@@ -93,11 +93,17 @@ const Dividend = () => {
                     <td width="2%">{row.fourthYear}</td>
                     <td width="2%">{row.fifthYear}</td>
                     <td width="30%">
-                      {row.average} <br /> <span>{row.averageComment}</span>
+                      {row.average} <br />
+                      <span className="dividend__comment">
+                        {row.averageComment}
+                      </span>
                     </td>
                     <td width="30%">
                       {row.averageSecond}
-                      <br /> <span>{row.averageSecondComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.averageSecondComment}
+                      </span>
                     </td>
                   </tr>
                 );
@@ -126,11 +132,17 @@ const Dividend = () => {
                     <td width="2%">{row.fourthYear}</td>
                     <td width="2%">{row.fifthYear}</td>
                     <td width="30%">
-                      {row.average} <br /> <span>{row.averageComment}</span>
+                      {row.average} <br />
+                      <span className="dividend__comment">
+                        {row.averageComment}
+                      </span>
                     </td>
                     <td width="30%">
                       {row.averageSecond}
-                      <br /> <span>{row.averageSecondComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.averageSecondComment}
+                      </span>
                     </td>
                   </tr>
                 );
@@ -159,26 +171,41 @@ const Dividend = () => {
                   <tr className="dividend__table-row" key={index}>
                     <td width="25%">
                       {row.title}
-                      <br /> <span>{row.titleComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.titleComment}
+                      </span>
                     </td>
                     <td width="15%">
                       {row.zero}
-                      <br /> <span>{row.zeroComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.zeroComment}
+                      </span>
                     </td>
                     <td width="5%">{row.one}</td>
                     <td width="5%">{row.two}</td>
                     <td width="15%">
                       {row.three}
-                      <br /> <span>{row.threeComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.threeComment}
+                      </span>
                     </td>
                     <td width="15%">
                       {row.four}
-                      <br /> <span>{row.fourComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.fourComment}
+                      </span>
                     </td>
                     <td width="5%">{row.five}</td>
                     <td width="15%">
                       {row.six}
-                      <br /> <span>{row.sixComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.sixComment}
+                      </span>
                     </td>
                   </tr>
                 );
@@ -193,11 +220,17 @@ const Dividend = () => {
                   <tr className="dividend__table-row" key={index}>
                     <td width="25%">
                       {row.title}
-                      <br /> <span>{row.titleComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.titleComment}
+                      </span>
                     </td>
                     <td width="15%">
                       {row.zero}
-                      <br /> <span>{row.zeroComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.zeroComment}
+                      </span>
                     </td>
                     <td width="5%">{row.one}</td>
                     <td width="5%">{row.two}</td>
@@ -213,16 +246,25 @@ const Dividend = () => {
                   <tr className="dividend__table-row" key={index}>
                     <td width="15%">
                       {row.three}
-                      <br /> <span>{row.threeComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.threeComment}
+                      </span>
                     </td>
                     <td width="15%">
                       {row.four}
-                      <br /> <span>{row.fourComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.fourComment}
+                      </span>
                     </td>
                     <td width="5%">{row.five}</td>
                     <td width="15%">
                       {row.six}
-                      <br /> <span>{row.sixComment}</span>
+                      <br />
+                      <span className="dividend__comment">
+                        {row.sixComment}
+                      </span>
                     </td>
                   </tr>
                 );
