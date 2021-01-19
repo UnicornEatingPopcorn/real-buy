@@ -2,6 +2,7 @@
   &__container
     width: 100%
     height: 100%
+    background: white
 
   &__image
     width: 100%
@@ -25,6 +26,8 @@
     position: absolute
     top: 197px
     justify-content: center
+    @media(max-width: 575px)
+      top: 132px
 
   &__titles-centered
     display: flex
@@ -49,7 +52,17 @@
   height: 100%
   background: #FAFBFE    
   box-shadow: inset 0px 10px 36px #0F143129
-  padding: 102px 308px 86px 308px
+  @media(max-width: 575px)
+    padding: 30px 10px
+  @media(min-width: 576px)
+    padding: 60px 100px
+  @media(min-width: 768px)
+    padding: 70px 150px
+  @media(min-width: 992px)
+    padding: 90px 200px 86px 200px
+  @media(min-width: 1200px)
+    padding: 102px 308px 86px 308px
+    
 
   &__title
     color: #0540FF
@@ -72,6 +85,16 @@
   height: 100%
   background: white
   padding: 78px 262px
+  @media(max-width: 575px)
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px 50px
+  @media(min-width: 768px)
+    padding: 50px 100px
+  @media(min-width: 992px)
+    padding: 78px 200px
+  @media(min-width: 1200px)
+    padding: 78px 262px
 
   &__title
     color: #0540ff
@@ -81,14 +104,30 @@
 
   &__subtitle
     color: #2a2a2a
-    font-size: 35px
     margin-bottom: 22px
+    @media(max-width: 575px)
+      font-size: 20px
+    @media(min-width: 576px)
+      font-size: 23px
+    @media(min-width: 768px)
+      font-size: 28px
+    @media(min-width: 992px)
+      font-size: 32px
+    @media(min-width: 1200px)
+      font-size: 35px
 
   &__sub
     color: #707070
     font-size: 17px
     font-family: "NanumSquareRegular"
-    margin-bottom: 128px
+    @media(max-width: 575px)
+      margin-bottom: 50px
+    @media(min-width: 576px)
+      margin-bottom: 80px
+    @media(min-width: 768px)
+      margin-bottom: 100px
+    @media(min-width: 992px)    
+      margin-bottom: 128px
 
   &__pic
     width: 100%
@@ -101,6 +140,18 @@
     padding: 78px 215px
     display: flex
     justify-content: space-between
+    @media(max-width: 575px)
+      display: grid
+      justify-content: center
+      padding: 20px
+    @media(min-width: 576px)
+      padding: 30px 50px
+    @media(min-width: 768px)
+      padding: 50px 100px
+    @media(min-width: 992px)
+      padding: 78px 200px
+    @media(min-width: 1200px)
+      padding: 78px 262px
 
     &_title
       color: #0540ff
@@ -110,8 +161,13 @@
 
     &_subtitle
       color: #2a2a2a
-      font-size: 35px
       margin-bottom: 37px
+      @media(min-width: 576px)
+        font-size: 22px
+      @media(min-width: 768px)
+        font-size: 31px
+      @media(min-width: 992px)
+        font-size: 35px
 
     &_sub
       color: #000000
@@ -122,9 +178,53 @@
   width: 100%
   height: 100%
   background: white
-  padding: 78px 215px
-  display: flex
-  justify-content: space-between
+  @media(max-width: 575px)
+    display: grid
+    justify-items: center
+    align-content: space-between
+    height: 877px    
+  @media(min-width: 576px)
+    height: 624px
+    display: grid
+    align-content: space-between
+  @media(min-width: 768px)
+    height: 100%
+
+
+  &__text-block
+    padding: 78px 215px
+    @media(max-width: 575px)
+      display: grid
+      justify-content: center
+      padding: 20px
+    @media(min-width: 576px)
+      padding: 30px 0px 0px 50px
+      width: 237px
+    @media(min-width: 768px)
+      padding: 50px 0px 0px 100px
+      width: 330px
+    @media(min-width: 992px)
+      padding: 78px 0px 0px 200px
+      width: 489px
+    @media(min-width: 1200px)
+      padding: 78px 0px 0px 262px
+      width: 554px
+    &_title
+      color: #0540ff
+      font-size: 15px
+      font-family: "JavaneseText"
+      margin-bottom: 10px
+
+    &_subtitle
+      color: #2a2a2a
+      font-size: 35px
+      margin-bottom: 37px
+      @media(min-width: 576px)
+        font-size: 22px
+      @media(min-width: 768px)
+        font-size: 31px
+      @media(min-width: 992px)
+        font-size: 35px
 
   &__title
     color: #141414
@@ -138,14 +238,146 @@
     font-family: "NanumSquareLight"
 
   &__frame
-    position: relative
-    bottom: 750px
-    left: 727px
+    position: absolute
+    top: 3576px
+    left: 595px
 
   &__inner-phone
+    position: absolute
+    top: 3609px
+    left: 627px
+
+  &__pic
+    width: 100%
+
+  &__phone-pic
     position: relative
-    bottom: 750px
-    left: 433px
+    bottom: 3500px
+    right: 700px
+
+  &__justify
+    display: flex
+    justify-content: space-between
+
+  &__pics
+    position: relative
+    @media(max-width: 575px)
+      right: 222px
+      top: 207px
+    @media(min-width: 576px)
+      z-index: 2
+      right: 267px
+      bottom: 38px
+    @media(min-width: 768px)
+      right: 313px
+    @media(min-width: 992px)
+      right: 412px
+    @media(min-width: 1200px)
+      right: 472px
+    
+.customize-offerings
+  width: 100%
+  height: 100%
+  background: #f6f6f6
+  @media(max-width: 575px)
+    display: grid
+    justify-content: center
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px
+    display: grid
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 50px
+  @media(min-width: 992px)
+    padding: 78px 215px 80px 215px
+  @media(min-width: 1200px)
+    padding: 125px 215px 80px 215px
+
+  &__text-block
+    @media(min-width: 576px)
+      width: 274px
+    @media(min-width: 768px)
+      width: 300px
+
+  &__title
+    color: #0540ff
+    font-size: 15px
+    font-family: "JavaneseText"
+    margin-bottom: 10px
+
+  &__subtitle
+    color: #2a2a2a
+    margin-bottom: 37px
+    @media(min-width: 576px)
+      font-size: 22px
+    @media(min-width: 768px)
+      font-size: 31px
+    @media(min-width: 992px)
+      font-size: 35px
+
+  &__sub
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+
+  &__pic
+    width: 100%
+    @media(min-width: 576px)
+      position: relative
+      bottom: 64px
+    @media(min-width: 768px)
+      max-width: 700px
+
+.computer
+  width: 100%
+  height: 100%
+  @media(max-width: 575px)
+    display: grid
+    justify-content: center
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px
+    display: grid
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 50px
+  @media(min-width: 992px)
+    padding: 78px 215px 80px 215px
+  @media(min-width: 1200px)
+    padding: 125px 215px 80px 215px
+
+  &__text-block
+
+  &__title
+    color: #0540ff
+    font-size: 15px
+    font-family: "JavaneseText"
+    margin-bottom: 10px
+
+  &__subtitle
+    color: #2a2a2a
+    margin-bottom: 37px
+    @media(min-width: 576px)
+      font-size: 22px
+    @media(min-width: 768px)
+      font-size: 31px
+    @media(min-width: 992px)
+      font-size: 35px
+
+  &__sub
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+
+  &__pic
+    width: 100%
+    @media(min-width: 768px)
+      max-width: 700px
+
+  &__up
+    width: 100%
+    height: 40px
 
 
 

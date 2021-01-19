@@ -150,7 +150,7 @@ const Header = () => {
       ) : (
         <div className="header-centered">
           <nav
-            className="navbar navbar-expand-md header header-transparent"
+            className="navbar navbar-expand-md header navbar-dark header-transparent"
             role="navigation"
           >
             <div className="container-fluid header-container">

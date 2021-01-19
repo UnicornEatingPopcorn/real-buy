@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.sass";
 import kakao from "./../../assets/icons/kakao.png";
 import facebook from "./../../assets/icons/facebook.png";
-import darkIcons from "./../../assets/icons/dark-footer.png";
+import darkIcons from "./../../assets/icons/sns.png";
 
 const Footer = ({ mode }) => {
   return (
@@ -39,7 +39,7 @@ const Footer = ({ mode }) => {
               <div className="row footer__images">
                 <img
                   src={darkIcons}
-                  alt="kakao"
+                  alt="sns icons"
                   className="footer__image footer__image-dark"
                 />
               </div>
@@ -66,7 +66,6 @@ const Footer = ({ mode }) => {
               <div className="row">
                 <p className="footer__additional-info__title">투자 인사이트</p>
                 <p className="footer__additional-info__title">
-                  {" "}
                   개인정보처리방침
                 </p>
               </div>
