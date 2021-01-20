@@ -24,18 +24,22 @@ const links = [
   {
     title: "매입 분석",
     path: "/investing/details/purchase-analysis",
+    id: 1,
   },
   {
     title: "임차인 분석",
     path: "/investing/details/tenant-analysis",
+    id: 2,
   },
   {
     title: "투자구조",
     path: "/investing/details/structure",
+    id: 3,
   },
   {
     title: "공동투자자 및 운용사",
     path: "/investing/details/management",
+    id: 4,
   },
 ];
 
@@ -43,10 +47,12 @@ const profitLinks = [
   {
     title: "배당수익",
     path: "/investing/details/dividend-income",
+    id: 5,
   },
   {
     title: "임대료 상승",
     path: "/investing/details/rent-increase",
+    id: 6,
   },
 ];
 
@@ -54,18 +60,21 @@ const riskLinks = [
   {
     title: "매각 시나리오",
     path: "/investing/details/selling-scenario",
+    id: 7,
   },
   {
     title: "주요 리스크",
     path: "/investing/details/key-risks",
+    id: 8,
   },
   {
     title: "상세 정보",
     path: "/investing/details/risk-details",
+    id: 9,
   },
 ];
 
-const InvestingDetails = () => {
+const InvestingDetails = ({ match }) => {
   return (
     <>
       <PresentationBlock />
@@ -89,6 +98,7 @@ const InvestingDetails = () => {
         })}
       </div>
       <Switch>
+        <Route exact path={`${match.url}`} component={PurchaseAnalysis} />
         <Route
           path="/investing/details/purchase-analysis"
           component={PurchaseAnalysis}
@@ -100,7 +110,6 @@ const InvestingDetails = () => {
         <Route path="/investing/details/structure" component={Structure} />
         <Route path="/investing/details/management" component={Management} />
       </Switch>
-
       <div className="investing-details__safety">수익성 분석</div>
       <div className="investing-details__links">
         {profitLinks.map((link) => {
@@ -117,10 +126,10 @@ const InvestingDetails = () => {
         })}
       </div>
       <Switch>
+        <Route exact path={`${match.url}`} component={Dividend} />
         <Route path="/investing/details/dividend-income" component={Dividend} />
         <Route path="/investing/details/rent-increase" component={Rent} />
       </Switch>
-
       <div className="investing-details__safety">리스크 분석</div>
       <div className="investing-details__links">
         {riskLinks.map((link) => {
@@ -137,6 +146,7 @@ const InvestingDetails = () => {
         })}
       </div>
       <Switch>
+        <Route exact path={`${match.url}`} component={SellingScenario} />
         <Route
           path="/investing/details/selling-scenario"
           component={SellingScenario}

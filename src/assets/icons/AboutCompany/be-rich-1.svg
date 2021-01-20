@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373" height="317" viewBox="0 0 373 317">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".009" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#3769fc"/>
+            <stop offset="1" stop-color="#43cbff"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path d="M0 0H2.615V7.975H0z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1,.cls-11,.cls-3{fill:none}.cls-3{stroke:#bfbfbf}.cls-5{fill:#9d9d9d;font-size:10px}.cls-5,.cls-6,.cls-8{font-family:NanumSquare_acR,NanumSquare_ac}.cls-6{fill:#7a7a7a;font-size:11px}.cls-8{fill:#555;font-size:12px}.cls-9{fill:url(#linear-gradient)}.cls-11{stroke:#fd7141}.cls-14{stroke:none}
+        </style>
+    </defs>
+    <g id="그룹_1295" transform="translate(-215 -888)">
+        <g id="그룹_981" transform="translate(-18146 9721)">
+            <g id="패스_1014" fill="#fff">
+                <path d="M372.5 272.5H.5V.5h372v272z" class="cls-14" transform="translate(18361 -8789)"/>
+                <path fill="#bfbfbf" d="M1 1v271h371V1H1M0 0h373v273H0V0z" transform="translate(18361 -8789)"/>
+            </g>
+            <path id="선_636" d="M0 0L9.286 0" class="cls-3" transform="translate(18418.371 -8602.101)"/>
+            <path id="선_637" d="M0 0L0 5.909" class="cls-3" transform="translate(18418.371 -8577.619)"/>
+            <path id="선_638" d="M0 0L9.286 0" class="cls-3" transform="translate(18418.371 -8635.869)"/>
+            <path id="선_639" d="M0 0L9.286 0" class="cls-3" transform="translate(18418.371 -8669.637)"/>
+            <path id="선_640" d="M0 133.449L0 0" class="cls-3" transform="translate(18418.371 -8705.159)"/>
+            <g id="반복_그리드_4" transform="translate(18191.061 -10304.125)">
+                <path id="선_393" d="M0 11L0 0" class="cls-3" transform="translate(315.5 1724.5)"/>
+            </g>
+            <g id="반복_그리드_3" transform="translate(18280.545 -10304.125)">
+                <path id="선_393-2" d="M0 11L0 0" class="cls-3" transform="translate(315.5 1724.5)"/>
+            </g>
+            <g id="그룹_978" transform="translate(18685.031 -8579.625)">
+                <g id="반복_그리드_2" transform="translate(-315 -1724.5)">
+                    <path id="선_393-3" d="M0 11L0 0" class="cls-3" transform="translate(315.5 1724.5)"/>
+                </g>
+            </g>
+            <path id="선_641" d="M0 0L9.286 0" class="cls-3" transform="translate(18418.371 -8705.159)"/>
+            <text id="_0_" class="cls-5" transform="translate(18394 -8570)">
+                <tspan x="0" y="0">0%</tspan>
+            </text>
+            <text id="명목임금" class="cls-6" transform="translate(18442 -8553)">
+                <tspan x="0" y="0">명목임금</tspan>
+            </text>
+            <text id="주거용_부동산" class="cls-6" transform="translate(18523 -8553)">
+                <tspan x="0" y="0">주거용 부동산</tspan>
+            </text>
+            <text id="_과거_5년_평균_상승률_" fill="#7a7a7a" font-family="NanumSquare_acB, NanumSquare_ac" font-size="15px" transform="translate(18479 -8747)">
+                <tspan x="0" y="0">[과거 5년 평균 상승률]</tspan>
+            </text>
+            <text id="상업용_부동산" class="cls-6" transform="translate(18614 -8553)">
+                <tspan x="0" y="0">상업용 부동산</tspan>
+            </text>
+            <text id="_2_" class="cls-5" transform="translate(18394 -8600)">
+                <tspan x="0" y="0">2%</tspan>
+            </text>
+            <text id="_4_" class="cls-5" transform="translate(18394 -8635)">
+                <tspan x="0" y="0">4%</tspan>
+            </text>
+            <text id="_6_" class="cls-5" transform="translate(18394 -8667)">
+                <tspan x="0" y="0">6%</tspan>
+            </text>
+            <text id="_8_" class="cls-5" transform="translate(18394 -8702)">
+                <tspan x="0" y="0">8%</tspan>
+            </text>
+            <text id="_3.3_" class="cls-8" transform="translate(18448 -8631)">
+                <tspan x="0" y="0">3.3%</tspan>
+            </text>
+            <text id="_6.7_" class="cls-8" transform="translate(18538 -8692)">
+                <tspan x="0" y="0">6.7%</tspan>
+            </text>
+            <text id="_6.8_" class="cls-8" transform="translate(18627 -8694)">
+                <tspan x="0" y="0">6.8%</tspan>
+            </text>
+            <path id="사각형_1559" d="M0 0h45a3 3 0 0 1 3 3v33a3 3 0 0 1-3 3H0V0z" class="cls-9" transform="rotate(-90 4935.5 -13507)"/>
+            <path id="사각형_1560" d="M0 0h108a3 3 0 0 1 3 3v33a3 3 0 0 1-3 3H0V0z" class="cls-9" transform="rotate(-90 4980.5 -13552)"/>
+            <path id="사각형_1561" d="M0 0h110a3 3 0 0 1 3 3v33a3 3 0 0 1-3 3H0V0z" class="cls-9" transform="rotate(-90 5025 -13596.5)"/>
+            <g id="Now" transform="translate(18417.904 -8571.837)">
+                <path id="x_axis" fill="none" stroke="#bdbdbd" d="M0 .482h268.1" transform="translate(0 -.482)"/>
+            </g>
+            <g id="그룹_979" transform="scale(-1) rotate(39 -20550.508 -22338.4)">
+                <path id="선_450" d="M0 0L0 62.947" class="cls-11" transform="translate(533.5 433.314)"/>
+                <path id="패스_978" d="M21320.215 2067.055l4 3.8 4-3.8" class="cls-11" transform="translate(-20790.713 -1574.439)"/>
+            </g>
+            <g id="그룹_980" transform="rotate(39 22397.815 21296.287)">
+                <path id="선_450-2" d="M0 0L0 62.947" class="cls-11" transform="translate(533.5 433.314)"/>
+                <path id="패스_978-2" d="M21320.215 2067.055l4 3.8 4-3.8" class="cls-11" transform="translate(-20790.713 -1574.439)"/>
+            </g>
+        </g>
+        <g id="사각형_1562" fill="rgba(242,242,242,0.75)" stroke="#bfbfbf">
+            <path d="M0 0H373V45H0z" class="cls-14" transform="translate(215 888)"/>
+            <path d="M0.5 0.5H372.5V44.5H0.5z" class="cls-1" transform="translate(215 888)"/>
+        </g>
+        <text id="점점_벌어지는_소득_격차." fill="#7a7a7a" font-family="NanumSquare_acR, NanumSquare_ac" font-size="20px" transform="translate(306 917)">
+            <tspan x="0" y="0">점점 벌어지는 소득 격차.</tspan>
+        </text>
+    </g>
+</svg>
