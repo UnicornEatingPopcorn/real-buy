@@ -16,6 +16,9 @@ import Precautions from "./Precautions/Precautions";
 import Dividend from "./Dividend/Dividend";
 import Rent from "./Rent/Rent";
 import Footer from "./../../Footer/Footer";
+import SellingScenario from "./SellingScenario/SellingScenario";
+import KeyRisks from "./KeyRisks/KeyRisks";
+import RiskDetails from "./RiskDetails/RiskDetails";
 
 const links = [
   {
@@ -47,7 +50,22 @@ const profitLinks = [
   },
 ];
 
-const InvestingDetails = ({ match }) => {
+const riskLinks = [
+  {
+    title: "매각 시나리오",
+    path: "/investing/details/selling-scenario",
+  },
+  {
+    title: "주요 리스크",
+    path: "/investing/details/key-risks",
+  },
+  {
+    title: "상세 정보",
+    path: "/investing/details/risk-details",
+  },
+];
+
+const InvestingDetails = () => {
   return (
     <>
       <PresentationBlock />
@@ -70,7 +88,6 @@ const InvestingDetails = ({ match }) => {
           );
         })}
       </div>
-      <Route exact path={match.url} component={PurchaseAnalysis} />
       <Switch>
         <Route
           path="/investing/details/purchase-analysis"
@@ -83,6 +100,7 @@ const InvestingDetails = ({ match }) => {
         <Route path="/investing/details/structure" component={Structure} />
         <Route path="/investing/details/management" component={Management} />
       </Switch>
+
       <div className="investing-details__safety">수익성 분석</div>
       <div className="investing-details__links">
         {profitLinks.map((link) => {
@@ -98,10 +116,33 @@ const InvestingDetails = ({ match }) => {
           );
         })}
       </div>
-      <Route exact path={match.url} component={Dividend} />
       <Switch>
         <Route path="/investing/details/dividend-income" component={Dividend} />
         <Route path="/investing/details/rent-increase" component={Rent} />
+      </Switch>
+
+      <div className="investing-details__safety">리스크 분석</div>
+      <div className="investing-details__links">
+        {riskLinks.map((link) => {
+          return (
+            <NavLink
+              to={link.path}
+              key={link.title}
+              className="investing-details__link"
+              activeClassName="investing-details__link-active"
+            >
+              {link.title}
+            </NavLink>
+          );
+        })}
+      </div>
+      <Switch>
+        <Route
+          path="/investing/details/selling-scenario"
+          component={SellingScenario}
+        />
+        <Route path="/investing/details/key-risks" component={KeyRisks} />
+        <Route path="/investing/details/risk-details" component={RiskDetails} />
       </Switch>
       <FundOverview />
       <AssetManagement />

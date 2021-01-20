@@ -111,9 +111,9 @@ const TenantAnalysis = () => {
       <div className="tenant-analysis__tables">
         <table className="tenant-analysis__table">
           <tbody>
-            {table1.map((tableRow) => {
+            {table1.map((tableRow, index) => {
               return (
-                <tr className="tenant-analysis__row">
+                <tr className="tenant-analysis__row" key={index}>
                   <td>{tableRow.title}</td>
                   <td>{tableRow.definition}</td>
                 </tr>
@@ -123,9 +123,9 @@ const TenantAnalysis = () => {
         </table>
         <table className="tenant-analysis__table">
           <tbody>
-            {table2.map((tableRow) => {
+            {table2.map((tableRow, index) => {
               return (
-                <tr className="tenant-analysis__row">
+                <tr className="tenant-analysis__row" key={index}>
                   <td>{tableRow.title}</td>
                   <td>{tableRow.definition}</td>
                 </tr>
@@ -146,9 +146,12 @@ const TenantAnalysis = () => {
         </div>
         <table className="tenant-analysis__amazon-table">
           <tbody>
-            {table3.map((tableRow) => {
+            {table3.map((tableRow, index) => {
               return (
-                <tr className="tenant-analysis__row tenant-analysis__amazon-row">
+                <tr
+                  className="tenant-analysis__row tenant-analysis__amazon-row"
+                  key={index}
+                >
                   <td>{tableRow.money}</td>
                   <td>{tableRow.prev}</td>
                   <td>{tableRow.last}</td>

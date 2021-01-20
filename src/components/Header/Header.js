@@ -60,7 +60,6 @@ const Header = () => {
 
   const location = useLocation();
 
-  console.log(location.pathname === "/");
   return (
     <>
       {location.pathname !== "/" ? (

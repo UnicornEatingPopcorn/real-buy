@@ -94,9 +94,9 @@ const Management = () => {
           </div>
           <table className="management__table">
             <tbody>
-              {assetManagement.map((tableRow) => {
+              {assetManagement.map((tableRow, index) => {
                 return (
-                  <tr className="management__table-row">
+                  <tr className="management__table-row" key={index}>
                     <td width="40%">{tableRow.title}</td>
                     <td width="60%">{tableRow.definition}</td>
                   </tr>
@@ -116,9 +116,9 @@ const Management = () => {
           </div>
           <table className="management__table">
             <tbody>
-              {domesticOperator.map((tableRow) => {
+              {domesticOperator.map((tableRow, index) => {
                 return (
-                  <tr className="management__table-row">
+                  <tr className="management__table-row" key={index}>
                     <td width="40%">{tableRow.title}</td>
                     <td width="60%">{tableRow.definition}</td>
                   </tr>
@@ -167,9 +167,9 @@ const Management = () => {
           </div>
           <table className="management__table">
             <tbody>
-              {jointInvestor.map((tableRow) => {
+              {jointInvestor.map((tableRow, index) => {
                 return (
-                  <tr className="management__table-row">
+                  <tr className="management__table-row" key={index}>
                     <td width="40%">
                       {tableRow.title} <br />
                       <span className="management__helper">
