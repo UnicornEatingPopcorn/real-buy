@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="342.024" height="218.361" viewBox="0 0 342.024 218.361">
+    <defs>
+        <filter id="646yk07uga" width="342.024" height="218.361" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur result="blur" stdDeviation="18"/>
+            <feFlood flood-color="#0f1431" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#646yk07uga)" transform="translate(54 44) translate(-54 -44)">
+            <rect width="234.024" height="110.361" fill="#fff" rx="6" transform="translate(54 44)"/>
+        </g>
+        <text fill="#3769fc" font-family="NanumSquare_acB, NanumSquare_ac" font-size="18px" transform="translate(54 44) translate(82.999 47.361)">
+            <tspan x="0" y="0">투자 설명서</tspan>
+        </text>
+        <path fill="none" stroke="#3769fc" d="M0 0L187.054 0" opacity="0.77" transform="translate(54 44) translate(23.5 67.861)"/>
+        <g>
+            <path fill="#3769fc" d="M41.409 9.933a2.835 2.835 0 0 0-2.723-1.922H23.354a6.139 6.139 0 0 1-3.874-1.7L18.138 4.9a6.127 6.127 0 0 0-3.873-1.7H6.94a2.661 2.661 0 0 0-2.52 2.391l-.657 7.233h38.1l-.453-2.89zm2.266 5.3H1.318a1.36 1.36 0 0 0-1.3 1.528L2.1 40.019a1.78 1.78 0 0 0 1.724 1.675h37.35a1.782 1.782 0 0 0 1.726-1.675l2.077-23.262a1.36 1.36 0 0 0-1.3-1.528z" transform="translate(54 44) translate(24.001 19.356) translate(-.014 -3.2)"/>
+        </g>
+        <text fill="#3769fc" font-family="NanumSquare_acR, NanumSquare_ac" font-size="12px" transform="translate(54 44) translate(61 88.361)">
+            <tspan x="0" y="0">Document Download</tspan>
+        </text>
+    </g>
+</svg>
