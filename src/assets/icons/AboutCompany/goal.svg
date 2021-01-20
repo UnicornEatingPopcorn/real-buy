@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="307" height="39" viewBox="0 0 307 39">
+    <defs>
+        <style>
+            .cls-1{fill:#2e2e2e}
+        </style>
+    </defs>
+    <g id="그룹_990" transform="translate(-388 -1523)">
+        <g id="그룹_974" transform="translate(388 1528.646)">
+            <g id="그룹_880">
+                <g id="그룹_879" transform="translate(124.153 1.436)">
+                    <path id="패스_322" d="M1656.384 895.877a7.1 7.1 0 0 0-7.093-7.092h-14.3v25.975h14.3a7.085 7.085 0 0 0 3.928-12.987 7.053 7.053 0 0 0 3.164-5.9m-2.392 11.792a4.705 4.705 0 0 1-4.7 4.7h-11.908v-9.4h11.908a4.705 4.705 0 0 1 4.7 4.7m-4.7-7.092h-11.908v-9.4h11.908a4.7 4.7 0 1 1 0 9.4" class="cls-1" transform="translate(-1634.991 -888.784)"/>
+                    <path id="패스_323" d="M1683.514 904.063a8.305 8.305 0 1 1-16.61 0v-15.278h-2.391v15.278a10.7 10.7 0 0 0 21.393 0v-15.278h-2.391z" class="cls-1" transform="translate(-1637.688 -888.784)"/>
+                    <path id="패스_324" d="M1704.6 899.867l-8.929-11.082h-3.07l10.8 13.41v12.565h2.387V902.2l10.809-13.416h-3.072z" class="cls-1" transform="translate(-1640.257 -888.784)"/>
+                </g>
+                <path id="패스_325" d="M1656.384 861.934a7.1 7.1 0 0 0-7.093-7.092h-14.3v25.975h2.392v-11.791h11.908a4.705 4.705 0 0 1 4.7 4.7v7.091h2.392v-7.091a7.054 7.054 0 0 0-3.164-5.9 7.051 7.051 0 0 0 3.164-5.9m-7.093 4.7h-11.908v-9.4h11.908a4.7 4.7 0 1 1 0 9.4" class="cls-1" transform="translate(-1634.991 -854.841)"/>
+                <path id="패스_326" d="M1693.4 880.832h2.578l4.75-11.792h7.887l4.751 11.792h2.578L1705.54 855h-1.732zm8.292-14.183l2.979-7.4 2.979 7.4z" class="cls-1" transform="translate(-1640.328 -854.856)"/>
+                <path id="패스_327" d="M1725.949 878.441V855h-2.391v25.831h19.351l2.042-2.391z" class="cls-1" transform="translate(-1643.087 -854.855)"/>
+                <path id="패스_328" d="M1681.08 854.843h-16.567v25.975h21.394v-2.392h-19v-9.4h19v-2.391h-19v-9.4h19v-2.248h-4.827z" class="cls-1" transform="translate(-1637.687 -854.841)"/>
+                <path id="사각형_94" d="M0 0H2.391V0.144H0z" class="cls-1" transform="translate(80.474 .002)"/>
+                <path id="사각형_95" d="M0 0H4.826V0.144H0z" class="cls-1" transform="translate(43.393)"/>
+            </g>
+        </g>
+        <text id="의_목표" fill="#2a2a2a" font-family="NanumSquare_acB, NanumSquare_ac" font-size="35px" transform="translate(595 1553)">
+            <tspan x="0" y="0">의 목표</tspan>
+        </text>
+    </g>
+</svg>

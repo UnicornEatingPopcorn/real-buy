@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166.4" height="41" viewBox="0 0 166.4 41">
+    <defs>
+        <style>
+            .cls-2{fill:#dfe2ea;stroke:#dfe2ea;stroke-width:.5px}
+        </style>
+    </defs>
+    <g id="그룹_1017" transform="translate(-510.066 -148.957)">
+        <g id="그룹_1017-2" transform="translate(-4)">
+            <text id="_s_Mission" fill="#dfe2ea" font-family="JavaneseText, Javanese Text" font-size="18px" transform="translate(602.467 171.957)">
+                <tspan x="0" y="0">&apos;s Mission</tspan>
+            </text>
+            <g id="그룹_880" transform="translate(514.316 159.948)">
+                <g id="그룹_879" transform="translate(50.791 .587)">
+                    <path id="패스_322" d="M1643.743 891.686a2.9 2.9 0 0 0-2.9-2.9h-5.85v10.626h5.85a20.893 20.893 0 0 1 2.9-7.725m-.979 4.824a1.925 1.925 0 0 1-1.923 1.923h-4.872v-3.846h4.872a1.925 1.925 0 0 1 1.923 1.923m-1.923-2.9h-4.872v-3.846h4.872a1.923 1.923 0 1 1 0 3.846" class="cls-2" transform="translate(-1634.991 -888.785)"/>
+                    <path id="패스_323" d="M1672.286 895.035a3.4 3.4 0 1 1-6.8 0v-6.25h-.978v6.25a4.376 4.376 0 0 0 8.752 0v-6.25h-.978z" class="cls-2" transform="translate(-1653.539 -888.785)"/>
+                    <path id="패스_324" d="M1697.51 893.318l-3.653-4.534h-1.257l4.42 5.486v5.14h.98v-5.138l4.422-5.488h-1.257z" class="cls-2" transform="translate(-1671.187 -888.784)"/>
+                </g>
+                <path id="패스_325" d="M1643.743 857.744a2.9 2.9 0 0 0-2.9-2.9h-5.85v10.626h.979v-4.824h4.872a1.925 1.925 0 0 1 1.923 1.923v2.9h.979v-2.9a2.895 2.895 0 0 1 0-4.824m-2.9 1.923h-4.872v-3.846h4.872a1.923 1.923 0 1 1 0 3.846" class="cls-2" transform="translate(-1634.991 -854.842)"/>
+                <path id="패스_326" d="M1693.4 865.569h1.054l1.943-4.824h3.226l1.944 4.824h1.054L1698.368 855h-.708zm3.392-5.8l1.219-3.026 1.219 3.026z" class="cls-2" transform="translate(-1671.69 -854.942)"/>
+                <path id="패스_327" d="M1724.536 864.591V855h-.978v10.567h7.916l.835-.978z" class="cls-2" transform="translate(-1690.637 -854.942)"/>
+                <path id="패스_328" d="M1671.291 854.843h-6.777v10.626h8.752v-.978h-7.774v-3.846h7.774v-.978h-7.774v-3.846h7.774v-.921h-1.975z" class="cls-2" transform="translate(-1653.538 -854.842)"/>
+                <path id="사각형_94" d="M0 0H0.978V0.059H0z" class="cls-2" transform="translate(32.922 .001)"/>
+                <path id="사각형_95" d="M0 0H1.975V0.059H0z" class="cls-2" transform="translate(17.752)"/>
+            </g>
+        </g>
+    </g>
+</svg>
