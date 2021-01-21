@@ -58,6 +58,11 @@ const InvestingMethod = () => {
             가상계좌 개설 및 확인
           </button>
         </div>
+        <div className="investing-method__container-large">
+          <button className="investing-method__button-left investing-method__button">
+            가상계좌 개설 및 확인
+          </button>
+        </div>
       </div>
 
       <div className="investing-method__pic-block">
@@ -94,6 +99,11 @@ const InvestingMethod = () => {
           className="investing-method__right-icon"
         />
         <div className="investing-method__button-container">
+          <button className="investing-method__button-left investing-method__button">
+            투자하기
+          </button>
+        </div>{" "}
+        <div className="investing-method__container-large">
           <button className="investing-method__button-left investing-method__button">
             투자하기
           </button>
@@ -140,6 +150,11 @@ const InvestingMethod = () => {
           </p>
         </div>
         <div className="investing-method__button-container">
+          <button className="investing-method__button-last investing-method__button">
+            마이페이지
+          </button>
+        </div>
+        <div className="investing-method__container-large">
           <button className="investing-method__button-last investing-method__button">
             마이페이지
           </button>

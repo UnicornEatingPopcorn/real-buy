@@ -1,0 +1,154 @@
+.register
+  width: 100%
+  height: 100%
+  background: #FAFBFE
+  padding: 66px 215px
+  display: grid
+  justify-content: center
+  @media(max-width: 575px)
+    padding: 40px
+  @media(min-width: 576px)
+    padding: 40px 80px
+
+  &__title
+    color: #2E2E2E
+    font-size: 30px
+    font-family: "NanumSquareRegular"
+    text-align: center
+    margin-bottom: 37px
+
+  &__box
+    width: 100%
+    height: 100%
+    background: #FFFFFF
+    box-shadow: 8px 13px 10px #C6D3E526
+    border: 1px solid #C6D3E5
+    border-radius: 3px
+    padding: 46px 24px
+    @media(min-width: 1200px)
+      width: 770px
+
+  &__input
+    width: 142px
+    margin-right: 0
+    height: 37px
+    background: #FFFFFF
+    border: 1px solid #3182F5
+    opacity: 0.4
+    color: #939393
+    font-size: 12px
+    font-family: "NanumSquareRegular"
+    padding-left: 10px
+
+    &-main
+      width: 205px
+      height: 37px
+      background: #FFFFFF
+      border: 1px solid #3182F5
+      opacity: 0.4
+      margin-right: 5px
+      color: #939393
+      font-size: 12px
+      font-family: "NanumSquareRegular"
+      padding-left: 10px
+
+  &__row
+    display: flex
+    margin-bottom: 17px
+    @media(max-width: 575px)
+      display: grid
+    &-last
+      margin-bottom: 39px
+
+  &__input-button
+    width: 94px
+    height: 37px
+    background: #adcdfb6b
+    border: 1px solid #3182f56b
+    color: #0540FF
+    font-size: 16px
+    font-family: "NanumSquareRegular"
+
+    &-last
+      margin-right: 11px
+
+  &__input-title
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+    margin-right: 31px    
+    width: 126px
+    &-last
+      width: 93px
+      margin-right: 17px
+
+  &__error
+    color: #FF7C7C
+    font-size: 11px
+    font-family: "NanumSquareLight"
+
+  &__first-checkbox-block
+    width: 100%
+    height: 64px
+    background: #FCFDFE 0% 0% no-repeat padding-box
+    border-top: 1px solid #DFE2EA
+    border-bottom: 1px solid #DFE2EA
+    padding: 21px
+    @media(max-width: 575px)
+      height: 80px
+
+  &__checkbox-label
+    margin-left: 28px
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      font-size: 14px
+
+
+  &__small-label
+    color: #333333
+    font-size: 11px
+    margin-left: 28px
+    font-family: "NanumSquareRegular"
+
+  &__row-col
+    display: flex
+    align-items: center
+    margin-bottom: 22px
+
+  &__message
+    color: #FF7C7C
+    font-size: 11px
+    font-family: "NanumSquareLight"
+    margin-left: 10px
+
+  &__arrow
+    position: absolute
+    right: 48%
+    @media(max-width: 575px)
+      right: 0
+
+  &__row-final
+    border-bottom: 1px solid #C6D3E5
+    padding: 21px 
+
+input[type="checkbox"]
+  appearance: none
+
+.register-check
+  width: 16px
+  height: 16px
+  border: 2px solid #DFE2EA
+  margin-left: 0px
+  &:before
+    background: #FFFFFF
+  &:after
+    content: ''
+    display: block
+    left: 0
+    top: 0    
+    position: absolute
+  &:checked
+    background: url("./../../assets/icons/check-mark.svg") no-repeat
+    background-size: cover

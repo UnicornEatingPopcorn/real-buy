@@ -9,36 +9,31 @@ const links = [
     title: "투자하기",
     path: "/investing",
     liClass: "nav-item header-item",
-    linkClass: "nav-link",
+    linkClass: "nav-link navlink-end",
   },
   {
     title: "투자 인사이트",
     path: "/investment-insight",
     liClass: "nav-item header-long-item",
-    linkClass: "nav-link",
+    linkClass: "nav-link navlink-end",
   },
   {
     title: "회사소개",
     path: "/company-introduction",
     liClass: "nav-item header-item",
-    linkClass: "nav-link",
+    linkClass: "nav-link navlink-end",
   },
   {
     title: "고객지원",
     path: "/customer-support",
     liClass: "nav-item header-item",
-    linkClass: "nav-link",
-  },
-  {
-    title: "홍길동님 마이페이지",
-    path: "/mypage/dashboard",
-    liClass: "nav-item header-end",
     linkClass: "nav-link navlink-end",
   },
 ];
 
 const Header = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
   const handleClick = () => {
     setIsToggle(!isToggle);
@@ -101,6 +96,41 @@ const Header = () => {
                     </li>
                   );
                 })}
+                {isLoggedIn ? (
+                  <li className="nav-item header-end">
+                    <NavLink
+                      className="nav-link navlink-end navlink-end-mypage"
+                      to="/mypage/dashboard"
+                      onClick={closeNav}
+                      activeClassName="header__link-active"
+                    >
+                      홍길동님 마이페이지
+                    </NavLink>
+                  </li>
+                ) : (
+                  <>
+                    <li className="nav-item header-item">
+                      <NavLink
+                        className="nav-link navlink-end nav-login-button"
+                        to="/login"
+                        onClick={closeNav}
+                        activeClassName="header__link-active"
+                      >
+                        로그인
+                      </NavLink>
+                    </li>
+                    <li className="nav-item header-item">
+                      <NavLink
+                        className="nav-link navlink-start"
+                        to="/register"
+                        onClick={closeNav}
+                        activeClassName="header__link-active"
+                      >
+                        회원가입
+                      </NavLink>
+                    </li>
+                  </>
+                )}
               </ul>
               <div
                 onMouseOut={closeAdditionalMenu}
@@ -185,6 +215,42 @@ const Header = () => {
                     </li>
                   );
                 })}
+
+                {isLoggedIn ? (
+                  <li className="nav-item header-end">
+                    <NavLink
+                      className="nav-link navlink-end navlink-end-mypage"
+                      to="/mypage/dashboard"
+                      onClick={closeNav}
+                      activeClassName="header__link-active"
+                    >
+                      홍길동님 마이페이지
+                    </NavLink>
+                  </li>
+                ) : (
+                  <>
+                    <li className="nav-item header-item">
+                      <NavLink
+                        className="nav-link navlink-end nav-login-button"
+                        to="/login"
+                        onClick={closeNav}
+                        activeClassName="header__link-active"
+                      >
+                        로그인
+                      </NavLink>
+                    </li>
+                    <li className="nav-item header-item">
+                      <NavLink
+                        className="nav-link navlink-start"
+                        to="/register"
+                        onClick={closeNav}
+                        activeClassName="header__link-active"
+                      >
+                        회원가입
+                      </NavLink>
+                    </li>
+                  </>
+                )}
               </ul>
               <div
                 onMouseOut={closeAdditionalMenu}

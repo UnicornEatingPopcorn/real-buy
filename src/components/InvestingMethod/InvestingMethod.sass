@@ -20,6 +20,8 @@
   &__main-pic
     width: 68%
     margin-bottom: 80px
+    @media(min-width: 768px)
+      width: 52%
 
   &__pic-block
     border-bottom: 2px solid #FFFFFF
@@ -27,6 +29,8 @@
     &:last-child
       border-bottom: none
       margin-bottom: 0
+      @media(min-width: 1400px)
+        margin-left: 9%
 
     @media(max-width: 575px)
       display: grid
@@ -97,7 +101,7 @@
       margin-top: -61px
       @media(min-width: 768px)
         position: relative
-        top: 133px
+        top: 182px
         right: 680px
 
     &-container
@@ -107,7 +111,7 @@
         margin-bottom: 25px
       @media(min-width: 768px)
         margin-bottom: 0
-        display: unset
+        display: none
 
   &__text
     &-container
