@@ -25,7 +25,7 @@ const Login = () => {
             />
           </div>
           <div className="login__button-container">
-            <Link to="/mypage/dashboard">
+            <Link to="/success">
               <button className="login__button">로그인 하기</button>
             </Link>
           </div>
