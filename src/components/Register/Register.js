@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Register.sass";
 import arrowRight from "./../../assets/icons/arrow-right.svg";
 
@@ -154,6 +155,11 @@ const Register = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="register__button-container">
+        <Link to="/register-success">
+          <button className="register__button">가입 하기</button>
+        </Link>
       </div>
     </div>
   );
