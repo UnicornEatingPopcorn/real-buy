@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SearchId.sass";
+import "./IdNotFound.sass";
 
-const SearchId = () => {
+const IdNotFound = () => {
   return (
     <div className="search-id">
       <p className="search-id__title">ID 찾기</p>
@@ -16,13 +16,11 @@ const SearchId = () => {
             className="search-id__input"
             value="휴대폰번호를 입력해 주세요"
           />
-          <Link to="/id-found">
-            <button className="search-id__button">ID 찾기</button>
-          </Link>
+          <button className="search-id__button">ID 찾기</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default SearchId;
+export default IdNotFound;

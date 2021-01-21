@@ -18,6 +18,8 @@ import Login from "./Login/Login";
 import Register from "./Register/Register";
 import SearchId from "./SearchId/SearchId";
 import SearchPassword from "./SearchPassword/SearchPassword";
+import IdFound from "./IdFound/IdFound";
+import IdNotFound from "./IdNotFound/IdNotFound";
 
 var FontFaceObserver = require("fontfaceobserver");
 
@@ -90,6 +92,8 @@ const App = () => {
           <Route path="/register" component={Register} />
           <Route path="/search-id" component={SearchId} />
           <Route path="/search-password" component={SearchPassword} />
+          <Route path="/id-found" component={IdFound} />
+          <Route path="/id-not-found" component={IdNotFound} />
         </Switch>
       </div>
     </BrowserRouter>

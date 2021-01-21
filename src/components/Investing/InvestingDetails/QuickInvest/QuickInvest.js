@@ -52,10 +52,10 @@ const QuickInvest = () => {
           </span>
           <div className="row">
             <div className="col quick__invest-info_icon-right">
-              <img src={heartGray} />
+              <img src={heartGray} alt="heart gray" />
             </div>
             <div className="col  quick__invest-info_icon-left">
-              <img src={bellGray} />
+              <img src={bellGray} alt="bell gary" />
             </div>
           </div>
           <span className="quick__invest-info_button-block">
@@ -83,10 +83,10 @@ const QuickInvest = () => {
         </span>
         <div className="row">
           <div className="col quick__invest-info_icon-right">
-            <img src={heartGray} />
+            <img src={heartGray} alt="heart gray" />
           </div>
           <div className="col  quick__invest-info_icon-left">
-            <img src={bellGray} />
+            <img src={bellGray} alt="bell gray" />
           </div>
         </div>
         <span className="quick__invest-info_button-block">
