@@ -19,11 +19,19 @@ const AssetManagement = () => {
         </span>
         <div className="asset-management__method">
           <p className="asset-management__subtitle">현황보고</p>
-          <img src={arrowRight} className="asset-management__arrow-right" />
+          <img
+            src={arrowRight}
+            className="asset-management__arrow-right"
+            alt="arrow right"
+          />
           <p className="asset-management__subtitle-last asset-management__subtitle">
             업무지시
           </p>
-          <img src={arrowRight} className="asset-management__arrow-left" />
+          <img
+            src={arrowRight}
+            className="asset-management__arrow-left"
+            alt="arrow left"
+          />
         </div>
         <span className="asset-management__circle">
           <img
@@ -34,7 +42,11 @@ const AssetManagement = () => {
         </span>
         <div className="asset-management__method-next">
           <p className="asset-management__subtitle">결과 보고</p>
-          <img src={arrowRight} className="asset-management__arrow-right" />
+          <img
+            src={arrowRight}
+            className="asset-management__arrow-right"
+            alt="arrow right"
+          />
         </div>
         <span className="asset-management__square-last asset-management__square">
           <p className="asset-management__investor">투자자</p>

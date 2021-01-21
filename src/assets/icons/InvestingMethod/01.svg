@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="462.5" height="182" viewBox="0 0 462.5 182">
+    <g>
+        <text fill="#555" font-family="NanumSquare_acB, NanumSquare_ac" font-size="20px" transform="translate(-451.5 -310.5) translate(452 376)">
+            <tspan x="0" y="0">회원가입 하기</tspan>
+        </text>
+        <text fill="#0154c8" font-family="Sandover-Regular, Sandover" font-size="15px" transform="translate(-451.5 -310.5) translate(452 339.5)">
+            <tspan x="0" y="0">01. First</tspan>
+        </text>
+        <text fill="#555" font-family="NanumSquare_acL, NanumSquare_ac" font-size="17px" transform="translate(-451.5 -310.5) translate(452 412)">
+            <tspan x="0" y="0">REAL BUY와 함께 꿈을 실현해보세요.</tspan>
+        </text>
+        <g>
+            <text fill="#e6ecef" font-family="JavaneseText, Javanese Text" font-size="80px" transform="translate(-451.5 -310.5) translate(837 410.5)">
+                <tspan x="0" y="0">01</tspan>
+            </text>
+            <path fill="none" stroke="#bfbfbf" d="M0 0L391 0" opacity="0.77" transform="translate(-451.5 -310.5) translate(451.5 388.5)"/>
+        </g>
+    </g>
+</svg>

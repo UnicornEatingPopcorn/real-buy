@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="488" height="159" viewBox="0 0 488 159">
+    <g>
+        <g>
+            <path fill="none" stroke="#bfbfbf" d="M0 0L419 0" opacity="0.77" transform="translate(-263 -581.5) translate(329.5 651.5)"/>
+            <text fill="#e6ecef" font-family="JavaneseText, Javanese Text" font-size="70px" transform="translate(-263 -581.5) translate(263 669.5)">
+                <tspan x="0" y="0">02</tspan>
+            </text>
+        </g>
+        <text fill="#555" font-family="NanumSquare_acB, NanumSquare_ac" font-size="20px" transform="translate(-263 -581.5) translate(607 637)">
+            <tspan x="0" y="0">가상계좌 개설하기</tspan>
+        </text>
+        <text fill="#0154c8" font-family="Sandover-Regular, Sandover" font-size="15px" transform="translate(-263 -581.5) translate(678 599)">
+            <tspan x="0" y="0">02. Second</tspan>
+        </text>
+        <text fill="#2e2e2e" font-family="NanumSquare_acL, NanumSquare_ac" font-size="17px" transform="translate(-263 -581.5) translate(535 680)">
+            <tspan x="0" y="0">믿을 수 있는 금융과 함께 합니다.</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,175 @@
+.investing-method
+  width: 100%
+  height: 100%
+  background-color: #F6F8FF
+  padding: 85px 215px
+  display: grid
+  justify-items: center
+  @media(max-width: 575px)
+    padding: 40px 40px
+    display: block
+  @media(min-width: 576px)
+    padding: 45px 70px
+  @media(min-width: 768px)
+    padding: 50px 42px
+  @media(min-width: 992px)        
+    padding: 60px 100px
+  @media(min-width: 1200px)
+    padding: 95px 215px
+
+  &__main-pic
+    width: 68%
+    margin-bottom: 80px
+
+  &__pic-block
+    border-bottom: 2px solid #FFFFFF
+    margin-bottom: 46px
+    &:last-child
+      border-bottom: none
+      margin-bottom: 0
+
+    @media(max-width: 575px)
+      display: grid
+      justify-content: center
+    @media(min-width: 768px)
+      display: flex
+      padding-bottom: 30px
+    
+  &__full-img
+    width: 100%
+
+  &__left-icon
+    margin-right: 39px
+
+  &__right-icon
+    margin-left: 39px
+    @media(max-width: 575px)
+      margin-bottom: 24px
+
+  &__number-left
+    @media(max-width: 575px)
+      margin-left: 0
+      margin-right: 39px
+    @media(min-width: 576px)
+      margin-left: 0
+    @media(min-width: 865px)
+      margin-left: 39px
+
+  &__button
+    width: 170px
+    height: 44px
+    background: #3769FC
+    box-shadow: 0px 5px 6px #85A2FF66
+    border: 1px solid #85A2FF66
+    border-radius: 5px
+    color: #FFFFFF
+    font-size: 16px
+    font-family: "NanumSquareRegular"
+
+    &-right
+      @media(max-width: 575px)
+        position: relative
+        left: 0
+        bottom: 27px
+      @media(min-width: 768px)
+        position: relative
+        top: 125px
+        right: 453px
+
+      &-container
+        @media(min-width: 576px)
+          display: flex
+          justify-content: flex-end    
+          margin-bottom: 25px
+        @media(min-width: 768px)
+          display: none
+
+
+    &-left
+      @media(max-width: 575px)
+        margin-bottom: 20px
+      @media(min-width: 768px)
+        position: relative
+        top: 131px
+        right: 407px
+
+    &-last
+      margin-top: -61px
+      @media(min-width: 768px)
+        position: relative
+        top: 133px
+        right: 680px
+
+    &-container
+      display: flex
+      justify-content: flex-end
+      @media(min-width: 576px)
+        margin-bottom: 25px
+      @media(min-width: 768px)
+        margin-bottom: 0
+        display: unset
+
+  &__text
+    &-container
+      position: relative
+      @media(max-width: 459px)
+        bottom: 306px
+        right: 0
+      @media(min-width: 460px)
+        bottom: 328px
+        right: 0
+      @media(min-width: 503px) 
+        bottom: 358px
+      @media(min-width: 768px)
+        top: 9px
+        right: 509px
+
+    &-title
+      color: #0154C8
+      text-align: end
+      @media(max-width: 459px)
+        font-size: 9px
+        margin-bottom: 7px
+      @media(min-width: 460px)
+        font-size: 12px
+        margin-bottom: 7px
+      @media(min-width: 503px)
+        font-size: 14px
+        margin-bottom: 8px
+      @media(min-width: 768px)      
+        margin-bottom: 11px
+        width: 275px
+
+    &-subtitle
+      color: #555555
+      text-align: end
+      @media(max-width: 459px)
+        font-size: 12px
+        margin-bottom: 6px
+      @media(min-width: 460px)
+        font-size: 15px
+        margin-bottom: 8px
+      @media(min-width: 503px)
+        font-size: 19px
+        margin-bottom: 12px
+      @media(min-width: 768px)        
+        margin-bottom: 20px   
+
+    &-sub
+      color: #555555
+      font-family: "NanumSquareLight"
+      text-align: end
+      @media(max-width: 459px)
+        font-size: 11px
+      @media(min-width: 460px)
+        font-size: 14px
+      @media(min-width: 503px)      
+        font-size: 16px
+
+  &__container-large
+    display: flex
+    @media(max-width: 767px)
+      display: none
+      
+.width
+  width: 100%

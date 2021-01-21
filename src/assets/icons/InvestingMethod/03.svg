@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="446" height="159" viewBox="0 0 446 159">
+    <g>
+        <text fill="#555" font-family="NanumSquare_acB, NanumSquare_ac" font-size="20px" transform="translate(-452 -844.5) translate(452 904)">
+            <tspan x="0" y="0">투자상품 확인하기</tspan>
+        </text>
+        <text fill="#555" font-family="NanumSquare_acL, NanumSquare_ac" font-size="17px" transform="translate(-452 -844.5) translate(452 940)">
+            <tspan x="0" y="0">REAL BUY는 우수한 투자 기회를 제공합니다.</tspan>
+        </text>
+        <g>
+            <path fill="none" stroke="#bfbfbf" d="M0 0L361 0" opacity="0.77" transform="translate(-452 -844.5) translate(463.5 916.5)"/>
+            <text fill="#e6ecef" font-family="JavaneseText, Javanese Text" font-size="70px" transform="translate(-452 -844.5) translate(819 932.5)">
+                <tspan x="0" y="0">03</tspan>
+            </text>
+        </g>
+        <text fill="#0154c8" font-family="Sandover-Regular, Sandover" font-size="15px" transform="translate(-452 -844.5) translate(452 865.5)">
+            <tspan x="0" y="0">03. Third</tspan>
+        </text>
+    </g>
+</svg>

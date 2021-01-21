@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="497" height="159" viewBox="0 0 497 159">
+    <g>
+        <text fill="#555" font-family="NanumSquare_acB, NanumSquare_ac" font-size="20px" transform="translate(-257 -1107.5) translate(680 1167)">
+            <tspan x="0" y="0">투자하기</tspan>
+        </text>
+        <text fill="#555" font-family="NanumSquare_acL, NanumSquare_ac" font-size="17px" transform="translate(-257 -1107.5) translate(561 1203)">
+            <tspan x="0" y="0">진정한 건물주가 되어보세요!</tspan>
+        </text>
+        <g>
+            <path fill="none" stroke="#bfbfbf" d="M0 0L423 0" opacity="0.77" transform="translate(-257 -1107.5) translate(325.5 1179.5)"/>
+            <text fill="#e6ecef" font-family="JavaneseText, Javanese Text" font-size="70px" transform="translate(-257 -1107.5) translate(257 1195.5)">
+                <tspan x="0" y="0">04</tspan>
+            </text>
+        </g>
+        <text fill="#0154c8" font-family="Sandover-Regular, Sandover" font-size="15px" transform="translate(-257 -1107.5) translate(682 1129.5)">
+            <tspan x="0" y="0">04. Fourth</tspan>
+        </text>
+    </g>
+</svg>
