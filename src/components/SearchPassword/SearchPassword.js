@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Login.sass";
+import "./SearchPassword.sass";
 
-const Login = () => {
+const SearchPassword = () => {
   return (
     <div className="login">
       <p className="login__title">로그인</p>
@@ -32,12 +32,8 @@ const Login = () => {
         </div>
       </div>
       <div className="login__buttons">
-        <Link to="/search-id">
-          <button className="login__add-button">ID 찾기</button>
-        </Link>
-        <Link to="/search-password">
-          <button className="login__add-button">비밀번호 찾기</button>
-        </Link>
+        <button className="login__add-button">ID 찾기</button>
+        <button className="login__add-button">비밀번호 찾기</button>
         <Link to="/register">
           <button className="login__add-button">회원 가입하기</button>
         </Link>
@@ -46,4 +42,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SearchPassword;

@@ -16,6 +16,8 @@ import FAQ from "./FAQ/FAQ";
 import InvestingDetails from "./Investing/InvestingDetails/InvestingDetails";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
+import SearchId from "./SearchId/SearchId";
+import SearchPassword from "./SearchPassword/SearchPassword";
 
 var FontFaceObserver = require("fontfaceobserver");
 
@@ -86,6 +88,8 @@ const App = () => {
           <Route path="/investing/details" component={InvestingDetails} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
+          <Route path="/search-id" component={SearchId} />
+          <Route path="/search-password" component={SearchPassword} />
         </Switch>
       </div>
     </BrowserRouter>
