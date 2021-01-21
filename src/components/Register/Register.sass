@@ -9,6 +9,15 @@
     padding: 40px
   @media(min-width: 576px)
     padding: 40px 80px
+  @media(min-width: 768px)
+    padding: 50px 140px
+    display: block
+    
+  &__align
+    @media(min-width: 992px)
+      display: flex
+      justify-content: center
+    
 
   &__title
     color: #2E2E2E
@@ -25,9 +34,14 @@
     border: 1px solid #C6D3E5
     border-radius: 3px
     padding: 46px 24px
-    @media(min-width: 1200px)
-      width: 770px
-
+    @media(min-width: 992px)
+      max-width: 770px
+    @media(min-width: 576px)
+      display: grid
+      justify-items: center
+    @media(min-width: 768px)
+      display: block
+ 
   &__input
     width: 142px
     margin-right: 0
@@ -52,13 +66,23 @@
       font-family: "NanumSquareRegular"
       padding-left: 10px
 
+    &-additional-rule
+      @media(min-width: 576px) and (max-width: 767px)
+        width: 103px
+
   &__row
     display: flex
     margin-bottom: 17px
     @media(max-width: 575px)
       display: grid
+    @media(min-width: 576px)
+      display: block
+    @media(min-width: 768px)
+      display: flex
     &-last
       margin-bottom: 39px
+      @media(min-width: 768px) and (max-width: 991px)
+        display: block
 
   &__input-button
     width: 94px
@@ -74,13 +98,17 @@
 
   &__input-title
     color: #000000
-    font-size: 17px
     font-family: "NanumSquareRegular"
     margin-right: 31px    
     width: 126px
     &-last
       width: 93px
       margin-right: 17px
+    @media(min-width: 576px)
+      font-size: 16px
+    @media(min-width: 768px)
+      font-size: 17px
+      
 
   &__error
     color: #FF7C7C
@@ -100,10 +128,11 @@
   &__checkbox-label
     margin-left: 28px
     color: #000000
-    font-size: 17px
     font-family: "NanumSquareRegular"
     @media(max-width: 575px)
       font-size: 14px
+    @media(min-width: 576px)    
+      font-size: 17px
 
 
   &__small-label
@@ -128,10 +157,22 @@
     right: 48%
     @media(max-width: 575px)
       right: 0
+    @media(min-width: 576px)
+      right: 13px
+    @media(min-width: 768px)
+      right: 30px
 
   &__row-final
     border-bottom: 1px solid #C6D3E5
     padding: 21px 
+    @media(min-width: 576px)
+      width: 100%
+
+  &__input-align
+    display: contents
+    @media(min-width: 992px)
+      display: block
+
 
 input[type="checkbox"]
   appearance: none

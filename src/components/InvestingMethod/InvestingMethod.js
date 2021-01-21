@@ -27,7 +27,7 @@ const InvestingMethod = () => {
         />
         <img
           src={numberOne}
-          aly="number one"
+          alt="number one"
           className="investing-method__full-img"
         />
         <div className="investing-method__button-right-container">
@@ -45,7 +45,7 @@ const InvestingMethod = () => {
       <div className="investing-method__pic-block">
         <img
           src={numberTwo}
-          aly="number one"
+          alt="number one"
           className="investing-method__number-left investing-method__full-img"
         />
         <img
@@ -73,7 +73,7 @@ const InvestingMethod = () => {
         />
         <img
           src={numberThree}
-          aly="number one"
+          alt="number one"
           className="investing-method__full-img"
         />
         <div className="investing-method__button-right-container">
@@ -90,7 +90,7 @@ const InvestingMethod = () => {
       <div className="investing-method__pic-block">
         <img
           src={numberFour}
-          aly="number one"
+          alt="number one"
           className="investing-method__number-left investing-method__full-img"
         />
         <img
@@ -102,7 +102,7 @@ const InvestingMethod = () => {
           <button className="investing-method__button-left investing-method__button">
             투자하기
           </button>
-        </div>{" "}
+        </div>
         <div className="investing-method__container-large">
           <button className="investing-method__button-left investing-method__button">
             투자하기
@@ -117,7 +117,7 @@ const InvestingMethod = () => {
         />
         <img
           src={numberFive}
-          aly="number one"
+          alt="number one"
           className="investing-method__full-img"
         />
         <div className="investing-method__button-right-container">
@@ -134,7 +134,7 @@ const InvestingMethod = () => {
       <div className="investing-method__pic-block">
         <img
           src={numberSix}
-          aly="number one"
+          alt="number one"
           className="investing-method__number-left investing-method__full-img"
         />
         <img
