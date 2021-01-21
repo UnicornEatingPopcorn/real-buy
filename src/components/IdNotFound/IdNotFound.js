@@ -4,19 +4,18 @@ import "./IdNotFound.sass";
 
 const IdNotFound = () => {
   return (
-    <div className="search-id">
-      <p className="search-id__title">ID 찾기</p>
-      <div className="search-id__block">
-        <div className="search-id__box">
-          <p className="search-id__box-title">
-            회원가입 시 입력한 이름과 핸드폰번호를 입력해주세요.
+    <div className="id-not-found">
+      <p className="id-not-found__title">ID를 찾지 못했어요</p>
+      <div className="id-not-found__block">
+        <div className="id-not-found__box">
+          <p className="id-not-found__box-title">
+            귀하는 회원가입이 되어 있지 않습니다. <br />
+            REAL BUY 와 함께
+            <br /> 지금 부동산 투자의 꿈을 실현해보세요!
           </p>
-          <input className="search-id__input" value="이름을 입력해 주세요" />
-          <input
-            className="search-id__input"
-            value="휴대폰번호를 입력해 주세요"
-          />
-          <button className="search-id__button">ID 찾기</button>
+          <Link to="/register">
+            <button className="id-not-found__button">가입 하기</button>
+          </Link>
         </div>
       </div>
     </div>

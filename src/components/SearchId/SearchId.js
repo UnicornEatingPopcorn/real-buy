@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SearchId.sass";
 
 const SearchId = () => {
+  const [isFound] = useState(false);
+
   return (
     <div className="search-id">
       <p className="search-id__title">ID 찾기</p>
@@ -16,9 +18,16 @@ const SearchId = () => {
             className="search-id__input"
             value="휴대폰번호를 입력해 주세요"
           />
-          <Link to="/id-found">
-            <button className="search-id__button">ID 찾기</button>
-          </Link>
+
+          {isFound ? (
+            <Link to="/id-found">
+              <button className="search-id__button">ID 찾기</button>
+            </Link>
+          ) : (
+            <Link to="/id-not-found">
+              <button className="search-id__button">ID 찾기</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
