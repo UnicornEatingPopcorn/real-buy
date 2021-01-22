@@ -3,32 +3,22 @@
   background: #FFFFFF !important
   @media(max-width: 575px)
     display: flex
-  
-  &-centered
-    display: flex
-    justify-content: center
-    background: white
-    @media(max-width: 575px)
-      display: block
-
 
   &-transparent
     justify-content: center
     position: absolute
     border-bottom: 1px solid white
     background-color: #f0f8ff00 !important
-    @media(max-width: 575px)
-      margin: 0px
-      width: 100%
-    @media(min-width: 576px) and (max-width: 767px)
+    @media(max-width: 767px)
       margin: 0px 40px
-      width: 538px
+      position: relative
+      justify-content: space-between
     @media(min-width: 768px)
       margin: 0px 50px
 
   &-container
     justify-content: center
-    @media(max-width: 575px)
+    @media(max-width: 767px)
       display: contents
   
   &-list
@@ -48,6 +38,7 @@
         color: #0540FF !important
 
     &-transparent
+      display: flex
       background-color: #f0f8ff00 !important
       a
         text-decoration: none
@@ -77,16 +68,18 @@
       width: 100%
 
   &-logo
-    @media(max-width: 575px)
+    @media(max-width: 767px)
       background-image: url("./../../assets/icons/small-blue-logo.svg")
       background-repeat: no-repeat
       height: 21px
       width: 121px
-      border: none
-    @media(min-width: 576px)
+    @media(min-width: 768px)
       background-image: url("./../../assets/icons/real-buy-logo.svg")
+      background-repeat: no-repeat
+      height: 43px
+      width: 121px
 
-    &-centered
+    &__centered
       margin-right: 35%
 
   &-item
@@ -102,6 +95,8 @@
     height: 16px
     width: 19px
     background-repeat: no-repeat
+    @media(min-width: 768px)
+      display: none
 
 .navlink-end
   display: flex
