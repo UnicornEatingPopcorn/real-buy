@@ -30,14 +30,11 @@ const MyPage = () => {
           <div className="visible-for-mobile">
             <MyPageMobileNav />
           </div>
-          <div className="col-4 col-md-2 col-lg-2 visible-for-desktop">
+          <div className="col-12 col-sm-4 col-md-2 col-lg-2 visible-for-desktop">
             <NavigateBar logOut={setIsLogout} logOutValue={isLogout} />
           </div>
 
-          <div className="visible-for-mobile">
-            <h1>Here will be Routes for mobile components</h1>
-          </div>
-          <div className="col-8 col-md-10 col-lg-10 visible-for-desktop">
+          <div className="col-12 col-sm-8 col-md-10 col-lg-10">
             <Switch>
               <Route path="/mypage/dashboard" component={Dashboard} />
               <Route

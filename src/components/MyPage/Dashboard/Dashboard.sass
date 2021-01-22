@@ -3,6 +3,10 @@
 
   &-column
     padding-left: 0px
+    @media(max-width: 575px)
+      margin-top: 28px
+      padding-right: 0px
+      padding-left: 15px
 
   &-row
     margin-top: 15px
@@ -10,14 +14,18 @@
   &-info
     &-row
       padding-left: 15px
-      @media(max-width: 767px)
+      @media(max-width: 575px)
+        padding: 0
+        margin-bottom: 47px
+      @media(min-width: 576px)
         padding: 0px 10px
       @media(min-width: 768px)
         padding: 0px
 
     &-column
       margin-bottom: 24px
-      @media(max-width: 767px)
+
+      @media(min-width: 576px)
         padding-left: 10px
         padding-right: 25px
       @media(min-width: 768px)

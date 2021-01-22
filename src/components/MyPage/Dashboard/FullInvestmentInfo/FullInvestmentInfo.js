@@ -33,7 +33,7 @@ const info = [
 const FullInvestmentInfo = () => {
   return (
     <div className="info-container container">
-      <div className="row">
+      <div className="row info-container-mobile">
         {info.map((el, index) => {
           return (
             <div className="info-block col" key={index}>

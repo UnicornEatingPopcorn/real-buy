@@ -7,7 +7,7 @@ import Deposit from "./Deposit/Deposit";
 import InvestmentLimit from "./InvestmentLimit/InvestmentLimit";
 import InvestmentStatus from "./InvestmentStatus/InvestmentStatus";
 
-const dividedReturn = [
+const dividendReturn = [
   {
     title: "예상 배당 수익률",
     subtitle: "(연환산 수익률)",
@@ -51,7 +51,7 @@ const Dashboard = () => {
       </div>
       <div className="row dashboard-row">
         <div className="col-sm-12 col-md-4 dashboard-info-column">
-          <ReturnCount returnAmount={dividedReturn} />
+          <ReturnCount returnAmount={dividendReturn} />
         </div>
         <div className="col-sm-12 col-md-4 dashboard-info-column">
           <ReturnCount returnAmount={totalReturn} />
