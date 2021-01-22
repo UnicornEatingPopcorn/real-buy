@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CustomerSupport.sass";
 import { NavLink } from "react-router-dom";
 import arrow from "./../../assets/icons/arrow-right.svg";
+import back from "./../../assets/icons/Mobile/back.svg";
 
 const links = [
   {
@@ -42,6 +43,7 @@ const questions = [
   {
     title: "Q. REAL BUY는 어떠한 투자를 하나요?",
     reply: "A. ...",
+    className: "customer-support__block-question-last",
   },
 ];
 
@@ -61,7 +63,7 @@ const CustomerSupport = () => {
     return (
       <React.Fragment key={index}>
         <div
-          className={`customer-support__block-question ${activeQuestion}`}
+          className={`customer-support__block-question ${activeQuestion} ${question.className}`}
           onClick={() => handleActive(index)}
         >
           <p className="customer-support__block-title">{question.title}</p>
@@ -80,6 +82,14 @@ const CustomerSupport = () => {
 
   return (
     <div className="customer-support">
+      <div className="customer-support-mobile__back">
+        <img
+          src={back}
+          alt="back"
+          className="customer-support-mobile__back-button"
+        />
+        <p className="customer-support-mobile__back-button_title">마이페이지</p>
+      </div>
       <p className="customer-support__title">자주하는 질문</p>
       <div className="customer-support__links">
         {links.map((link) => {

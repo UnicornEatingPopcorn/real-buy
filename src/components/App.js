@@ -12,7 +12,6 @@ import AboutCompany from "./AboutCompany/AboutCompany";
 import CustomerSupport from "./CustomerSupport/CustomerSupport";
 import "./App.sass";
 import InvestingMethod from "./InvestingMethod/InvestingMethod";
-import FAQ from "./FAQ/FAQ";
 import InvestingDetails from "./Investing/InvestingDetails/InvestingDetails";
 import Login from "./Login/Login";
 import Register from "./Register/Register";
@@ -88,7 +87,6 @@ const App = () => {
           <Route path="/company-introduction" component={AboutCompany} />
           <Route path="/customer-support/common" component={CustomerSupport} />
           <Route path="/how-to-invest" component={InvestingMethod} />
-          <Route path="/faq" component={FAQ} />
           <Route path="/investing/details" component={InvestingDetails} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />

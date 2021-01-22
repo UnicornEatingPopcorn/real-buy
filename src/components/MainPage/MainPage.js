@@ -68,7 +68,7 @@ const MainPage = () => {
             연 6% 이상의 배당을 받는 안정적인 투자
           </p>
         </div>
-        <img src={phone} />
+        <img src={phone} alt="phone" />
       </div>
       <div className="rand-mark">
         <div className="rand-mark__justify">
@@ -89,8 +89,12 @@ const MainPage = () => {
           </div>
           <div className="rand-mark__pics">
             <div className="rand-mark__phone-pic">
-              <img src={frame} className="rand-mark__frame" />
-              <img src={innerPhone} className="rand-mark__inner-phone" />
+              <img src={frame} className="rand-mark__frame" alt="frame" />
+              <img
+                src={innerPhone}
+                className="rand-mark__inner-phone"
+                alt="phone"
+              />
             </div>
           </div>
         </div>

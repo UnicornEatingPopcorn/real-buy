@@ -166,7 +166,7 @@ const Header = () => {
                     <NavLink
                       activeClassName="header__link-active"
                       className="navbar__expand_link nav-link"
-                      to="/faq"
+                      to="/customer-support/common"
                     >
                       자주하는 질문
                     </NavLink>
