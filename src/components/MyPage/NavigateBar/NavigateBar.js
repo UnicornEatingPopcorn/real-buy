@@ -32,7 +32,7 @@ const NavigateBar = ({ logOut, logOutValue }) => {
   };
 
   return (
-    <div className="navigate-bar show-on-scroll">
+    <div className="navigate-bar">
       <div className="container navigate-bar-margin">
         <div className="row name-padding">
           <div className="name__block">

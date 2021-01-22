@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.583" height="19.185" viewBox="0 0 19.583 19.185">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="icon_navigation_arrow_forward_24px" d="M1.257 10.856h14.037l-6.133 6.165a1.278 1.278 0 0 0 0 1.794 1.247 1.247 0 0 0 1.772 0l8.282-8.326a1.263 1.263 0 0 0 0-1.781L10.946.37a1.247 1.247 0 0 0-1.772 0 1.263 1.263 0 0 0 0 1.781l6.12 6.178H1.257a1.263 1.263 0 0 0 0 2.527z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#373737}
+        </style>
+    </defs>
+    <g id="icon_navigation_arrow_forward_24px-2" transform="rotate(180 9.791 9.592)">
+        <g id="그룹_5">
+            <path id="icon_navigation_arrow_forward_24px-3" d="M1.257 10.856h14.037l-6.133 6.165a1.278 1.278 0 0 0 0 1.794 1.247 1.247 0 0 0 1.772 0l8.282-8.326a1.263 1.263 0 0 0 0-1.781L10.946.37a1.247 1.247 0 0 0-1.772 0 1.263 1.263 0 0 0 0 1.781l6.12 6.178H1.257a1.263 1.263 0 0 0 0 2.527z" class="cls-1"/>
+        </g>
+    </g>
+</svg>

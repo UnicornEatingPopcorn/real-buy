@@ -87,7 +87,7 @@ const Precautions = () => {
         </p>
       </div>
       <div className="precautions__logo-wrapper">
-        <img src={logoGray} />
+        <img src={logoGray} alt="logo gray" />
       </div>
     </div>
   );

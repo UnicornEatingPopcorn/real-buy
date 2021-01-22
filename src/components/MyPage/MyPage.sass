@@ -1,5 +1,7 @@
 .mypage
-  @media(max-width: 767px)
+  @media(max-width: 575px)
+    padding: 0px
+  @media(min-width: 576px)
     padding: 40px 0px
   @media(min-width: 768px)
     padding: 57px 0px
@@ -8,5 +10,15 @@
 
   &-container
     height: 90vh
+
+.visible-for-desktop
+  display: block
+  @media(max-width: 575px)
+    display: none
+
+.visible-for-mobile
+  display: none
+  @media(max-width: 575px)
+    display: contents
 
 

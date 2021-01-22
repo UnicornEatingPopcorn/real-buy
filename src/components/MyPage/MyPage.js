@@ -9,6 +9,7 @@ import MemberInfo from "./MemberInfo/MemberInfo";
 import Dashboard from "./Dashboard/Dashboard";
 import Cart from "./Dashboard/Cart/Cart";
 import LogoutModal from "./NavigateBar/LogoutModal/LogoutModal";
+import MyPageMobileNav from "./../MobileVersion/MyPageMobileNav/MyPageMobileNav";
 
 const MyPage = () => {
   const [isLogout, setIsLogout] = useState(false);
@@ -26,10 +27,17 @@ const MyPage = () => {
       )}
       <div className="mypage-container container">
         <div className="mypage row">
-          <div className="col-4 col-md-2 col-lg-2">
+          <div className="visible-for-mobile">
+            <MyPageMobileNav />
+          </div>
+          <div className="col-4 col-md-2 col-lg-2 visible-for-desktop">
             <NavigateBar logOut={setIsLogout} logOutValue={isLogout} />
           </div>
-          <div className="col-8 col-md-10 col-lg-10">
+
+          <div className="visible-for-mobile">
+            <h1>Here will be Routes for mobile components</h1>
+          </div>
+          <div className="col-8 col-md-10 col-lg-10 visible-for-desktop">
             <Switch>
               <Route path="/mypage/dashboard" component={Dashboard} />
               <Route
