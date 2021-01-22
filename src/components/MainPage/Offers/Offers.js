@@ -14,11 +14,19 @@ const Offers = () => {
         <p className="offers__offer-title">글로벌 랜드 마크</p>
         <img src={offerFirst} alt="offer" className="offers__main" />
         <div className="offers__evaluation">
-          <img src={four} className="offers__evaluation-four-stars" />
+          <img
+            src={four}
+            className="offers__evaluation-four-stars"
+            alt="four"
+          />
           <p className="offers__evaluation-text">안전성</p>
         </div>
         <div className="offers__evaluation offers__evaluation-boarder">
-          <img src={three} className="offers__evaluation-three-stars" />
+          <img
+            src={three}
+            className="offers__evaluation-three-stars"
+            alt="three"
+          />
           <p className="offers__evaluation-text">수익성</p>
         </div>
         <p className="offers__return">
@@ -29,11 +37,19 @@ const Offers = () => {
         <p className="offers__offer-title">고수익형 오피스</p>
         <img src={offerSecond} alt="offer" className="offers__main" />
         <div className="offers__evaluation">
-          <img src={three} className="offers__evaluation-three-stars" />
+          <img
+            src={three}
+            className="offers__evaluation-three-stars"
+            alt="three"
+          />
           <p className="offers__evaluation-text">안전성</p>
         </div>
         <div className="offers__evaluation offers__evaluation-boarder">
-          <img src={five} className="offers__evaluation-five-stars" />
+          <img
+            src={five}
+            className="offers__evaluation-five-stars"
+            alt="five"
+          />
           <p className="offers__evaluation-text">수익성</p>
         </div>
         <p className="offers__return">
@@ -44,11 +60,19 @@ const Offers = () => {
         <p className="offers__offer-title">안정적인 오피스</p>
         <img src={offerThird} alt="offer" className="offers__main" />
         <div className="offers__evaluation">
-          <img src={four} className="offers__evaluation-four-stars" />
+          <img
+            src={four}
+            className="offers__evaluation-four-stars"
+            alt="four"
+          />
           <p className="offers__evaluation-text">안전성</p>
         </div>
         <div className="offers__evaluation offers__evaluation-boarder">
-          <img src={four} className="offers__evaluation-four-stars" />
+          <img
+            src={four}
+            className="offers__evaluation-four-stars"
+            alt="four"
+          />
           <p className="offers__evaluation-text">수익성</p>
         </div>
         <p className="offers__return">

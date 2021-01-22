@@ -1,0 +1,73 @@
+.customer-support
+  width: 100%
+  height: 100%
+  background: #FAFBFE
+  padding: 86px 215px
+
+  &__title
+    color: #2E2E2E
+    font-size: 22px
+    margin-bottom: 56px
+    text-align: left
+
+  &__links
+    display: flex
+    justify-content: space-around
+
+    a
+      margin-top: 20px
+      color: #7A7A7A
+      font-size: 14px
+      text-decoration: none
+      text-align: center
+      font-family: "NanumSquare"
+
+      &:hover
+        color: #3769FC 
+    
+  &__link
+    &-active
+      color: #3769FC !important
+      padding-bottom: 3px
+      border-bottom: 2px solid #3769FC
+
+  &__block
+    width: 100%
+    height: 398px
+    background: #FFFFFF
+    padding: 56px 89px
+
+    &-question
+      height: 54px
+      display: flex
+      justify-content: space-between
+      padding: 0px 40px
+      align-items: center
+      border-top: 1px solid #DEDEDE
+      border-bottom: 1px solid #DEDEDE
+
+    &-title
+      color: #555555
+      font-size: 17px
+      font-family: "NanumSquareRegular"
+
+    &-answer
+      color: #555555
+      font-size: 15px
+      font-family: "NanumSquareRegular"
+      background-color: #FAFBFE
+      height: 54px
+      justify-content: flex-start
+      align-items: center
+      padding: 0px 40px
+      display: none
+
+      &-active
+        display: flex
+
+  &__active
+    background: #F5F5F5
+    box-shadow: 0px 5px 20px #9DADDE66
+    border-bottom: none
+      
+

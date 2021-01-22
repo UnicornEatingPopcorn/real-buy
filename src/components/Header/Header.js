@@ -25,7 +25,7 @@ const links = [
   },
   {
     title: "고객지원",
-    path: "/customer-support",
+    path: "/customer-support/common",
     liClass: "nav-item header-item",
     linkClass: "nav-link navlink-end",
   },
