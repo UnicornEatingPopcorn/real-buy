@@ -6,18 +6,18 @@ const MemberInfo = () => {
     <div className="container member-info-container">
       <div className="member-info-box">
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             이름
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input type="text" value="홍길동" className="member-info__input" />
           </div>
         </div>
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             아이디
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input
               type="text"
               value="hong2@gmail.com"
@@ -26,10 +26,10 @@ const MemberInfo = () => {
           </div>
         </div>
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             비밀번호
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input
               type="text"
               value="*****"
@@ -40,10 +40,10 @@ const MemberInfo = () => {
           </div>
         </div>
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             휴대전화
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input
               type="text"
               value="010-234-3647"
@@ -53,10 +53,10 @@ const MemberInfo = () => {
           </div>
         </div>
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             이메일
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input
               type="text"
               value="hong2@gmail.com"
@@ -65,10 +65,10 @@ const MemberInfo = () => {
           </div>
         </div>
         <div className="row">
-          <label className="col col-sm-4 form-label member-info__label">
+          <label className="col-12 col-sm-4 form-label member-info__label">
             주민번호
           </label>
-          <div className="col col-sm-8">
+          <div className="col-12 col-sm-8">
             <input
               type="text"
               value="900312-1*****3"
@@ -154,10 +154,10 @@ const MemberInfo = () => {
         </div>
       </div>
       <div className="row member-info__message-row">
-        <div className="col-12 col-md-6 col-lg-4 col-xl-5 member-info__message">
+        <div className="col-8 col-md-6 col-lg-4 col-xl-5 member-info__message">
           리얼바이의 서비스를 더 이상 이용하지 않는다면
         </div>
-        <div className="col-12 col-md-6 col-lg-8 col-xl-7">
+        <div className="col-4 col-md-6 col-lg-8 col-xl-7">
           <button className="member-info__withdrawal-button">
             회원 탈퇴하기
           </button>

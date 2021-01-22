@@ -5,7 +5,7 @@ import logoGray from "./../../../assets/icons/logo-gray.svg";
 import NoAccount from "./NoAccount/NoAccount";
 
 const MyAccount = () => {
-  const [isAccount, setIsAccount] = useState(false);
+  const [isAccount] = useState(true);
 
   return (
     <div className="container my-account-container">
@@ -15,15 +15,14 @@ const MyAccount = () => {
             <div className="row my-account-header">
               <div className="col-12 col-md-10">
                 <p className="header-title">보유 예치금</p>
-                <div className="bank-info">
-                  <img src={bank} className="bank-picture" alt="bank" />
-                  <span className="header-subtitle">
-                    고객님의 예치금과 투자금은 신한은행 신탁관리시스템에 의해
-                    보호받고 있습니다.
-                  </span>
-                </div>
+                <p className="sum-mobile">0 원</p>
+                <img src={bank} className="bank-picture" alt="bank" />
+                <span className="header-subtitle">
+                  고객님의 예치금과 투자금은 신한은행 신탁관리시스템에 의해
+                  보호받고 있습니다.
+                </span>
               </div>
-              <div className="col-12 col-md-2">
+              <div className="col-12 col-md-2 my-account__mobile-invisible">
                 <span className="sum">0 원</span>
               </div>
             </div>
