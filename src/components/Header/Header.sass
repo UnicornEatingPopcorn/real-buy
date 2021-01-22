@@ -1,29 +1,16 @@
 .header
   height: 70px
   background: #FFFFFF !important
+  @media(max-width: 575px)
+    display: flex
   
-
-  @media(max-width: 399px)
-    // padding-left: 23px
-    // padding-right: 23px
-  @media(min-width: 400px)
-
-    // padding-left: 35px
-    // padding-right: 24px
-  // @media(min-width: 576px)
-    // padding-left: 60px
-    // padding-right: 60px
-  // @media(min-width: 768px)
-    // padding-left: 120px
-    // padding-right: 120px
-  // @media(min-width: 992px)
-    // padding-left: 184px
-    // padding-right: 184px
-
   &-centered
     display: flex
     justify-content: center
     background: white
+    @media(max-width: 575px)
+      display: block
+
 
   &-transparent
     justify-content: center
@@ -41,6 +28,8 @@
 
   &-container
     justify-content: center
+    @media(max-width: 575px)
+      display: contents
   
   &-list
     width: 140%
@@ -88,12 +77,31 @@
       width: 100%
 
   &-logo
+    @media(max-width: 575px)
+      background-image: url("./../../assets/icons/small-blue-logo.svg")
+      background-repeat: no-repeat
+      height: 21px
+      width: 121px
+      border: none
+    @media(min-width: 576px)
+      background-image: url("./../../assets/icons/real-buy-logo.svg")
+
+    &-centered
+      margin-right: 35%
 
   &-item
     width: 130px
 
   &-long-item
     width: 150px
+
+  &__navbar-toggler
+    background-image: url("./../../assets/icons/toggler.svg")
+    border: none
+    background-color: white
+    height: 16px
+    width: 19px
+    background-repeat: no-repeat
 
 .navlink-end
   display: flex

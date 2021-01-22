@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Header.sass";
-import logo from "./../../assets/icons/real-buy-logo.svg";
 import logoWhite from "./../../assets/icons/MainPage/logo-white.svg";
 
 const links = [
@@ -63,17 +62,15 @@ const Header = () => {
             className="navbar navbar-expand-md header navbar-light"
             role="navigation"
           >
-            <div className="container-fluid header-container">
-              <NavLink to="/">
-                <img alt="logo" className="header-logo" src={logo} />
-              </NavLink>
+            <div className="header-container">
               <button
-                className="navbar-toggler"
+                className="header__navbar-toggler"
                 type="button"
                 onClick={handleClick}
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
+              ></button>
+              <NavLink to="/" className="header-logo__centered">
+                <svg className="header-logo" />
+              </NavLink>
             </div>
             <div
               className={`navbar-collapse ${
@@ -191,7 +188,7 @@ const Header = () => {
                 type="button"
                 onClick={handleClick}
               >
-                <span className="navbar-toggler-icon"></span>
+                <span className="header__navbar-toggler"></span>
               </button>
             </div>
             <div
