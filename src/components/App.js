@@ -21,6 +21,8 @@ import IdFound from "./IdFound/IdFound";
 import IdNotFound from "./IdNotFound/IdNotFound";
 import LoginSuccess from "./LoginSuccess/LoginSuccess";
 import RegisterSuccess from "./RegisterSuccess/RegisterSuccess";
+import { stopSpinner } from "./../actions/index";
+import { useDispatch } from "react-redux";
 
 var FontFaceObserver = require("fontfaceobserver");
 
@@ -38,6 +40,8 @@ var observers = [];
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     fonts.forEach((font) => {
       var obs = new FontFaceObserver(font);
@@ -54,6 +58,7 @@ const App = () => {
         setTimeout(() => {
           setIsLoading(false);
         }, 500);
+        dispatch(stopSpinner(isLoading));
       })
       .catch((err) => {
         console.warn("Error occured", err);
@@ -63,7 +68,10 @@ const App = () => {
   return (
     <BrowserRouter>
       {isLoading && (
-        <div className="d-flex justify-content-center align-items-center app-spinner">
+        <div
+          id="spinner"
+          className="d-flex justify-content-center align-items-center app-spinner"
+        >
           <div className="spinner-grow text-primary" role="status"></div>
         </div>
       )}

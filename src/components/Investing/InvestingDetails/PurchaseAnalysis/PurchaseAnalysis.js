@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./PurchaseAnalysis.sass";
-import graph1 from "./../../../../assets/icons/PurchaseAnalysis/graph1.png";
 import graph2 from "./../../../../assets/icons/PurchaseAnalysis/graph2.png";
 import graph3 from "./../../../../assets/icons/PurchaseAnalysis/graph3.png";
 import graph4 from "./../../../../assets/icons/PurchaseAnalysis/graph4.png";
 import arrowLeft from "./../../../../assets/icons/PurchaseAnalysis/arrow-left.png";
 import arrowRight from "./../../../../assets/icons/PurchaseAnalysis/arrow-right.png";
+import { HorizontalBar } from "react-chartjs-2";
 import {
   ButtonBack,
   ButtonNext,
@@ -14,9 +14,71 @@ import {
   Slide,
   Slider,
 } from "pure-react-carousel";
+import { connect } from "react-redux";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-const PurchaseAnalysis = () => {
+export const mapStateToProps = (state) => {
+  return {
+    stopSpinner: state.stopSpinner,
+  };
+};
+
+const PurchaseAnalysis = ({ stopSpinner }) => {
+  let barBackground;
+  if (stopSpinner) {
+    let context = document.getElementById("firstGraph");
+    let gradient = context.getContext("2d");
+    barBackground = gradient.createLinearGradient(150, 200, 80, 0);
+    barBackground.addColorStop(0, "#43cbff");
+    barBackground.addColorStop(1, "#3769fc");
+  }
+
+  const dataHorBar = {
+    labels: ["독일", "영국", "프랑스", "네덜란드", "폴란드"],
+    datasets: [
+      {
+        backgroundColor: barBackground,
+        data: [8.5, 6.75, 6.2, 4.6, 2.3],
+        maxBarThickness: 17,
+      },
+    ],
+  };
+
+  const options = {
+    legend: {
+      display: false,
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+          ticks: {
+            userCallback(value) {
+              if (!(value % 2)) {
+                return value;
+              }
+            },
+            beginAtZero: true,
+          },
+        },
+      ],
+
+      yAxes: [
+        {
+          gridLines: {
+            display: true,
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: true,
+      mode: "index",
+      intersect: true,
+    },
+  };
   return (
     <div className="purchase-analysis__container">
       <div className="purchase-analysis__row">
@@ -32,14 +94,15 @@ const PurchaseAnalysis = () => {
                   <span className="purchase-analysis__title">
                     유럽 최대의 물류센터 투자 시장
                   </span>
-                  <img
-                    src={graph1}
-                    alt="graph"
-                    className="purchase-analysis__picture"
-                  />
+                  <div style={{ padding: "20px" }}>
+                    <HorizontalBar
+                      data={dataHorBar}
+                      id="firstGraph"
+                      options={options}
+                    />
+                  </div>
                 </Slide>
                 <Slide index={1}>
-                  {" "}
                   <span className="purchase-analysis__title">
                     독일의 5대 물류센터 투자 시장
                   </span>
@@ -169,4 +232,4 @@ const PurchaseAnalysis = () => {
   );
 };
 
-export default PurchaseAnalysis;
+export default connect(mapStateToProps, null)(PurchaseAnalysis);
