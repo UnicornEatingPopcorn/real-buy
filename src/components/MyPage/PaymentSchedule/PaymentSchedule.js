@@ -4,9 +4,76 @@ import goBack from "./../../../assets/icons/go-back.png";
 import goFurther from "./../../../assets/icons/go-further.png";
 import grayPointer from "./../../../assets/icons/gray-pointer.png";
 import bluePointer from "./../../../assets/icons/blue-pointer.png";
-import scheduleGraph from "./../../../assets/icons/schedule-graph.png";
+import { Line } from "react-chartjs-2";
 
 const PaymentSchedule = () => {
+  const data = {
+    labels: [
+      "1월",
+      "2월",
+      "3월",
+      "4월",
+      "5월",
+      "6월",
+      "7월",
+      "8월",
+      "9월",
+      "10월",
+      "11월",
+      "12월",
+    ],
+
+    datasets: [
+      {
+        fill: false,
+        data: [0, 500, 1000],
+        borderColor: "transparent",
+        pointRadius: 0,
+      },
+    ],
+  };
+
+  const options = {
+    legend: {
+      display: false,
+    },
+    layout: {
+      padding: {
+        top: 30,
+        bottom: 40,
+      },
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+
+      yAxes: [
+        {
+          gridLines: {
+            display: true,
+          },
+          ticks: {
+            userCallback(value) {
+              if (value / 500 === 2 || value / 500 === 1 || value / 500 === 0) {
+                return `${value}원`;
+              }
+            },
+          },
+          stacked: true,
+        },
+      ],
+    },
+    tooltips: {
+      enabled: true,
+      mode: "index",
+      intersect: true,
+    },
+  };
   return (
     <div className="container schedule-container">
       <div className="row schedule-row no-gutters">
@@ -42,11 +109,7 @@ const PaymentSchedule = () => {
       </div>
       <div className="row schedule-row">
         <div className="col graph">
-          <img
-            src={scheduleGraph}
-            alt="schedule graph"
-            className="schedule-graph"
-          />
+          <Line data={data} options={options} />
         </div>
       </div>
       <div className="row schedule-row">
