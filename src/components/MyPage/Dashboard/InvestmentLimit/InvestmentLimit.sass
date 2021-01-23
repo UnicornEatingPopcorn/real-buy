@@ -1,10 +1,13 @@
 .limit
   &-container
     height: 217px
+    width: 100%
     background: #FFFFFF 0% 0%
     box-shadow: 0px 7px 20px #0F143129
     padding: 19px 16px
     display: grid
+    @media(max-width: 575px)
+      width: 308px
     @media(min-width: 576px)
       padding: 19px 14px
     @media(min-width: 768px)

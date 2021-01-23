@@ -1,5 +1,5 @@
 import React from "react";
-import graph from "./../../../../assets/icons/graph.png";
+import { Line } from "react-chartjs-2";
 import won from "./../../../../assets/icons/won.svg";
 import "./Graph.sass";
 
@@ -17,6 +17,76 @@ const graphInfo = [
 ];
 
 const Graph = () => {
+  const data = {
+    labels: [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+    ],
+
+    datasets: [
+      {
+        label: [],
+        fill: false,
+        lineTension: 0.4,
+        borderColor: "white",
+        pointBackgroundColor: "#fff",
+        pointRadius: 0,
+        borderWidth: 1,
+        data: [75, 60, 50, 75, 80, 100, 80, 90, 100, 133, 100, 105, 110, 100],
+      },
+    ],
+  };
+
+  const options = {
+    legend: {
+      display: false,
+    },
+    scales: {
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+          ticks: {
+            userCallback() {
+              return "";
+            },
+          },
+        },
+      ],
+
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+          ticks: {
+            userCallback() {
+              return "";
+            },
+          },
+        },
+      ],
+    },
+    tooltips: {
+      enabled: true,
+      mode: "index",
+      intersect: true,
+    },
+  };
+
   return (
     <div className="graph-container">
       <div className="graph-info">
@@ -28,16 +98,17 @@ const Graph = () => {
           </div>
           <p className="graph-info__period">20.11.09 ~ 21.02.11(현재)</p>
         </div>
+        <Line data={data} options={options} />
       </div>
+
       <div className="graph-decoration"></div>
-      <div className="graph-data">
-        <img className="graph-data__picture" alt="graphic" src={graph} />
         <span className="graph-data__price">
           <span className="graph-data__price-sum">+133.2</span>
-          <img src={won} alt="won" className="graph-data__price-won" />
+            <img src={won} alt="won" className="graph-data__price-won" />
+              <span className="graph-data__price-tick"></span>
+                <span className="graph-data__price-pointer"></span>
         </span>
-      </div>
-      <div className="container">
+      <div className="container graph__text-container">
         <div className="row">
           {graphInfo.map((graph, index) => {
             return (

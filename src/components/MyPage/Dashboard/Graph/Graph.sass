@@ -1,18 +1,28 @@
 .graph
   &-container
-    height: 275px
+    height: 100%
+    width: 100%
     background: #FFFFFF
     box-shadow: 0px 7px 20px #0F143129
     position: relative
-    
-    @media(max-width: 331px)
-      height: 365px
+    @media(max-width: 575px)
+      width: 308px
+      
+  &__line
+    margin-bottom: 100px
 
   &-info
-    height: 159px
     width: 100%
-    //TODO include real graph, change background according to design
     background: transparent linear-gradient(146deg, #1CA9E9 0%, #0154C8 78%)
+    @media(max-width: 575px)
+      height: 67%
+    @media(min-width: 576px)
+      height: 206px
+    @media(min-width: 768px)
+      height: 156px
+    @media(min-width: 992px)
+      height: 177px
+
 
     &__title
       color: #FFFFFF
@@ -45,28 +55,9 @@
     opacity: 0.5
     position: absolute
     top: 0
-    right: 40px
+    right: 26%
 
   &-data
-    &__picture
-      width: 91%
-      margin-left: 10px
-      position: absolute
-      top: 85px
-      @media(min-width: 400px)
-        width: 73%
-        margin-left: 40px
-      @media(min-width: 500px)
-        width: 55%
-        margin-left: 123px
-      @media(min-width: 576px)
-        width: 139px
-        margin-left: 3px
-      @media(min-width: 992px)
-        width: 223px
-      @media(min-width: 1200px)
-        width: 198px
-
     &__price
       width: 64px
       height: 25px
@@ -74,9 +65,17 @@
       border-radius: 15px
       position: absolute
       top: 60px
-      right: 21px
+      right: 19%
       display: flex
       align-items: center
+      @media(min-width: 768px)
+        top: 54px
+        right: 10%
+      @media(min-width: 992px)
+        top: 56px
+        right: 16%
+      @media(min-width: 1200px)
+        right: 14%
 
       &-sum
         color: #FFFFFF
@@ -86,7 +85,27 @@
       &-won
         color: white
         margin: 0px 7px -3px 4px
-  
+
+      &-tick
+        height: 20px
+        border-left: 1px solid #1CA9E9
+        right: 38px
+        top: 14px
+        position: relative
+
+      &-pointer
+        height: 10px
+        width: 10px
+        background-color: #1CA9E9
+        position: inherit
+        border-radius: 5px
+        border: 2px solid white
+        left: 26px
+        top: 32px
+
+  &__text-container
+    height: 98px
+
   &-block
     @media(max-width: 331px)
       padding: 0px 15px
@@ -97,9 +116,7 @@
     @media(min-width: 576px)
       padding: 7px 8px
     @media(min-width: 992px)
-      padding: 5px 15px
-    @media(min-width: 992px)
-      padding: 7px 11px
+      padding: 0px 11px
 
     &__divider
       border-bottom: 0.5px solid #BFBFBF
