@@ -1,6 +1,8 @@
 .header
   height: 70px
   background: #FFFFFF !important
+  position: fixed
+  width: 100%
   @media(max-width: 575px)
     display: flex
 
@@ -18,7 +20,10 @@
       position: relative
       justify-content: space-between
     @media(min-width: 768px)
-      margin: 0px 50px
+      margin: 0px 50px     
+      max-width: 768px
+    @media(min-width: 992px)
+      max-width: 830px
 
   &-container
     justify-content: center
@@ -78,16 +83,33 @@
       height: 21px
       width: 121px
     @media(min-width: 768px)      
-      background-image: url("./../../assets/icons/MainPage/logo-white.svg")
+      background-image: url("./../../assets/icons/real-buy-logo.svg")
       background-repeat: no-repeat
       height: 43px
       width: 121px
 
     &__centered
       margin-right: 35%
+      @media(min-width: 768px)
+        margin-left: 0
+
+    &-blue
+      @media(max-width: 767px)
+        background-image: url("./../../assets/icons/small-blue-logo.svg")
+        background-repeat: no-repeat
+        height: 21px
+        width: 121px
+      @media(min-width: 768px)      
+        background-image: url("./../../assets/icons/MainPage/logo-white.svg")
+        background-repeat: no-repeat
+        height: 43px
+        width: 121px
+      
 
   &-item
     width: 130px
+    @media(min-width: 768px)
+      width: 99px
 
   &-long-item
     width: 150px

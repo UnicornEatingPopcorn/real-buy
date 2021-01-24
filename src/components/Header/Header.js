@@ -183,7 +183,7 @@ const Header = () => {
                 onClick={handleClick}
               ></button>
               <NavLink to="/" className="header-logo__centered">
-                <svg className="header-logo" />
+                <svg className="header-logo-blue" />
               </NavLink>
             </div>
             <div
