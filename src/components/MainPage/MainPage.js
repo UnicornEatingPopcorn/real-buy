@@ -12,9 +12,10 @@ import computer from "./../../assets/icons/MainPage/computer.png";
 import pageUp from "./../../assets/icons/MainPage/page-up.svg";
 import Offers from "./Offers/Offers";
 import Footer from "./../Footer/Footer";
-// import toBuy1 from "./../../assets/icons/MainPage/to-buy-1.svg";
-// import toBuy2 from "./../../assets/icons/MainPage/to-buy-2.svg";
-// import toBuy3 from "./../../assets/icons/MainPage/to-buy-3.svg";
+import toBuy1 from "./../../assets/icons/MainPage/to-buy-1.svg";
+import toBuy2 from "./../../assets/icons/MainPage/to-buy-2.svg";
+import toBuy3 from "./../../assets/icons/MainPage/to-buy-3.svg";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   const goUp = () => {
@@ -33,9 +34,15 @@ const MainPage = () => {
           </p>
         </div>
       </div>
-      {/*<img className="main__to-buy-first" src={toBuy1} alt="main" />
-      <img className="main__to-buy-second" src={toBuy2} alt="main" />
-      <img className="main__to-buy-third" src={toBuy3} alt="main" />*/}
+      <Link to="/investing">
+        <img className="main__to-buy-first" src={toBuy1} alt="main" />
+      </Link>
+      <Link to="/investing">
+        <img className="main__to-buy-second" src={toBuy2} alt="main" />
+      </Link>
+      <Link to="/investing">
+        <img className="main__to-buy-third" src={toBuy3} alt="main" />
+      </Link>
       <Offers />
       <div className="why-real-buy">
         <p className="why-real-buy__title">Why Real Buy ?</p>

@@ -8,19 +8,31 @@
     width: 100%
 
   &__to-buy-first
-    position: relative
-    bottom: 571px
-    left: 335px
+    @media(min-width: 768px)
+      position: absolute
+      top: 25%
+      width: 12%
+      left: 29%
+    @media(min-width: 992px)
+      top: 31%
 
   &__to-buy-second
-    position: relative
-    bottom: 514px
-    left: 516px
+    @media(min-width: 768px)
+      position: absolute
+      top: 27%
+      width: 12%
+      left: 55%
+    @media(min-width: 992px)
+      top: 36%
 
   &__to-buy-third
-    position: relative
-    bottom: 482px
-    left: 564px
+    @media(min-width: 768px)
+      position: absolute
+      top: 30%
+      left: 69%
+      width: 12%
+    @media(min-width: 992px)
+      top: 39%
 
   &__titles-block
     position: absolute
@@ -28,6 +40,8 @@
     justify-content: center
     @media(max-width: 575px)
       top: 132px
+    @media(min-width: 768px)
+      top: 110px
 
   &__titles-centered
     display: flex
