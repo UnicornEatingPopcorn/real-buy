@@ -1,6 +1,5 @@
 import React from "react";
 import "./PurchaseAnalysis.sass";
-import graph2 from "./../../../../assets/icons/PurchaseAnalysis/graph2.png";
 import arrowLeft from "./../../../../assets/icons/PurchaseAnalysis/arrow-left.png";
 import arrowRight from "./../../../../assets/icons/PurchaseAnalysis/arrow-right.png";
 import {
@@ -14,6 +13,7 @@ import {
 import Graph1 from "./Graph1";
 import Graph2 from "./Graph2";
 import Graph3 from "./Graph3";
+import Graph4 from "./Graph4";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 const PurchaseAnalysis = () => {
@@ -112,7 +112,25 @@ const PurchaseAnalysis = () => {
       <div className="purchase-analysis__row">
         <div className="purchase-analysis__small-box">
           <span className="purchase-analysis__title">매입 금액 추이</span>
-          <img src={graph2} className="purchase-analysis__graph2" />
+          <Graph4 />
+
+          <div className="purchase-analysis__legend">
+            <div className="purchase-analysis__legend-blue">
+              <span></span>
+              <p>뒤셀도르프 시장 NIY</p>
+            </div>
+            <div className="purchase-analysis__legend-orange">
+              <span></span>
+              <p>본건 NIY</p>
+            </div>
+            <div className="purchase-analysis__legend-label">
+              4.35%
+              <span>
+                <span></span>
+              </span>
+              <p>3.70%</p>
+            </div>
+          </div>
         </div>
         <div className="purchase-analysis__small-box">
           <span className="purchase-analysis__title">분석 Comments</span>

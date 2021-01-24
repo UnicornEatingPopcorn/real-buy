@@ -8,7 +8,7 @@ export const mapStateToProps = (state) => {
   };
 };
 
-const Graph1 = ({ stopSpinner }) => {
+const Graph2 = ({ stopSpinner }) => {
   let barBackground;
   let hover;
   if (stopSpinner) {
@@ -43,7 +43,7 @@ const Graph1 = ({ stopSpinner }) => {
       xAxes: [
         {
           gridLines: {
-            display: true,
+            display: false,
           },
         },
       ],
@@ -78,4 +78,4 @@ const Graph1 = ({ stopSpinner }) => {
   );
 };
 
-export default connect(mapStateToProps, null)(Graph1);
+export default connect(mapStateToProps, null)(Graph2);

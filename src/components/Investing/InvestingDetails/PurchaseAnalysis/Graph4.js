@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { connect } from "react-redux";
 import "chartjs-plugin-datalabels";
 
@@ -9,23 +9,30 @@ export const mapStateToProps = (state) => {
   };
 };
 
-const Graph3 = ({ stopSpinner }) => {
+const Graph4 = ({ stopSpinner }) => {
   let barBackground;
   if (stopSpinner) {
-    let context = document.getElementById("firstGraph");
+    let context = document.getElementById("fourthGraph");
     let gradient = context.getContext("2d");
     barBackground = gradient.createLinearGradient(0, 0, 50, 300);
-    barBackground.addColorStop(0, "#43cbff");
-    barBackground.addColorStop(1, "#3769fc");
+    barBackground.addColorStop(0, "rgba(154, 227, 255, 0.6)");
+    barBackground.addColorStop(1, "rgba(180, 231, 254, 0)");
   }
 
   const data = {
-    labels: ["15", "16", "17", "18", "19"],
+    labels: ["0", "10", "12", "13", "14", "15", "16", "17", "18", "19"],
     datasets: [
       {
+        label: [],
+        fill: true,
+        lineTension: 0.1,
+        borderColor: "#3769fc",
         backgroundColor: barBackground,
-        data: [341, 280, 452, 280, 157],
-        maxBarThickness: 17,
+        borderCapStyle: "butt",
+        pointBackgroundColor: "#fff",
+        pointRadius: 0,
+        borderWidth: 1,
+        data: [11, 11, 11, 11, 10, 7.5, 7, 5, 2],
       },
     ],
   };
@@ -38,7 +45,8 @@ const Graph3 = ({ stopSpinner }) => {
       xAxes: [
         {
           gridLines: {
-            display: false,
+            display: true,
+            color: "white",
           },
         },
       ],
@@ -47,10 +55,11 @@ const Graph3 = ({ stopSpinner }) => {
         {
           gridLines: {
             display: true,
+            color: "white",
           },
           ticks: {
             beginAtZero: true,
-            stepSize: 100,
+            stepSize: 3,
           },
         },
       ],
@@ -62,20 +71,16 @@ const Graph3 = ({ stopSpinner }) => {
     },
     plugins: {
       datalabels: {
-        display: true,
-        color: "black",
-        anchor: "end",
-        align: "top",
-        offset: -1
+        display: false,
       },
     },
   };
 
   return (
     <div style={{ padding: "30px 20px 20px 20px" }}>
-      <Bar data={data} id="firstGraph" options={options} />
+      <Line data={data} id="fourthGraph" options={options} />
     </div>
   );
 };
 
-export default connect(mapStateToProps, null)(Graph3);
+export default connect(mapStateToProps, null)(Graph4);
