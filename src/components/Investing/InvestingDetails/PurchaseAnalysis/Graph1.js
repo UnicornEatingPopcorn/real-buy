@@ -71,7 +71,7 @@ const Graph1 = ({ stopSpinner }) => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "30px 20px 20px 20px" }}>
       <HorizontalBar data={dataHorBar} id="firstGraph" options={options} />
     </div>
   );

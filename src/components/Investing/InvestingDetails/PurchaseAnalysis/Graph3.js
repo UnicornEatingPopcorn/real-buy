@@ -66,12 +66,13 @@ const Graph1 = ({ stopSpinner }) => {
         color: "black",
         anchor: "end",
         align: "top",
+        offset: -1
       },
     },
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "30px 20px 20px 20px" }}>
       <Bar data={data} id="firstGraph" options={options} />
     </div>
   );

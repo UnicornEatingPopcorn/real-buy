@@ -5,30 +5,32 @@
     background: #FAFBFE
     @media(max-width: 575px)
       padding: 30px 10px
+      display: grid
+      justify-content: center
     @media(min-width: 576px)
       padding: 74px 10px
+      display: grid
+      justify-content: center
     @media(min-width: 768px)
-      padding: 74px 140px
+      padding: 74px 80px
     @media(min-width: 1200px)
+      padding: 74px 150px
+    @media(min-width: 1400px)
       padding: 74px 215px
 
   &__big-box
-    width: 373px
     height: 350px
     background: #FFFFFF
     margin-bottom: 20px
-    @media(max-width: 767px)
-      flex: 0 0 80%
-      margin-left: 8%
-    @media(min-width: 768px)
-      flex: 0 0 76%
-      margin-left: 5%
+    @media(max-width: 575px)
+      height: 246px
+      width: 300px
+    @media(min-width: 576px)
+      width: 450px
     @media(min-width: 992px)
-      flex: 0 0 48%
-      margin-left: 0
+      margin-left: 20px
     @media(min-width: 1200px)
-      flex: 0 0 45%
-      margin-left: 0
+      max-width: 456px
 
   &__small-box
     width: 373px
@@ -101,6 +103,8 @@
 
   &__slider
     height: 312px
+    @media(max-width: 575px)
+      height: 212px
 
   &__picture
     width: 353px
@@ -117,6 +121,8 @@
     position: relative
     bottom: 136px
     margin: 0px 5px
+    @media(max-width: 575px)
+      bottom: 104px
 
   &__arrow
     border: none !important
@@ -150,3 +156,4 @@
 
 .carousel__back-button
   padding: 0px
+
