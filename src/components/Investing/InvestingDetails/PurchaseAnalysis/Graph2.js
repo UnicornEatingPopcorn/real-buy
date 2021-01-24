@@ -64,6 +64,11 @@ const Graph1 = ({ stopSpinner }) => {
       mode: "index",
       intersect: true,
     },
+    plugins: {
+      datalabels: {
+        display: false,
+      },
+    },
   };
 
   return (

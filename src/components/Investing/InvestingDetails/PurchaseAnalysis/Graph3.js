@@ -1,6 +1,7 @@
 import React from "react";
-import { HorizontalBar } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import { connect } from "react-redux";
+import "chartjs-plugin-datalabels";
 
 export const mapStateToProps = (state) => {
   return {
@@ -13,17 +14,17 @@ const Graph1 = ({ stopSpinner }) => {
   if (stopSpinner) {
     let context = document.getElementById("firstGraph");
     let gradient = context.getContext("2d");
-    barBackground = gradient.createLinearGradient(150, 200, 80, 0);
+    barBackground = gradient.createLinearGradient(0, 0, 50, 300);
     barBackground.addColorStop(0, "#43cbff");
     barBackground.addColorStop(1, "#3769fc");
   }
 
-  const dataHorBar = {
-    labels: ["독일", "영국", "프랑스", "네덜란드", "폴란드"],
+  const data = {
+    labels: ["15", "16", "17", "18", "19"],
     datasets: [
       {
         backgroundColor: barBackground,
-        data: [8.5, 6.75, 6.2, 4.6, 2.3],
+        data: [341, 280, 452, 280, 157],
         maxBarThickness: 17,
       },
     ],
@@ -39,14 +40,6 @@ const Graph1 = ({ stopSpinner }) => {
           gridLines: {
             display: false,
           },
-          ticks: {
-            userCallback(value) {
-              if (!(value % 2)) {
-                return value;
-              }
-            },
-            beginAtZero: true,
-          },
         },
       ],
 
@@ -54,6 +47,10 @@ const Graph1 = ({ stopSpinner }) => {
         {
           gridLines: {
             display: true,
+          },
+          ticks: {
+            beginAtZero: true,
+            stepSize: 100,
           },
         },
       ],
@@ -63,11 +60,19 @@ const Graph1 = ({ stopSpinner }) => {
       mode: "index",
       intersect: true,
     },
+    plugins: {
+      datalabels: {
+        display: true,
+        color: "black",
+        anchor: "end",
+        align: "top",
+      },
+    },
   };
 
   return (
     <div style={{ padding: "20px" }}>
-      <HorizontalBar data={dataHorBar} id="firstGraph" options={options} />
+      <Bar data={data} id="firstGraph" options={options} />
     </div>
   );
 };
