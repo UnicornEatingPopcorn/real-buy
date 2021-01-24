@@ -6,11 +6,14 @@ import offerThird from "./../../../assets/icons/Offers/offer3.png";
 import three from "./../../../assets/icons/Offers/stars3.png";
 import four from "./../../../assets/icons/Offers/stars4.png";
 import five from "./../../../assets/icons/Offers/stars5.png";
+import offers from "./../../../assets/icons/Offers/offers.jpg";
 
 const Offers = () => {
   return (
     <div className="offers__container">
-      <div className="offers__offer">
+      <img src={offers} className="offers-image" />
+
+      {/*  <div className="offers__offer">
         <p className="offers__offer-title">글로벌 랜드 마크</p>
         <img src={offerFirst} alt="offer" className="offers__main" />
         <div className="offers__evaluation">
@@ -78,7 +81,7 @@ const Offers = () => {
         <p className="offers__return">
           예상 연 수익률<span className="offers__return-percent"> 7.4%</span>
         </p>
-      </div>
+      </div>*/}
     </div>
   );
 };

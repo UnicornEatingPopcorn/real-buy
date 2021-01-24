@@ -63,7 +63,9 @@ const MainPage = () => {
         <p className="how-to__sub">
           예상 가능한 배당 수익과 매각차익을 누릴 수 있는 기회
         </p>
-        <img src={howTo} alt="how to" className="how-to__pic" />
+        <div className="how-to__pic-container">
+          <img src={howTo} alt="how to" className="how-to__pic" />
+        </div>
       </div>
       <div className="how-to__second">
         <div className="how-to__second_text-block">
@@ -77,7 +79,9 @@ const MainPage = () => {
             연 6% 이상의 배당을 받는 안정적인 투자
           </p>
         </div>
-        <img src={phone} alt="phone" />
+        <div className="phone-container">
+          <img src={phone} alt="phone" className="phone" />
+        </div>
       </div>
       <div className="rand-mark">
         <div className="rand-mark__justify">
@@ -122,11 +126,13 @@ const MainPage = () => {
             상품을 공급합니다.
           </p>
         </div>
-        <img
-          src={customize}
-          alt="customize"
-          className="customize-offerings__pic"
-        />
+        <div className="customize-offerings__pic-container">
+          <img
+            src={customize}
+            alt="customize"
+            className="customize-offerings__pic"
+          />
+        </div>
       </div>
       <div className="computer">
         <div className="computer__text-block">
