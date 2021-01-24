@@ -1,5 +1,6 @@
 import React from "react";
 import "./Rent.sass";
+import GraphRent from "./GraphRent";
 import rent from "./../../../../assets/icons/rent.png";
 
 const table = [
@@ -80,7 +81,12 @@ const Rent = () => {
         </div>
       </div>
       <div className="rent__pic-container">
-        <img src={rent} alt="rent" className="rent__pic" />
+        <div className="rent__pic-container_graph">
+          <GraphRent />
+          <span>
+            <p>향후 5년 평균 물가 상승률: 1.23%</p>
+          </span>
+        </div>
       </div>
     </div>
   );
