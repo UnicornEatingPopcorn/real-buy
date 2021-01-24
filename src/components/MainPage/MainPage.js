@@ -43,7 +43,9 @@ const MainPage = () => {
       <Link to="/investing">
         <img className="main__to-buy-third" src={toBuy3} alt="main" />
       </Link>
-      <Offers />
+      <div className="main__offers">
+        <Offers />
+      </div>
       <div className="why-real-buy">
         <p className="why-real-buy__title">Why Real Buy ?</p>
         <p className="why-real-buy__subtitle">
