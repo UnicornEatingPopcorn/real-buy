@@ -63,7 +63,7 @@
     top: 197px
     justify-content: center
     @media(max-width: 575px)
-      top: 132px
+      top: 92px
     @media(min-width: 768px)
       top: 110px
     @media(min-width: 1920px)
@@ -78,6 +78,8 @@
     line-height: 1.1
     text-align: center
     color: #ffffff
+    @media(max-width: 575px)
+      font-size: 17px
 
   &__subtitle
     margin-top: 22px
@@ -86,6 +88,9 @@
     line-height: 1.6
     text-align: center
     color: #ffffff
+    @media(max-width: 575px)
+      margin-top: 20px
+      font-size: 13px
 
   &__offers
     display: flex
@@ -109,6 +114,7 @@
   justify-items: center 
   @media(max-width: 575px)
     padding: 30px 10px
+    box-shadow: none
   @media(min-width: 576px)
     padding: 60px 10px
   @media(min-width: 768px)
@@ -118,7 +124,17 @@
   @media(min-width: 1200px)
     padding: 102px 308px 86px 308px
   //end of temp
-    
+
+  div
+    @media(min-width: 576px)
+      display: flex
+
+  span
+    height: 137px
+    border-right: solid 1px #bebebe
+    margin-top: 44px
+    @media(max-width: 575px)
+      display: none
 
   &__title
     color: #0540FF
@@ -126,22 +142,56 @@
     font-family: "NanumSquareRegular"
     text-align: center
     margin-bottom: 13px
+    @media(max-width: 575px)
+      display: none
 
   &__subtitle
     color: #2E2E2E
     font-size: 25px
     text-align: center
     margin-bottom: 33px
-
-  &__pic
-    //temp
     @media(max-width: 575px)
-      width: 337px
-    @media(min-width: 576px)
-      width: 500px
-    @media(min-width: 768px)
-      width: 612px
-    //end of temp
+      display: none
+
+  &__mobile
+    &-title
+      color: #2a2a2a
+      font-size: 15px
+      text-align: center
+      @media(min-width: 576px)
+        display: none
+
+    &-block
+      display: grid !important
+      justify-items: center
+      padding: 27px
+      border-bottom: solid 1px #bebebe
+      height: 220px
+      &:last-child
+        border-bottom: none
+      @media(min-width: 576px)
+        border-bottom: none
+
+      &-pic
+        margin-bottom: 13px
+
+      &-title
+        color: #555555
+        font-size: 12px
+        text-align: center
+        margin-bottom: 12px
+        @media(min-width: 576px)
+          color: #0540FF
+          font-size: 16px
+          margin-bottom: 0
+
+      &-subtitle
+        font-family: "NanumSquareRegular"
+        color: #555555
+        font-size: 12px
+        text-align: center
+        @media(min-width: 576px)
+          color: #0540FF
 
 .how-to
   width: 100%

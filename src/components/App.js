@@ -39,6 +39,7 @@ var observers = [];
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [changeHeader, setChangeHeader] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -65,6 +66,14 @@ const App = () => {
       });
   }, []);
 
+  const changeNav = () => {
+    if (window.scrollY > 600) {
+      setChangeHeader(true);
+    }
+  };
+
+  window.addEventListener("scroll", changeNav);
+
   return (
     <BrowserRouter>
       {isLoading && (
@@ -76,7 +85,7 @@ const App = () => {
         </div>
       )}
       <div>
-        <Header />
+        <Header changeHeader={changeHeader} />
         <Switch>
           <Route path="/" exact component={MainPage} />
           <Route path="/mypage" component={MyPage} />

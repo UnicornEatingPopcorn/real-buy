@@ -1,7 +1,6 @@
 import React from "react";
 import "./MainPage.sass";
 import main from "./../../assets/icons/MainPage/main.jpg";
-import whyReal from "./../../assets/icons/MainPage/why-real-buy.svg";
 import howTo from "./../../assets/icons/MainPage/how-to.svg";
 import phone from "./../../assets/icons/MainPage/phone.svg";
 import randMark from "./../../assets/icons/MainPage/rand-mark.svg";
@@ -15,6 +14,9 @@ import Footer from "./../Footer/Footer";
 import toBuy1 from "./../../assets/icons/MainPage/to-buy-1.svg";
 import toBuy2 from "./../../assets/icons/MainPage/to-buy-2.svg";
 import toBuy3 from "./../../assets/icons/MainPage/to-buy-3.svg";
+import opportunity from "./../../assets/icons/MainPage/opportunity.svg";
+import investment from "./../../assets/icons/MainPage/investment.svg";
+import efficiency from "./../../assets/icons/MainPage/efficiency.svg";
 import { Link } from "react-router-dom";
 
 const MainPage = () => {
@@ -51,7 +53,52 @@ const MainPage = () => {
         <p className="why-real-buy__subtitle">
           왜 리얼바이와 함께 해야 할까요?
         </p>
-        <img src={whyReal} alt="why real" className="why-real-buy__pic" />
+        <p className="why-real-buy__mobile-title">REAL BUY 의 목표</p>
+        <div>
+          <div className="why-real-buy__mobile-block">
+            <img
+              src={opportunity}
+              alt="opportunity"
+              className="why-real-buy__mobile-block-pic"
+            />
+            <p className="why-real-buy__mobile-block-title">기회의 민주화</p>
+            <p className="why-real-buy__mobile-block-subtitle">
+              투자기관과 공동 투자함으로서
+              <br />
+              이제는 나도 투자 전문가
+            </p>
+          </div>
+          <span></span>
+          <div className="why-real-buy__mobile-block">
+            <img
+              src={investment}
+              alt="investment"
+              className="why-real-buy__mobile-block-pic"
+            />
+            <p className="why-real-buy__mobile-block-title">투자의 전문화</p>
+            <p className="why-real-buy__mobile-block-subtitle">
+              투자기관과 공동 투자함으로서
+              <br />
+              이제는 나도 투자 전문가!
+            </p>
+          </div>
+          <span></span>
+          <div className="why-real-buy__mobile-block">
+            <img
+              src={efficiency}
+              alt="efficiency"
+              className="why-real-buy__mobile-block-pic"
+            />
+            <p className="why-real-buy__mobile-block-title">자본의 효율화</p>
+            <p className="why-real-buy__mobile-block-subtitle">
+              불필요한 비용을 줄이고!
+              <br />
+              투자수익은 올리고!
+              <br />
+              안정성은 높이고!
+            </p>
+          </div>
+        </div>
       </div>
       <div className="how-to">
         <p className="how-to__title">How to</p>
