@@ -216,33 +216,41 @@
     font-size: 15px
     font-family: "JavaneseText"
     margin-bottom: 4px
+    @media(max-width: 575px)
+      font-size: 7px
 
   &__subtitle
     color: #2a2a2a
-    margin-bottom: 22px
     @media(max-width: 575px)
-      font-size: 20px
+      font-size: 14px
+      margin-bottom: 4px
     @media(min-width: 576px)
-      font-size: 23px
+      font-size: 17px
+      margin-bottom: 10px
     @media(min-width: 768px)
-      font-size: 28px
+      font-size: 20px
+      margin-bottom: 15px
     @media(min-width: 992px)
-      font-size: 32px
+      font-size: 28px
+      margin-bottom: 22px
     @media(min-width: 1200px)
       font-size: 35px
 
   &__sub
     color: #707070
-    font-size: 17px
     font-family: "NanumSquareRegular"
     @media(max-width: 575px)
       margin-bottom: 50px
+      font-size: 14px
     @media(min-width: 576px)
       margin-bottom: 80px
+      font-size: 15px
     @media(min-width: 768px)
       margin-bottom: 100px
+      font-size: 16px
     @media(min-width: 992px)    
       margin-bottom: 128px
+      font-size: 17px
 
   &__pic
     @media(max-width: 575px)
@@ -267,6 +275,7 @@
     justify-content: space-between
     @media(max-width: 575px)
       padding: 20px
+      display: block
     @media(min-width: 576px)
       padding: 30px 50px
     @media(min-width: 768px)
@@ -283,21 +292,43 @@
       font-size: 15px
       font-family: "JavaneseText"
       margin-bottom: 10px
+      @media(max-width: 575px)
+        font-size: 7px
 
     &_subtitle
       color: #2a2a2a
       margin-bottom: 37px
+      @media(max-width: 575px)
+        font-size: 14px
+        margin-bottom: 4px
       @media(min-width: 576px)
-        font-size: 22px
+        font-size: 17px
+        margin-bottom: 10px
       @media(min-width: 768px)
-        font-size: 31px
+        font-size: 20px
+        margin-bottom: 15px
       @media(min-width: 992px)
+        font-size: 28px
+        margin-bottom: 22px
+      @media(min-width: 1200px)
         font-size: 35px
 
     &_sub
       color: #000000
       font-size: 17px
       font-family: "NanumSquareRegular"
+      @media(max-width: 575px)
+        font-size: 14px
+      @media(min-width: 576px)
+        font-size: 15px
+      @media(min-width: 768px)
+        font-size: 16px
+      @media(min-width: 992px)    
+        font-size: 17px
+
+    &_text-block
+      @media(min-width: 768px)
+        width: 360px
 
 .phone
   @media(max-width: 575px)
@@ -306,36 +337,69 @@
     width: 200px
   @media(min-width: 768px)
     width: 300px
+
   &-container
     display: flex
     justify-content: center
     width: 57%
+    @media(max-width: 575px)
+      width: 100%
+      justify-content: flex-end
+
 
 .rand-mark
   width: 100%
   height: 100%
   background: white
   @media(max-width: 575px)
-    height: 877px    
+    height: 100%
+    padding: 20px 20px 0px 20px
   @media(min-width: 576px)
-    height: 624px
     display: grid
     align-content: space-between
   @media(min-width: 768px)
     height: 100%
+  @media(min-width: 1200px)
+    padding-top: 78px
 
+  &__phone
+    @media(max-width: 575px)
+      width: 200px
+      z-index: 1
+    @media(min-width: 576px)
+      width: 200px
+    @media(min-width: 768px)
+      width: 300px
+
+    &-container
+      display: flex
+      justify-content: center
+      width: 62%
+      z-index: 1
+      @media(max-width: 575px)
+        width: 100%
+        justify-content: flex-end
+      @media(min-width: 768px)
+        width: 60%
+      @media(min-width: 992px)
+        width: 50%
+        display: block
+      @media(min-width: 1920px)
+        width: 48%
+        
   &__text-block
     padding: 78px 215px
     @media(max-width: 575px)
-      display: grid
+      display: block
       justify-content: center
-      padding: 20px
+      padding: 0
     @media(min-width: 576px)
       padding: 30px 0px 0px 50px
       width: 237px
+      display: block
     @media(min-width: 768px)
       padding: 50px 0px 0px 100px
-      width: 360px
+      width: 297px
     @media(min-width: 992px)
       padding: 78px 0px 0px 200px
       width: 489px
@@ -345,21 +409,32 @@
     @media(min-width: 1920px)
       padding: 78px 0px 0px 529px
       width: 835px
+
     &_title
       color: #0540ff
       font-size: 15px
       font-family: "JavaneseText"
       margin-bottom: 10px
+      @media(max-width: 575px)
+        font-size: 7px
 
     &_subtitle
       color: #2a2a2a
       font-size: 35px
       margin-bottom: 37px
+      @media(max-width: 575px)
+        font-size: 14px
+        margin-bottom: 4px
       @media(min-width: 576px)
-        font-size: 22px
+        font-size: 17px
+        margin-bottom: 10px
       @media(min-width: 768px)
-        font-size: 31px
+        font-size: 20px
+        margin-bottom: 15px
       @media(min-width: 992px)
+        font-size: 28px
+        margin-bottom: 22px
+      @media(min-width: 1200px)
         font-size: 35px
 
   &__title
@@ -367,33 +442,72 @@
     font-size: 17px
     font-family: "NanumSquareRegular"
     margin-bottom: 23px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
+    @media(min-width: 576px)
+      font-size: 17px
+      margin-bottom: 10px
+      
 
   &__subtitle
     color: #141414
-    font-size: 14px
     font-family: "NanumSquareLight"
+    @media(max-width: 575px)
+      font-size: 9px
+    @media(min-width: 576px)
+      font-size: 10px
+    @media(min-width: 768px)
+      font-size: 12px
+    @media(min-width: 992px)
+      font-size: 14px
 
   &__frame
     position: absolute
     top: 3576px
     left: 595px
+    @media(max-width: 575px)
+      top: 3576px
+      left: 595px
+      height: 251px
 
   &__inner-phone
     position: absolute
     top: 3609px
     left: 627px
+    @media(max-width: 575px)
+      top: 3591px
+      left: 610px
+      height: 221px
 
   &__pic
     width: 100%
+    @media(max-width: 575px)
+      width: 137%
+      position: relative
+      right: 62px
+      margin-top: -140px
+    @media(min-width: 576px)
+      margin-top: -185px
+    @media(min-width: 992px)
+      margin-top: -300px
+    @media(min-width: 1920px)
+      margin-top: 0
 
   &__phone-pic
     position: relative
     bottom: 3500px
     right: 700px
+    @media(max-width: 575px)
+      right: 545px
+      bottom: 3682px
+      z-index: 2
 
   &__justify
     display: flex
     justify-content: space-between
+    @media(max-width: 575px)
+      display: block
     @media(min-width: 1920px)
       height: 65px
 
@@ -441,15 +555,25 @@
     font-size: 15px
     font-family: "JavaneseText"
     margin-bottom: 10px
+    @media(max-width: 575px)
+      font-size: 7px
 
   &__subtitle
     color: #2a2a2a
     margin-bottom: 37px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
     @media(min-width: 576px)
-      font-size: 22px
+      font-size: 17px
+      margin-bottom: 10px
     @media(min-width: 768px)
-      font-size: 31px
+      font-size: 20px
+      margin-bottom: 15px
     @media(min-width: 992px)
+      font-size: 28px
+      margin-bottom: 22px
+    @media(min-width: 1200px)
       font-size: 35px
 
   &__sub
@@ -457,6 +581,15 @@
     font-size: 17px
     font-family: "NanumSquareRegular"
     width: 322px
+    @media(max-width: 575px)
+      font-size: 14px
+      width: 270px
+    @media(min-width: 576px)
+      font-size: 15px
+    @media(min-width: 768px)
+      font-size: 16px
+    @media(min-width: 992px)    
+      font-size: 17px
 
   &__pic
     @media(max-width: 575px)
@@ -496,21 +629,39 @@
     font-size: 15px
     font-family: "JavaneseText"
     margin-bottom: 10px
+    @media(max-width: 575px)
+      display: none
 
   &__subtitle
     color: #2a2a2a
     margin-bottom: 37px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
     @media(min-width: 576px)
-      font-size: 22px
+      font-size: 17px
+      margin-bottom: 10px
     @media(min-width: 768px)
-      font-size: 31px
+      font-size: 20px
+      margin-bottom: 15px
     @media(min-width: 992px)
+      font-size: 28px
+      margin-bottom: 22px
+    @media(min-width: 1200px)
       font-size: 35px
 
   &__sub
     color: #000000
     font-size: 17px
     font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      font-size: 14px
+    @media(min-width: 576px)
+      font-size: 15px
+    @media(min-width: 768px)
+      font-size: 16px
+    @media(min-width: 992px)    
+      font-size: 17px
 
   &__pic
     width: 100%

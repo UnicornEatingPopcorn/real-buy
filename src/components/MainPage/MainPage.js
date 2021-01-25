@@ -135,9 +135,7 @@ const MainPage = () => {
           <div className="rand-mark__text-block">
             <p className="rand-mark__text-block_title">Rand Mark</p>
             <p className="rand-mark__text-block_subtitle">
-              부동산 차익을 꿈꾸며
-              <br />
-              건물에 투자하자
+              부동산 차익을 꿈꾸며 건물에 투자하자
             </p>
             <p className="rand-mark__title">
               건물 값이 오르면 수익은 투자자에게!
@@ -147,7 +145,7 @@ const MainPage = () => {
               <br />- 서울 상업용 부동산 지수: 이지스 (대신증권 지수)
             </p>
           </div>
-          <div className="rand-mark__pics">
+          {/*<div className="rand-mark__pics">
             <div className="rand-mark__phone-pic">
               <img src={frame} className="rand-mark__frame" alt="frame" />
               <img
@@ -156,6 +154,9 @@ const MainPage = () => {
                 alt="phone"
               />
             </div>
+          </div>*/}
+          <div className="rand-mark__phone-container">
+            <img src={phone} alt="phone" className="rand-mark__phone" />
           </div>
         </div>
         <img src={randMark} alt="rand mark" className="rand-mark__pic" />
