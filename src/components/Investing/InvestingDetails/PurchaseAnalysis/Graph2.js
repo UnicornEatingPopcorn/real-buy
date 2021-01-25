@@ -13,13 +13,15 @@ const Graph2 = ({ stopSpinner }) => {
   let hover;
   if (stopSpinner) {
     let context = document.getElementById("secondGraph");
-    let gradient = context.getContext("2d");
-    hover = gradient.createLinearGradient(0, 0, 0, 300);
-    hover.addColorStop(0, "#3769fc");
-    hover.addColorStop(1, "#43cbff");
-    barBackground = gradient.createLinearGradient(0, 0, 0, 300);
-    barBackground.addColorStop(0, "#7597fb");
-    barBackground.addColorStop(1, "#62cef7");
+    if (context) {
+      let gradient = context.getContext("2d");
+      hover = gradient.createLinearGradient(0, 0, 0, 300);
+      hover.addColorStop(0, "#3769fc");
+      hover.addColorStop(1, "#43cbff");
+      barBackground = gradient.createLinearGradient(0, 0, 0, 300);
+      barBackground.addColorStop(0, "#7597fb");
+      barBackground.addColorStop(1, "#62cef7");
+    }
   }
 
   const data = {

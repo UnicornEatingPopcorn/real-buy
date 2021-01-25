@@ -12,10 +12,12 @@ const Graph1 = ({ stopSpinner }) => {
   let barBackground;
   if (stopSpinner) {
     let context = document.getElementById("firstGraph");
-    let gradient = context.getContext("2d");
-    barBackground = gradient.createLinearGradient(150, 200, 80, 0);
-    barBackground.addColorStop(0, "#43cbff");
-    barBackground.addColorStop(1, "#3769fc");
+    if (context) {
+      let gradient = context.getContext("2d");
+      barBackground = gradient.createLinearGradient(150, 200, 80, 0);
+      barBackground.addColorStop(0, "#43cbff");
+      barBackground.addColorStop(1, "#3769fc");
+    }
   }
 
   const dataHorBar = {

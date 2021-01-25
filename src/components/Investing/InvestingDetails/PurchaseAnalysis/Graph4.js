@@ -13,10 +13,12 @@ const Graph4 = ({ stopSpinner }) => {
   let barBackground;
   if (stopSpinner) {
     let context = document.getElementById("fourthGraph");
-    let gradient = context.getContext("2d");
-    barBackground = gradient.createLinearGradient(0, 0, 50, 300);
-    barBackground.addColorStop(0, "rgba(154, 227, 255, 0.6)");
-    barBackground.addColorStop(1, "rgba(180, 231, 254, 0)");
+    if (context) {
+      let gradient = context.getContext("2d");
+      barBackground = gradient.createLinearGradient(0, 0, 50, 300);
+      barBackground.addColorStop(0, "rgba(154, 227, 255, 0.6)");
+      barBackground.addColorStop(1, "rgba(180, 231, 254, 0)");
+    }
   }
 
   const data = {

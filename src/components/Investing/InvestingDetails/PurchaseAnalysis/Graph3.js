@@ -13,10 +13,12 @@ const Graph3 = ({ stopSpinner }) => {
   let barBackground;
   if (stopSpinner) {
     let context = document.getElementById("firstGraph");
-    let gradient = context.getContext("2d");
-    barBackground = gradient.createLinearGradient(0, 0, 50, 300);
-    barBackground.addColorStop(0, "#43cbff");
-    barBackground.addColorStop(1, "#3769fc");
+    if (context) {
+      let gradient = context.getContext("2d");
+      barBackground = gradient.createLinearGradient(0, 0, 50, 300);
+      barBackground.addColorStop(0, "#43cbff");
+      barBackground.addColorStop(1, "#3769fc");
+    }
   }
 
   const data = {
@@ -66,7 +68,7 @@ const Graph3 = ({ stopSpinner }) => {
         color: "black",
         anchor: "end",
         align: "top",
-        offset: -1
+        offset: -1,
       },
     },
   };
