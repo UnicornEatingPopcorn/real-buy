@@ -1,23 +1,24 @@
 .header
   height: 70px
   background: #FFFFFF !important
-  position: fixed
   width: 100%
   @media(max-width: 575px)
     display: flex
+    height: 52px
 
   &__centered
     display: flex
     justify-content: center
+    position: sticky
+    top: 0
+    z-index: 10
+    background: white
 
   &-transparent
     justify-content: center
-    position: absolute
     border-bottom: 1px solid rgba(120, 143, 217, 0.4)
     background-color: #f0f8ff00 !important
     @media(max-width: 767px)
-      margin: 0px 40px
-      position: relative
       justify-content: space-between
     @media(min-width: 768px)
       margin: 0px 50px     
