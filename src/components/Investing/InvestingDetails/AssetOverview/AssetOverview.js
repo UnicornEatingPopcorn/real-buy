@@ -10,7 +10,7 @@ const AssetOverview = () => {
       <div className="row">
         <p className="asset-overview__container-title">자산 개요</p>
       </div>
-      <div className="row">
+      <div className="row no-gutters">
         <div className="col-12 col-sm-9 col-md-6">
           <CarouselProvider
             naturalSlideWidth={100}

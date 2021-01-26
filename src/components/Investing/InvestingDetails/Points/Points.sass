@@ -1,16 +1,23 @@
 .points
   &-container
+    display: flex
     @media(max-width: 575px)
-      padding: 30px 10px
+      padding: 51px 10px 66px 10px
       justify-content: center
     @media(min-width: 576px)
-      padding: 53px 45px
-      justify-content: space-around
+      padding: 51px 10px 66px 10px
+      justify-content: center
     @media(min-width: 992px)
-      padding: 66px 120px
+      padding: 66px 120px 82px 120px
     @media(min-width: 1200px)
-      padding: 66px 215px
-      justify-content: space-between
+      padding: 66px 215px 82px 215px
+
+  &__block
+    @media(min-width: 576px)
+      display: contents
+    @media(min-width: 768px)
+      width: 770px
+      display: flex
 
   &-col
     max-width: 236px
@@ -18,6 +25,7 @@
     background: #FFFFFF
     box-shadow: 0px 10px 36px #0F143129
     padding: 20px
+    margin: 10px
     @media(max-width: 575px)
       margin-bottom: 20px
     @media(min-width: 493px)

@@ -36,21 +36,23 @@ const Points = () => {
   return (
     <>
       <div className="row points-container">
-        {points.map((point, index) => {
-          return (
-            <div className="col-12 col-sm-6 points-col" key={index}>
-              <p className="points-col__number">{point.number}</p>
-              <p className="points-col__title">{point.title}</p>
-              <span className="points__divider"></span>
-              <p className="points-col__subtitle-first">{point.subtitle1}</p>
-              <p className="points-col__comment">{point.comment1}</p>
-              <p className="points-col__subtitle">{point.subtitle2}</p>
-              <p className="points-col__comment">{point.comment2}</p>
-              <p className="points-col__subtitle">{point.subtitle3}</p>
-              <p className="points-col__comment">{point.comment3}</p>
-            </div>
-          );
-        })}
+        <div className="points__block">
+          {points.map((point, index) => {
+            return (
+              <div className="col-12 col-sm-6 points-col" key={index}>
+                <p className="points-col__number">{point.number}</p>
+                <p className="points-col__title">{point.title}</p>
+                <span className="points__divider"></span>
+                <p className="points-col__subtitle-first">{point.subtitle1}</p>
+                <p className="points-col__comment">{point.comment1}</p>
+                <p className="points-col__subtitle">{point.subtitle2}</p>
+                <p className="points-col__comment">{point.comment2}</p>
+                <p className="points-col__subtitle">{point.subtitle3}</p>
+                <p className="points-col__comment">{point.comment3}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
