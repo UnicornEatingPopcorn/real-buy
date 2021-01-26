@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
+const HeaderWhite = ({ links, onMouseOver, onMouseOut }) => {
   const [isToggle, setIsToggle] = useState(false);
   const [isLoggedIn] = useState(false);
 
@@ -34,7 +34,8 @@ const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
             className={`navbar-collapse ${
               isToggle ? "header-collapse-visible" : "header-collapse"
             }`}
-            onMouseOver={openAdditionalMenu}
+            onMouseOver={onMouseOver}
+            onMouseOut={onMouseOut}
           >
             <ul className="navbar-nav header-list ">
               {links.map((link) => {
@@ -85,49 +86,6 @@ const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
             </div>
           </div>
         </nav>
-      </div>
-      <div className="navbar__expand_link-container">
-        <div
-          onMouseOut={closeAdditionalMenu}
-          className="navbar__expand-links navbar__expand-links-transparent"
-        >
-          <div className="row no-gutters navbar__expand-links_width">
-            <div className="col-3 navbar__expand-column">
-              <NavLink
-                activeClassName="header__link-active"
-                className="navbar__expand_link-first nav-link"
-                to="/investing"
-              >
-                투자상품
-              </NavLink>
-              <NavLink
-                activeClassName="header__link-active"
-                className="navbar__expand_link nav-link"
-                to="/how-to-invest"
-              >
-                투자하는 방법
-              </NavLink>
-            </div>
-            <div className="col-2 offset-4 navbar__expand-column">
-              <NavLink
-                activeClassName="header__link-active"
-                className="navbar__expand_link nav-link"
-                to="/company-introduction"
-              >
-                회사소개
-              </NavLink>
-            </div>
-            <div className="col-3 navbar__expand-column ">
-              <NavLink
-                activeClassName="header__link-active"
-                className="navbar__expand_link nav-link"
-                to="/customer-support/common"
-              >
-                자주하는 질문
-              </NavLink>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

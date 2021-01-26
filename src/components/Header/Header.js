@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import "./Header.sass";
 import HeaderTransparent from "./HeaderTransparent";
 import HeaderWhite from "./HeaderWhite";
@@ -36,7 +36,6 @@ const Header = ({ changeHeader }) => {
 
   const openAdditionalMenu = () => {
     if (expandLinks) {
-      console.log("open");
       expandLinks.classList.add("navbar__expand-links-visible");
     }
   };
@@ -52,16 +51,16 @@ const Header = ({ changeHeader }) => {
       return (
         <HeaderWhite
           links={links}
-          openAdditionalMenu={() => openAdditionalMenu()}
-          closeAdditionalMenu={() => closeAdditionalMenu()}
+          onMouseOut={() => closeAdditionalMenu()}
+          onMouseOver={() => openAdditionalMenu()}
         />
       );
     } else {
       return (
         <HeaderTransparent
           links={links}
-          openAdditionalMenu={() => openAdditionalMenu()}
-          closeAdditionalMenu={() => closeAdditionalMenu()}
+          onMouseOut={() => closeAdditionalMenu()}
+          onMouseOver={() => openAdditionalMenu()}
         />
       );
     }
@@ -71,12 +70,52 @@ const Header = ({ changeHeader }) => {
       {location.pathname !== "/" ? (
         <HeaderWhite
           links={links}
-          openAdditionalMenu={() => openAdditionalMenu()}
-          closeAdditionalMenu={() => closeAdditionalMenu()}
+          onMouseOut={() => closeAdditionalMenu()}
+          onMouseOver={() => openAdditionalMenu()}
         />
       ) : (
         <WhichHeader />
       )}
+      <div className="navbar__expand_link-container">
+        <div className="navbar__expand-links navbar__expand-links-transparent">
+          <div className="row no-gutters navbar__expand-links_width">
+            <div className="col-3 navbar__expand-column">
+              <NavLink
+                activeClassName="header__link-active"
+                className="navbar__expand_link-first nav-link"
+                to="/investing"
+              >
+                투자상품
+              </NavLink>
+              <NavLink
+                activeClassName="header__link-active"
+                className="navbar__expand_link nav-link"
+                to="/how-to-invest"
+              >
+                투자하는 방법
+              </NavLink>
+            </div>
+            <div className="col-2 offset-4 navbar__expand-column">
+              <NavLink
+                activeClassName="header__link-active"
+                className="navbar__expand_link nav-link"
+                to="/company-introduction"
+              >
+                회사소개
+              </NavLink>
+            </div>
+            <div className="col-3 navbar__expand-column ">
+              <NavLink
+                activeClassName="header__link-active"
+                className="navbar__expand_link nav-link"
+                to="/customer-support/common"
+              >
+                자주하는 질문
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

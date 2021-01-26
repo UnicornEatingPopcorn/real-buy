@@ -176,35 +176,22 @@
   display: flex
 
 .navbar__expand
-  //set visibility of expand links
   &-links
-    width: 438px
-    display: flex
-    position: fixed
-    height: 103px
-    top: 69px
-    background: white
-    padding: 20px 28px
-    box-shadow: 0px 4px 15px #0540FF21
+    display: none
 
     &-visible
       display: flex
       position: fixed
-      top: 56px
-      right: 191px
+      top: 69px
       z-index: 2
+      width: 438px
+      height: 103px
+      background: white
+      padding: 20px 28px
+      box-shadow: 0px 4px 15px #0540FF21
+
       @media(max-width: 991px)
         display: none
-      @media(min-width: 992px)
-        right: 232px
-      @media(min-width: 1100px)
-        right: 246px
-      @media(min-width: 1200px)
-        right: 364px
-      @media(min-width: 1300px)
-        right: 345px
-      @media(min-width: 1400px)
-        right: 318px
 
     &_width
       width: 100%
