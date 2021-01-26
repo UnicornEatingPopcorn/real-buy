@@ -51,16 +51,16 @@ const Header = ({ changeHeader }) => {
       return (
         <HeaderWhite
           links={links}
-          openAdditionalMenu={openAdditionalMenu}
-          closeAdditionalMenu={closeAdditionalMenu}
+          openAdditionalMenu={() => openAdditionalMenu()}
+          closeAdditionalMenu={() => closeAdditionalMenu()}
         />
       );
     } else {
       return (
         <HeaderTransparent
           links={links}
-          openAdditionalMenu={openAdditionalMenu}
-          closeAdditionalMenu={closeAdditionalMenu}
+          openAdditionalMenu={() => openAdditionalMenu()}
+          closeAdditionalMenu={() => closeAdditionalMenu()}
         />
       );
     }
@@ -70,8 +70,8 @@ const Header = ({ changeHeader }) => {
       {location.pathname !== "/" ? (
         <HeaderWhite
           links={links}
-          openAdditionalMenu={openAdditionalMenu}
-          closeAdditionalMenu={closeAdditionalMenu}
+          openAdditionalMenu={() => openAdditionalMenu()}
+          closeAdditionalMenu={() => closeAdditionalMenu()}
         />
       ) : (
         <WhichHeader />

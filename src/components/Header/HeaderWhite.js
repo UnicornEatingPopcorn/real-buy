@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
   const [isToggle, setIsToggle] = useState(false);
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  const [isLoggedIn] = useState(false);
 
   const handleClick = () => {
     setIsToggle(!isToggle);
@@ -14,9 +14,9 @@ const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
   };
 
   return (
-    <div className="header__centered">
+    <div className="header__centered-white">
       <nav
-        className="navbar navbar-expand-md header navbar-light"
+        className="navbar navbar-expand-md header navbar-light header-white"
         role="navigation"
       >
         <div className="header-container">

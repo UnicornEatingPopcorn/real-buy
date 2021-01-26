@@ -4,8 +4,7 @@ import main from "./../../assets/icons/MainPage/main.jpg";
 import howTo from "./../../assets/icons/MainPage/how-to.svg";
 import phone from "./../../assets/icons/MainPage/phone.svg";
 import randMark from "./../../assets/icons/MainPage/rand-mark.svg";
-import innerPhone from "./../../assets/icons/MainPage/inner-phone.svg";
-import frame from "./../../assets/icons/MainPage/frame.svg";
+import phoneSecond from "./../../assets/icons/MainPage/phone-2.png";
 import customize from "./../../assets/icons/MainPage/customize.svg";
 import computer from "./../../assets/icons/MainPage/computer.png";
 import pageUp from "./../../assets/icons/MainPage/page-up.svg";
@@ -145,18 +144,9 @@ const MainPage = () => {
               <br />- 서울 상업용 부동산 지수: 이지스 (대신증권 지수)
             </p>
           </div>
-          {/*<div className="rand-mark__pics">
-            <div className="rand-mark__phone-pic">
-              <img src={frame} className="rand-mark__frame" alt="frame" />
-              <img
-                src={innerPhone}
-                className="rand-mark__inner-phone"
-                alt="phone"
-              />
-            </div>
-          </div>*/}
+
           <div className="rand-mark__phone-container">
-            <img src={phone} alt="phone" className="rand-mark__phone" />
+            <img src={phoneSecond} alt="phone" className="rand-mark__phone" />
           </div>
         </div>
         <img src={randMark} alt="rand mark" className="rand-mark__pic" />
