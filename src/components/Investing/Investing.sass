@@ -6,6 +6,8 @@ body
     background: #F6F8FF
     min-height: 881px
     width: 100%
+    display: grid
+    justify-content: center
     @media(max-width: 575px)
       padding: 30px 5px
     @media(min-width: 576px)
@@ -26,6 +28,7 @@ body
       display: flex
       justify-content: space-between
       align-items: center
+      max-width: 502px
 
   &__notify
     display: grid
@@ -51,7 +54,10 @@ body
 
   &__row
     margin: 20px 0px 20px 0px
-    justify-content: space-around
+    justify-content: space-between
+    max-width: 502px
+    @media(max-width: 575px)
+      justify-content: center
 
     a
       &:hover

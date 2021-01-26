@@ -60,7 +60,9 @@
   &-container
     justify-content: center
     @media(max-width: 767px)
-      display: contents
+      display: flex
+      width: 100%
+      padding: 0px 20px
   
   &-list
     background: #FFFFFF
@@ -111,7 +113,8 @@
       background-image: url("./../../assets/icons/small-blue-logo.svg")
       background-repeat: no-repeat
       height: 21px
-      width: 86px
+      width: 120px
+      margin-right: 7%
     @media(min-width: 768px)      
       background-image: url("./../../assets/icons/real-buy-logo.svg")
       background-repeat: no-repeat
@@ -119,7 +122,9 @@
       width: 86px
 
     &__centered
-      margin-right: 35%
+      display: flex
+      width: 100%
+      justify-content: center
       @media(min-width: 768px)
         margin-left: 0
 

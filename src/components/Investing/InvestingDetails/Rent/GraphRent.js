@@ -46,7 +46,7 @@ const Graph4 = ({ stopSpinner }) => {
         borderColor: "#3769fc",
         backgroundColor: barBackground,
         borderCapStyle: "butt",
-        pointBackgroundColor: "#fff",
+        // pointBackgroundColor: "#fff",
         pointRadius: 2,
         pointBackgroundColor: "#3769fc",
         borderWidth: 1,

@@ -35,7 +35,7 @@ const InvestmentCard = ({
       onMouseOut={returnStyles}
     >
       <div
-        className="col-12 col-sm-6 col-lg-4 investment-card__card"
+        className="col-8 offset-2 col-sm-6 offset-sm-0 col-lg-4 investment-card__card"
         key={index}
       >
         <img

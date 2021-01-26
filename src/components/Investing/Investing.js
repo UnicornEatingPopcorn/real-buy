@@ -96,7 +96,7 @@ const Investing = () => {
                   index={index}
                   stars5={stars5}
                   stars4={stars4}
-                  style={{ height: "400px" }}
+                  style={{ height: "425px" }}
                 >
                   <div className="investing__info">{el.text}</div>
                 </InvestmentCard>
