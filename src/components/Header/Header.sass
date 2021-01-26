@@ -111,12 +111,12 @@
       background-image: url("./../../assets/icons/small-blue-logo.svg")
       background-repeat: no-repeat
       height: 21px
-      width: 121px
+      width: 86px
     @media(min-width: 768px)      
       background-image: url("./../../assets/icons/real-buy-logo.svg")
       background-repeat: no-repeat
       height: 43px
-      width: 121px
+      width: 86px
 
     &__centered
       margin-right: 35%
@@ -128,21 +128,25 @@
         background-image: url("./../../assets/icons/small-blue-logo.svg")
         background-repeat: no-repeat
         height: 21px
-        width: 121px
+        width: 86px
       @media(min-width: 768px)      
         background-image: url("./../../assets/icons/MainPage/logo-white.svg")
         background-repeat: no-repeat
         height: 43px
-        width: 121px
+        width: 86px
       
 
   &-item
-    width: 130px
     @media(min-width: 768px)
-      width: 99px
+      width: 79px
+    @media(min-width: 992px)
+      width: 98px
 
   &-long-item
-    width: 129px
+    @media(min-width: 768px)
+      width: 112px
+    @media(min-width: 992px)    
+      width: 119px
 
   &__navbar-toggler
     background-image: url("./../../assets/icons/toggler.svg")
@@ -216,20 +220,45 @@
     display: grid
     height: fit-content
 
-.nav-login-button
-  padding-left: 109px
+.nav-transparent-login-button
   border-right: 1px solid #707070
   height: 17px
   padding-top: 0px
   margin-top: 8px
   margin-right: 10px
   padding-right: 10px
+  color: white
+  @media(min-width: 768px)
+    padding-left: 75px
+  @media(min-width: 992px)
+    padding-left: 109px
+
 
 .header-collapse
   justify-content: flex-end
 
+.nav-transparent-enter-button
+  padding: 8px 0px 0px 0px
+  color: white
+
+.nav-login-button
+  border-right: 1px solid #707070
+  height: 17px
+  padding-top: 0px
+  margin-top: 8px
+  margin-right: 10px
+  padding-right: 10px
+  color: #0540FF 
+  @media(min-width: 768px)
+    padding-left: 75px
+  @media(min-width: 992px)
+    padding-left: 109px
+
 .nav-enter-button
   padding: 8px 0px 0px 0px
+  color: #0540FF 
+
+
       
     
 

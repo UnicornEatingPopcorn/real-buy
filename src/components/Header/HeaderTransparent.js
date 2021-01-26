@@ -58,7 +58,7 @@ const HeaderTransparent = ({
           <div>
             {isLoggedIn ? (
               <NavLink
-                className="nav-enter-button"
+                className="nav-transparent-enter-button"
                 to="/mypage/dashboard"
                 onClick={closeNav}
                 activeClassName="header__link-active"
@@ -68,7 +68,7 @@ const HeaderTransparent = ({
             ) : (
               <>
                 <NavLink
-                  className="nav-login-button"
+                  className="nav-transparent-login-button"
                   to="/login"
                   onClick={closeNav}
                   activeClassName="header__link-active"
@@ -76,7 +76,7 @@ const HeaderTransparent = ({
                   로그인
                 </NavLink>
                 <NavLink
-                  className="nav-enter-button"
+                  className="nav-transparent-enter-button"
                   to="/register"
                   onClick={closeNav}
                   activeClassName="header__link-active"
