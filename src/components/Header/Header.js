@@ -36,6 +36,7 @@ const Header = ({ changeHeader }) => {
 
   const openAdditionalMenu = () => {
     if (expandLinks) {
+      console.log("open");
       expandLinks.classList.add("navbar__expand-links-visible");
     }
   };

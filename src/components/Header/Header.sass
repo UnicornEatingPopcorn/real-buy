@@ -53,6 +53,7 @@
     @media(min-width: 768px)
       margin: 0px 50px     
       max-width: 768px
+      border-bottom: solid 1px #c6d3e5
     @media(min-width: 992px)
       max-width: 830px
     
@@ -105,7 +106,9 @@
     display: none
 
     &-visible
-      display: flex
+      display: grid
+      justify-content: center
+      background: white
       width: 100%
 
   &-logo
@@ -173,17 +176,21 @@
   display: flex
 
 .navbar__expand
+  //set visibility of expand links
   &-links
-    width: 100%
-    display: none
+    width: 438px
+    display: flex
+    position: fixed
     height: 103px
+    top: 69px
     background: white
     padding: 20px 28px
     box-shadow: 0px 4px 15px #0540FF21
+
     &-visible
-      display: block
-      position: absolute
-      top: 70px
+      display: flex
+      position: fixed
+      top: 56px
       right: 191px
       z-index: 2
       @media(max-width: 991px)
@@ -198,6 +205,9 @@
         right: 345px
       @media(min-width: 1400px)
         right: 318px
+
+    &_width
+      width: 100%
 
   &-transparent
     background-color: #f0f8ff00 !important
@@ -221,9 +231,16 @@
       font-family: "NanumSquareRegular"
       border-left: 0.3px solid #707070
 
+    &-container
+      display: flex
+      justify-content: center
+
   &-column
     display: grid
     height: fit-content
+    &:last-child
+      display: flex
+      justify-content: flex-end
 
 .nav-transparent-login-button
   border-right: 1px solid #707070
