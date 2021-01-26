@@ -67,8 +67,30 @@ const App = () => {
   }, []);
 
   const changeNav = () => {
-    if (window.scrollY > 600) {
-      setChangeHeader(true);
+    if (window.innerWidth >= 768 && window.innerWidth <= 991) {
+      if (window.scrollY > 600) {
+        setChangeHeader(true);
+      } else {
+        setChangeHeader(false);
+      }
+    } else if (window.innerWidth >= 992 && window.innerWidth <= 1199) {
+      if (window.scrollY > 800) {
+        setChangeHeader(true);
+      } else {
+        setChangeHeader(false);
+      }
+    } else if (window.innerWidth >= 1200 && window.innerWidth <= 1919) {
+      if (window.scrollY > 1000) {
+        setChangeHeader(true);
+      } else {
+        setChangeHeader(false);
+      }
+    } else if (window.innerWidth >= 1920) {
+      if (window.scrollY > 1500) {
+        setChangeHeader(true);
+      } else {
+        setChangeHeader(false);
+      }
     }
   };
 
