@@ -50,42 +50,38 @@ const HeaderWhite = ({ links, openAdditionalMenu, closeAdditionalMenu }) => {
                 </li>
               );
             })}
+          </ul>
+          <div>
             {isLoggedIn ? (
-              <li className="nav-item header-end">
+              <NavLink
+                className="nav-enter-button"
+                to="/mypage/dashboard"
+                onClick={closeNav}
+                activeClassName="header__link-active"
+              >
+                홍길동님 마이페이지
+              </NavLink>
+            ) : (
+              <>
                 <NavLink
-                  className="nav-link navlink-end navlink-end-mypage"
-                  to="/mypage/dashboard"
+                  className="nav-login-button"
+                  to="/login"
                   onClick={closeNav}
                   activeClassName="header__link-active"
                 >
-                  홍길동님 마이페이지
+                  로그인
                 </NavLink>
-              </li>
-            ) : (
-              <>
-                <li className="nav-item header-item">
-                  <NavLink
-                    className="nav-link navlink-end nav-login-button"
-                    to="/login"
-                    onClick={closeNav}
-                    activeClassName="header__link-active"
-                  >
-                    로그인
-                  </NavLink>
-                </li>
-                <li className="nav-item header-item">
-                  <NavLink
-                    className="nav-link navlink-start"
-                    to="/register"
-                    onClick={closeNav}
-                    activeClassName="header__link-active"
-                  >
-                    회원가입
-                  </NavLink>
-                </li>
+                <NavLink
+                  className="nav-enter-button"
+                  to="/register"
+                  onClick={closeNav}
+                  activeClassName="header__link-active"
+                >
+                  회원가입
+                </NavLink>
               </>
             )}
-          </ul>
+          </div>
           <div
             onMouseOut={closeAdditionalMenu}
             className="navbar__expand-links navbar__expand-links-transparent col-lg-5 offset-lg-7 col-xl-4 offset-lg-4"
