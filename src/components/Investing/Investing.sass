@@ -25,10 +25,15 @@ body
     font-size: 22px
 
     &-col
-      display: flex
-      justify-content: space-between
-      align-items: center
-      max-width: 502px
+      @media(max-width: 991px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 502px
+      @media(min-width: 992px)
+        display: flex
+        justify-content: space-between
+        align-items: center
 
   &__notify
     display: grid
@@ -37,12 +42,10 @@ body
     &-title
       color: #2E2E2E
       font-size: 15px
+      font-family: "NanumSquareRegular"
 
       &-hover
         color: #3769FC
-
-    &-hover
-      transform: scale(1.2)
 
   &__bell
     width: 31px
@@ -50,15 +53,23 @@ body
     margin-bottom: 2px
     &-hover
       transform: rotate(-45deg)
-      transition: 1s
+      transition: 0.1s
 
   &__row
     margin: 20px 0px 20px 0px
     justify-content: space-between
-    max-width: 502px
     @media(max-width: 575px)
       justify-content: center
-
+      max-width: 502px
+    @media(min-width: 992px)
+      width: 100%
+      
+    &-container
+      @media(min-width: 992px)
+      display: flex
+      justify-content: center
+      width: 770px
+      
     a
       &:hover
         text-decoration: none

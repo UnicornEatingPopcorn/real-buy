@@ -54,13 +54,11 @@ const Investing = () => {
   const bellTitle = document.querySelector(".investing__notify-title");
 
   const ringTheBell = () => {
-    bellBlock.classList.add("investing__notify-hover");
     bellPic.classList.add("investing__bell-hover");
     bellTitle.classList.add("investing__notify-title-hover");
   };
 
   const stopTheBell = () => {
-    bellBlock.classList.remove("investing__notify-hover");
     bellPic.classList.remove("investing__bell-hover");
     bellTitle.classList.remove("investing__notify-title-hover");
   };
@@ -87,22 +85,24 @@ const Investing = () => {
             </div>
           </div>
         </div>
-        <div className="row investing__row">
-          {allObjects.map((el, index) => {
-            return (
-              <Link to="/investing/details" key={index}>
-                <InvestmentCard
-                  investmentObject={el}
-                  index={index}
-                  stars5={stars5}
-                  stars4={stars4}
-                  style={{ height: "425px" }}
-                >
-                  <div className="investing__info">{el.text}</div>
-                </InvestmentCard>
-              </Link>
-            );
-          })}
+        <div className="investing__row-container">
+          <div className="row investing__row">
+            {allObjects.map((el, index) => {
+              return (
+                <Link to="/investing/details" key={index}>
+                  <InvestmentCard
+                    investmentObject={el}
+                    index={index}
+                    stars5={stars5}
+                    stars4={stars4}
+                    style={{ height: "425px" }}
+                  >
+                    <div className="investing__info">{el.text}</div>
+                  </InvestmentCard>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
       <Footer />
