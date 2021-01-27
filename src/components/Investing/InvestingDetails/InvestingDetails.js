@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import AssetOverview from "./AssetOverview/AssetOverview";
 import "./InvestingDetails.sass";
 import Points from "./Points/Points";
 import PresentationBlock from "./PresentationBlock/PresentationBlock";
 import ProfitGraph from "./ProfitGraph/ProfitGraph";
 import QuickInvest from "./QuickInvest/QuickInvest";
-import { NavLink, Route, Switch } from "react-router-dom";
 import PurchaseAnalysis from "./PurchaseAnalysis/PurchaseAnalysis";
 import TenantAnalysis from "./TenantAnalysis/TenantAnalysis";
 import Structure from "./Structure/Structure";
@@ -23,58 +22,128 @@ import RiskDetails from "./RiskDetails/RiskDetails";
 const links = [
   {
     title: "매입 분석",
-    path: "/investing/details/purchase-analysis",
-    id: 1,
+    component: <PurchaseAnalysis />,
   },
   {
     title: "임차인 분석",
-    path: "/investing/details/tenant-analysis",
-    id: 2,
+    component: <TenantAnalysis />,
   },
   {
     title: "투자구조",
-    path: "/investing/details/structure",
-    id: 3,
+    component: <Structure />,
   },
   {
     title: "공동투자자 및 운용사",
-    path: "/investing/details/management",
-    id: 4,
+    component: <Management />,
   },
 ];
 
 const profitLinks = [
   {
     title: "배당수익",
-    path: "/investing/details/dividend-income",
-    id: 5,
+    component: <Dividend />,
   },
   {
     title: "임대료 상승",
-    path: "/investing/details/rent-increase",
-    id: 6,
+    component: <Rent />,
   },
 ];
 
 const riskLinks = [
   {
     title: "매각 시나리오",
-    path: "/investing/details/selling-scenario",
-    id: 7,
+    component: <SellingScenario />,
   },
   {
     title: "주요 리스크",
-    path: "/investing/details/key-risks",
-    id: 8,
+    component: <KeyRisks />,
   },
   {
     title: "상세 정보",
-    path: "/investing/details/risk-details",
-    id: 9,
+    component: <RiskDetails />,
   },
 ];
 
-const InvestingDetails = ({ match }) => {
+const InvestingDetails = () => {
+  const [activeSafeIndex, setActiveSafeIndex] = useState(0);
+  const [activeProfitIndex, setActiveProfitIndex] = useState(0);
+  const [activeRiskIndex, setActiveRiskIndex] = useState(0);
+
+  const handleSafetyClick = (index) => {
+    setActiveSafeIndex(index);
+  };
+
+  const renderedSafetyLinks = links.map((link, index) => {
+    return (
+      <span
+        key={index}
+        className="investing-details__link"
+        onClick={() => handleSafetyClick(index)}
+      >
+        {link.title}
+      </span>
+    );
+  });
+
+  const renderedSafetyRoutes = links.map((link, index) => {
+    const active = index === activeSafeIndex ? "renderedLinks-active" : "";
+    return (
+      <div key={index} className={`renderedLinks ${active}`}>
+        {link.component}
+      </div>
+    );
+  });
+
+  const handleProfitClick = (index) => {
+    setActiveProfitIndex(index);
+  };
+
+  const renderedProfitLinks = profitLinks.map((link, index) => {
+    return (
+      <span
+        key={index}
+        className="investing-details__link"
+        onClick={() => handleProfitClick(index)}
+      >
+        {link.title}
+      </span>
+    );
+  });
+
+  const renderedProfitRoutes = profitLinks.map((link, index) => {
+    const active = index === activeProfitIndex ? "renderedLinks-active" : "";
+    return (
+      <div key={index} className={`renderedLinks ${active}`}>
+        {link.component}
+      </div>
+    );
+  });
+
+  const handleRiskClick = (index) => {
+    setActiveRiskIndex(index);
+  };
+
+  const renderedRiskLinks = riskLinks.map((link, index) => {
+    return (
+      <span
+        key={index}
+        className="investing-details__link"
+        onClick={() => handleRiskClick(index)}
+      >
+        {link.title}
+      </span>
+    );
+  });
+
+  const renderedRiskRoutes = riskLinks.map((link, index) => {
+    const active = index === activeRiskIndex ? "renderedLinks-active" : "";
+    return (
+      <div key={index} className={`renderedLinks ${active}`}>
+        {link.component}
+      </div>
+    );
+  });
+
   return (
     <>
       <PresentationBlock />
@@ -83,77 +152,15 @@ const InvestingDetails = ({ match }) => {
       <ProfitGraph />
       <AssetOverview />
       <div className="investing-details__safety">안전성 분석</div>
-      <div className="investing-details__links">
-        {links.map((link) => {
-          return (
-            <NavLink
-              to={link.path}
-              key={link.title}
-              className="investing-details__link"
-              activeClassName="investing-details__link-active"
-            >
-              {link.title}
-            </NavLink>
-          );
-        })}
-      </div>
-      <Switch>
-        <Route exact path={`${match.url}`} component={PurchaseAnalysis} />
-        <Route
-          path="/investing/details/purchase-analysis"
-          component={PurchaseAnalysis}
-        />
-        <Route
-          path="/investing/details/tenant-analysis"
-          component={TenantAnalysis}
-        />
-        <Route path="/investing/details/structure" component={Structure} />
-        <Route path="/investing/details/management" component={Management} />
-      </Switch>
+      <div className="investing-details__links">{renderedSafetyLinks}</div>
+      {renderedSafetyRoutes}
+
       <div className="investing-details__safety">수익성 분석</div>
-      <div className="investing-details__links">
-        {profitLinks.map((link) => {
-          return (
-            <NavLink
-              to={link.path}
-              key={link.title}
-              className="investing-details__link"
-              activeClassName="investing-details__link-active"
-            >
-              {link.title}
-            </NavLink>
-          );
-        })}
-      </div>
-      <Switch>
-        <Route exact path={`${match.url}`} component={Dividend} />
-        <Route path="/investing/details/dividend-income" component={Dividend} />
-        <Route path="/investing/details/rent-increase" component={Rent} />
-      </Switch>
+      <div className="investing-details__links">{renderedProfitLinks} </div>
+      {renderedProfitRoutes}
       <div className="investing-details__safety">리스크 분석</div>
-      <div className="investing-details__links">
-        {riskLinks.map((link) => {
-          return (
-            <NavLink
-              to={link.path}
-              key={link.title}
-              className="investing-details__link"
-              activeClassName="investing-details__link-active"
-            >
-              {link.title}
-            </NavLink>
-          );
-        })}
-      </div>
-      <Switch>
-        <Route exact path={`${match.url}`} component={SellingScenario} />
-        <Route
-          path="/investing/details/selling-scenario"
-          component={SellingScenario}
-        />
-        <Route path="/investing/details/key-risks" component={KeyRisks} />
-        <Route path="/investing/details/risk-details" component={RiskDetails} />
-      </Switch>
+      <div className="investing-details__links">{renderedRiskLinks} </div>
+      {renderedRiskRoutes}
       <FundOverview />
       <AssetManagement />
       <Precautions />
