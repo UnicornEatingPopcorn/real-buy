@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./QuickInvest.sass";
 import heartGray from "./../../../../assets/icons/InvestingDetails/heart-gray.svg";
 import bellGray from "./../../../../assets/icons/InvestingDetails/bell-gray.svg";
@@ -6,21 +6,19 @@ import bellGray from "./../../../../assets/icons/InvestingDetails/bell-gray.svg"
 const QuickInvest = () => {
   const [percentage, setPercentage] = useState(0);
 
-  const progress = document.querySelector(".progress-done");
-  const progressLabel = document.querySelector(".progress-done__label");
-  const progressLabelLine = document.querySelector(
-    ".progress-done__label-line"
-  );
-
-  if (progress) {
+  useEffect(() => {
+    const progress = document.querySelector(".progress-done");
+    const progressLabel = document.querySelector(".progress-done__label");
+    const progressLabelLine = document.querySelector(
+      ".progress-done__label-line"
+    );
     progress.style.width = progress.getAttribute("data-done") + "%";
-    progress.style.opacity = 1;
     setTimeout(() => {
       setPercentage(progress.style.width);
       progressLabel.style.marginLeft = progress.style.width;
       progressLabelLine.style.marginLeft = progress.style.width;
     }, 500);
-  }
+  });
 
   return (
     <div className="quick-block">

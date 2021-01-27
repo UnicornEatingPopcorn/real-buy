@@ -49,17 +49,12 @@ const Header = ({ changeHeader }) => {
   const WhichHeader = () => {
     if (changeHeader) {
       return (
-        <HeaderWhite
-          links={links}
-          onMouseOut={() => closeAdditionalMenu()}
-          onMouseOver={() => openAdditionalMenu()}
-        />
+        <HeaderWhite links={links} onMouseOver={() => openAdditionalMenu()} />
       );
     } else {
       return (
         <HeaderTransparent
           links={links}
-          onMouseOut={() => closeAdditionalMenu()}
           onMouseOver={() => openAdditionalMenu()}
         />
       );
@@ -68,16 +63,15 @@ const Header = ({ changeHeader }) => {
   return (
     <>
       {location.pathname !== "/" ? (
-        <HeaderWhite
-          links={links}
-          onMouseOut={() => closeAdditionalMenu()}
-          onMouseOver={() => openAdditionalMenu()}
-        />
+        <HeaderWhite links={links} onMouseOver={() => openAdditionalMenu()} />
       ) : (
         <WhichHeader />
       )}
       <div className="navbar__expand_link-container">
-        <div className="navbar__expand-links navbar__expand-links-transparent">
+        <div
+          onMouseLeave={() => closeAdditionalMenu()}
+          className="navbar__expand-links navbar__expand-links-transparent"
+        >
           <div className="row no-gutters navbar__expand-links_width">
             <div className="col-3 navbar__expand-column">
               <NavLink

@@ -12,24 +12,38 @@ body
       padding: 30px 5px
     @media(min-width: 576px)
       padding: 50px 70px
-    @media(min-width: 776px)
-      padding: 85px 120px
+    @media(min-width: 768px)
+      padding: 112px 120px
     @media(min-width: 992px)
       padding: 85px 160px
     @media(min-width: 1200px)
       padding: 85px 215px
-      
+
+    &__first-row     
+      display: flex
+      justify-content: center
+       
 
   &__title
     color: #2E2E2E
     font-size: 22px
 
     &-col
-      @media(max-width: 991px)
+      @media(max-width: 575px)
         display: flex
         justify-content: space-between
         align-items: center
-        max-width: 502px
+        width: 250px
+      @media(min-width: 576px) 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 506px
+      @media(min-width: 768px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        // max-width: 502px
       @media(min-width: 992px)
         display: flex
         justify-content: space-between
@@ -60,15 +74,17 @@ body
     justify-content: space-between
     @media(max-width: 575px)
       justify-content: center
-      max-width: 502px
+      width: 300px
     @media(min-width: 992px)
       width: 100%
       
     &-container
+      @media(min-width: 576px)
+        display: flex
+        justify-content: center
+        width: 509px
       @media(min-width: 992px)
-      display: flex
-      justify-content: center
-      width: 770px
+        width: 770px
       
     a
       &:hover

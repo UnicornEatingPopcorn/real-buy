@@ -71,7 +71,7 @@ const Investing = () => {
   return (
     <>
       <div className="investing-container">
-        <div className="row">
+        <div className="row investing-container__first-row">
           <div className="col investing__title-col">
             <p className="investing__title">신규 투자 상품</p>
             <div
