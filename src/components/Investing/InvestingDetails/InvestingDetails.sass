@@ -9,13 +9,17 @@
     justify-content: center
     align-items: center
     font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      height: 65px
+      font-size: 18px
 
   &__links
     background-color: white
     display: flex
     justify-content: space-between
     @media(max-width: 575px)
-      padding: 10px 20px
+      padding: 10px 20px 0px 20px
+      align-items: flex-end
     @media(min-width: 576px)
       padding: 20px 20px 0px 20px
     @media(min-width: 768px)
@@ -34,9 +38,11 @@
     font-size: 20px
     text-decoration: none
     font-family: "NanumSquareRegular"      
-    padding-bottom: 10px
     @media(max-width: 575px)
       font-size: 14px
+      width: 64px
+      text-align: center
+      padding-bottom: 3px
     @media(min-width: 576px)
       padding-bottom: 20px
     @media(min-width: 768px)
@@ -47,10 +53,16 @@
       text-decoration: none
       border-bottom: 2px solid #707070
 
-.renderedLinks
+.renderedRoutes
   display: none
 
   &-active
     display: block
+
+.renderedLinks
+  &-active
+    color: #3182f5
+    border-bottom: 2px solid #3182f5
+
 
 

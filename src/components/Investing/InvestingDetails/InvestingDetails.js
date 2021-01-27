@@ -74,10 +74,11 @@ const InvestingDetails = () => {
   };
 
   const renderedSafetyLinks = links.map((link, index) => {
+    const active = index === activeSafeIndex ? "renderedLinks-active" : "";
     return (
       <span
         key={index}
-        className="investing-details__link"
+        className={`investing-details__link ${active}`}
         onClick={() => handleSafetyClick(index)}
       >
         {link.title}
@@ -86,9 +87,9 @@ const InvestingDetails = () => {
   });
 
   const renderedSafetyRoutes = links.map((link, index) => {
-    const active = index === activeSafeIndex ? "renderedLinks-active" : "";
+    const active = index === activeSafeIndex ? "renderedRoutes-active" : "";
     return (
-      <div key={index} className={`renderedLinks ${active}`}>
+      <div key={index} className={`renderedRoutes ${active}`}>
         {link.component}
       </div>
     );
@@ -99,10 +100,11 @@ const InvestingDetails = () => {
   };
 
   const renderedProfitLinks = profitLinks.map((link, index) => {
+    const active = index === activeProfitIndex ? "renderedLinks-active" : "";
     return (
       <span
         key={index}
-        className="investing-details__link"
+        className={`investing-details__link ${active}`}
         onClick={() => handleProfitClick(index)}
       >
         {link.title}
@@ -111,9 +113,9 @@ const InvestingDetails = () => {
   });
 
   const renderedProfitRoutes = profitLinks.map((link, index) => {
-    const active = index === activeProfitIndex ? "renderedLinks-active" : "";
+    const active = index === activeProfitIndex ? "renderedRoutes-active" : "";
     return (
-      <div key={index} className={`renderedLinks ${active}`}>
+      <div key={index} className={`renderedRoutes ${active}`}>
         {link.component}
       </div>
     );
@@ -124,10 +126,11 @@ const InvestingDetails = () => {
   };
 
   const renderedRiskLinks = riskLinks.map((link, index) => {
+    const active = index === activeRiskIndex ? "renderedRoutes-active" : "";
     return (
       <span
         key={index}
-        className="investing-details__link"
+        className={`investing-details__link ${active}`}
         onClick={() => handleRiskClick(index)}
       >
         {link.title}
@@ -136,9 +139,9 @@ const InvestingDetails = () => {
   });
 
   const renderedRiskRoutes = riskLinks.map((link, index) => {
-    const active = index === activeRiskIndex ? "renderedLinks-active" : "";
+    const active = index === activeRiskIndex ? "renderedRoutes-active" : "";
     return (
-      <div key={index} className={`renderedLinks ${active}`}>
+      <div key={index} className={`renderedRoutes ${active}`}>
         {link.component}
       </div>
     );
