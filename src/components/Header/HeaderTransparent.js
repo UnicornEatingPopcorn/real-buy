@@ -52,7 +52,7 @@ const HeaderTransparent = ({ links, onMouseOut, onMouseOver }) => {
               );
             })}
           </ul>
-          <div>
+          <div className="header-list__end">
             {isLoggedIn ? (
               <NavLink
                 className="nav-transparent-enter-button"

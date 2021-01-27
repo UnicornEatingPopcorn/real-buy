@@ -115,7 +115,6 @@
   height: 100%
   background: #FAFBFE    
   box-shadow: inset 0px 10px 36px #0F143129
-  //temporarily
   display: grid
   justify-items: center 
   @media(max-width: 575px)
@@ -124,16 +123,23 @@
   @media(min-width: 576px)
     padding: 60px 10px
   @media(min-width: 768px)
-    padding: 70px 150px
+    padding: 70px 0px
   @media(min-width: 992px)
-    padding: 90px 200px 86px 200px
+    padding: 90px 0px 86px 0px
   @media(min-width: 1200px)
-    padding: 102px 308px 86px 308px
-  //end of temp
+    padding: 95px 0px
+  @media(min-width: 1920px)
+    padding: 142px 0px
 
   div
     @media(min-width: 576px)
       display: flex
+    @media(min-width: 768px)
+      width: 574px
+      justify-content: center
+    @media(min-width: 992px)
+      width: 861px
+      
 
   span
     height: 137px
@@ -150,6 +156,8 @@
     margin-bottom: 13px
     @media(max-width: 575px)
       display: none
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__subtitle
     color: #2E2E2E
@@ -158,6 +166,8 @@
     margin-bottom: 33px
     @media(max-width: 575px)
       display: none
+    @media(min-width: 1920px)
+      font-size: 37px
 
   &__mobile
     &-title
@@ -177,9 +187,14 @@
         border-bottom: none
       @media(min-width: 576px)
         border-bottom: none
+      @media(min-width: 1920px)
+        height: 274px
 
       &-pic
         margin-bottom: 13px
+        @media(min-width: 1920px)
+          width: 117px
+          margin-bottom: 19px
 
       &-title
         color: #555555
@@ -190,6 +205,9 @@
           color: #0540FF
           font-size: 16px
           margin-bottom: 0
+        @media(min-width: 1920px)
+          font-size: 24px
+          margin-bottom: 15px
 
       &-subtitle
         font-family: "NanumSquareRegular"
@@ -198,6 +216,8 @@
         text-align: center
         @media(min-width: 576px)
           color: #0540FF
+        @media(min-width: 1920px)
+          font-size: 18px
 
 .how-to
   width: 100%
@@ -207,15 +227,24 @@
   @media(max-width: 575px)
     padding: 20px
   @media(min-width: 576px)
-    padding: 30px 50px
+    padding: 30px 0px
+    display: flex
+    justify-content: center
   @media(min-width: 768px)
-    padding: 50px 100px
+    padding: 50px 0px
   @media(min-width: 992px)
-    padding: 78px 200px
-  @media(min-width: 1200px)
-    padding: 78px 262px
+    padding: 78px 0px
   @media(min-width: 1920px)
-    padding: 78px 529px
+    padding: 117px 0px
+
+  &__container
+    @media(min-width: 768px)
+      width: 671px
+      display: grid
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1245px
 
   &__title
     color: #0540ff
@@ -224,6 +253,8 @@
     margin-bottom: 4px
     @media(max-width: 575px)
       font-size: 7px
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__subtitle
     color: #2a2a2a
@@ -241,6 +272,8 @@
       margin-bottom: 22px
     @media(min-width: 1200px)
       font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
 
   &__sub
     color: #707070
@@ -257,6 +290,9 @@
     @media(min-width: 992px)    
       margin-bottom: 128px
       font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
+      margin-bottom: 192px
 
   &__pic
     @media(max-width: 575px)
@@ -265,6 +301,8 @@
       width: 500px
     @media(min-width: 768px)
       width: 612px
+    @media(min-width: 1920px)
+      width: 100%
 
     &-container
       display: flex
@@ -278,20 +316,29 @@
     background: #FAFBFE
     padding: 78px 215px
     display: flex
-    justify-content: space-between
+    justify-content: center
     @media(max-width: 575px)
       padding: 20px
       display: block
     @media(min-width: 576px)
-      padding: 30px 50px
+      padding: 30px 0px
     @media(min-width: 768px)
-      padding: 50px 100px
+      padding: 50px 0px
     @media(min-width: 992px)
-      padding: 78px 200px
-    @media(min-width: 1200px)
-      padding: 78px 262px
+      padding: 78px 0px
     @media(min-width: 1920px)
-      padding: 78px 529px
+      padding: 117px 0px
+
+    &-container
+      @media(min-width: 576px)
+        display: flex
+        justify-content: space-between
+      @media(min-width: 768px)
+        width: 671px
+      @media(min-width: 1200px)
+        width: 770px
+      @media(min-width: 1920px)
+        width: 1245px
 
     &_title
       color: #0540ff
@@ -300,6 +347,8 @@
       margin-bottom: 10px
       @media(max-width: 575px)
         font-size: 7px
+      @media(min-width: 1920px)
+        font-size: 22px
 
     &_subtitle
       color: #2a2a2a
@@ -318,6 +367,8 @@
         margin-bottom: 22px
       @media(min-width: 1200px)
         font-size: 35px
+      @media(min-width: 1920px)
+        font-size: 52px
 
     &_sub
       color: #000000
@@ -331,10 +382,16 @@
         font-size: 16px
       @media(min-width: 992px)    
         font-size: 17px
+      @media(min-width: 1920px)
+        font-size: 25px
 
     &_text-block
+      @media(min-width: 576px)
+        width: 294px
       @media(min-width: 768px)
         width: 360px
+      @media(min-width: 1920px)
+        width: 433px
 
 .phone
   @media(max-width: 575px)
@@ -343,11 +400,12 @@
     width: 200px
   @media(min-width: 768px)
     width: 300px
+  @media(min-width: 1920px)
+    width: 450px
 
   &-container
     display: flex
     justify-content: center
-    width: 57%
     @media(max-width: 575px)
       width: 100%
       justify-content: flex-end
@@ -362,11 +420,15 @@
     padding: 20px 20px 0px 20px
   @media(min-width: 576px)
     display: grid
-    align-content: space-between
+    align-content: space-between 
+    padding: 30px 0px 0px 0px
   @media(min-width: 768px)
     height: 100%
-  @media(min-width: 1200px)
-    padding-top: 78px
+    padding: 50px 0px 0px 0px
+  @media(min-width: 992px)
+    padding: 78px 0px 0px 0px
+  @media(min-width: 1920px)
+    padding: 117px 0px 0px 0px
 
   &__phone
     @media(max-width: 575px)
@@ -379,43 +441,35 @@
       width: 300px
     @media(min-width: 1200px)
       margin-top: 0
+    @media(min-width: 1920px)
+      width: 450px
 
     &-container
       display: flex
       justify-content: center
-      width: 62%
       z-index: 1
       @media(max-width: 575px)
         width: 100%
         justify-content: flex-end
-      @media(min-width: 768px)
-        width: 60%
       @media(min-width: 992px)
-        width: 48%
         display: block
         
   &__text-block
-    padding: 78px 215px
     @media(max-width: 575px)
       display: block
       justify-content: center
       padding: 0
     @media(min-width: 576px)
-      padding: 30px 0px 0px 50px
-      width: 237px
+      width: 294px
       display: block
     @media(min-width: 768px)
-      padding: 50px 0px 0px 100px
-      width: 297px
+      width: 177px
     @media(min-width: 992px)
-      padding: 78px 0px 0px 200px
-      width: 489px
+      width: 254px
     @media(min-width: 1200px)
-      padding: 0px 0px 0px 262px
-      width: 554px
+      width: 320px
     @media(min-width: 1920px)
-      padding: 0px 0px 0px 529px
-      width: 835px
+      width: 482px
 
     &_title
       color: #0540ff
@@ -424,6 +478,8 @@
       margin-bottom: 10px
       @media(max-width: 575px)
         font-size: 7px
+      @media(min-width: 1920px)
+        font-size: 22px
 
     &_subtitle
       color: #2a2a2a
@@ -443,10 +499,11 @@
         margin-bottom: 22px
       @media(min-width: 1200px)
         font-size: 35px
+      @media(min-width: 1920px)
+        font-size: 52px
 
   &__title
     color: #141414
-    font-size: 17px
     font-family: "NanumSquareRegular"
     margin-bottom: 23px
     @media(max-width: 575px)
@@ -455,6 +512,9 @@
     @media(min-width: 576px)
       font-size: 17px
       margin-bottom: 10px
+    @media(min-width: 1920px)
+      font-size: 25px
+      margin-bottom: 15px
       
 
   &__subtitle
@@ -468,6 +528,8 @@
       font-size: 12px
     @media(min-width: 992px)
       font-size: 14px
+    @media(min-width: 1920px)
+      font-size: 21px
 
   &__pic
     width: 100%
@@ -488,29 +550,50 @@
     justify-content: space-between
     @media(max-width: 575px)
       display: block
+      width: 100%
+    @media(min-width: 768px)
+      width: 671px
+    @media(min-width: 1200px)
+      width: 770px
     @media(min-width: 1920px)
-      height: 65px
+      height: 185px
+      width: 1245px
+
+    &-container
+      display: flex
+      justify-content: center
     
 .customize-offerings
   background: #FAFBFE
   @media(max-width: 575px)
     padding: 20px
   @media(min-width: 576px)
-    padding: 30px 50px
+    padding: 30px 0px
+    display: flex
+    justify-content: center
   @media(min-width: 768px)
-    padding: 50px 100px
+    padding: 50px 0px
   @media(min-width: 992px)
-    padding: 78px 200px
-  @media(min-width: 1200px)
-    padding: 78px 262px
+    padding: 78px 0px
   @media(min-width: 1920px)
-    padding: 78px 529px
+    padding: 117px 0px
+
+  &__container
+    @media(min-width: 768px)
+      width: 671px
+      display: grid
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1245px
 
   &__text-block
     @media(min-width: 576px)
       width: 274px
     @media(min-width: 768px)
       width: 429px
+    @media(min-width: 1920px)
+      width: 638px
 
   &__title
     color: #0540ff
@@ -519,6 +602,8 @@
     margin-bottom: 10px
     @media(max-width: 575px)
       font-size: 7px
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__subtitle
     color: #2a2a2a
@@ -537,6 +622,8 @@
       margin-bottom: 22px
     @media(min-width: 1200px)
       font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
 
   &__sub
     color: #000000
@@ -552,6 +639,8 @@
       font-size: 16px
     @media(min-width: 992px)    
       font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
 
   &__pic
     @media(max-width: 575px)
@@ -560,6 +649,8 @@
       width: 500px
     @media(min-width: 768px)
       width: 612px
+    @media(min-width: 1920px)
+      width: 100%
     
     &-container
       display: flex
@@ -574,17 +665,26 @@
     justify-content: center
     padding: 20px
   @media(min-width: 576px)
-    padding: 30px
-    display: grid
+    padding: 30px 0px
+    display: flex
     justify-content: center
   @media(min-width: 768px)
-    padding: 50px
+    padding: 50px 0px
   @media(min-width: 992px)
-    padding: 78px 215px 80px 215px
-  @media(min-width: 1200px)
-    padding: 125px 215px 80px 215px
+    padding: 78px 0px
+  @media(min-width: 1920px)
+    padding: 117px 0px
 
-  &__text-block
+  &__container
+    @media(min-width: 576px)
+      width: 509px
+      display: grid
+    @media(min-width: 768px)
+      width: 671px   
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1245px
 
   &__title
     color: #0540ff
@@ -593,6 +693,8 @@
     margin-bottom: 10px
     @media(max-width: 575px)
       display: none
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__subtitle
     color: #2a2a2a
@@ -611,6 +713,8 @@
       margin-bottom: 22px
     @media(min-width: 1200px)
       font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
 
   &__sub
     color: #000000
@@ -624,15 +728,17 @@
       font-size: 16px
     @media(min-width: 992px)    
       font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
 
   &__pic
-    width: 100%
-    @media(min-width: 768px)
-      max-width: 700px
+    max-width: 100%
 
   &__up
     width: 100%
     height: 40px
+    @media(min-width: 1920px)
+      height: 60px
 
 
 

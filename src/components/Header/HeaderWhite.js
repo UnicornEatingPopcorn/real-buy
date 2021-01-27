@@ -53,7 +53,7 @@ const HeaderWhite = ({ links, onMouseOver, onMouseOut }) => {
                 );
               })}
             </ul>
-            <div>
+            <div className="header-list__end">
               {isLoggedIn ? (
                 <NavLink
                   className="nav-enter-button"
