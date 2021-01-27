@@ -17,10 +17,39 @@
       font-size: 35px
       margin-left: 19px
       margin-bottom: 39px
-      @media(max-width: 575px)
+      @media(max-width: 767px)
         font-size: 15px
         margin-left: 0px
         margin-bottom: 19px
+
+    &-block
+      width: 770px
+      display: grid
+      justify-content: center
+
+  &__row
+    @media(max-width: 767px)
+      display: flex
+      justify-items: center
+    @media(min-width: 768px)
+      display: flex
+      justify-content: center
+      width: 100% 
+
+    &_div
+      @media(max-width: 767px)
+        display: grid
+        justify-items: center
+      @media(min-width: 768px)
+        display: flex
+        justify-content: space-between
+        width: 100%
+      @media(min-width: 992px)
+        width: 770px
+
+    &_carousel
+      @media(max-width: 575px)
+        padding: 0
 
   &__picture
     width: 100%
@@ -38,57 +67,87 @@
   &__dots
     display: flex
     justify-content: center
+    margin-top: 15px
 
   &__slider
     height: 269px
+    box-shadow: 0px 10px 36px #0f143129
+    @media(max-width: 575px)
+      width: 339px
     @media(min-width: 576px)
       height: 309px
-
+      width: 420px
+   
   &__slide
     position: unset
     display: flex
     justify-content: center
-    @media(max-width: 576px)
+    @media(max-width: 767px)
+      position: relative
+    @media(min-width: 992px)
       position: relative
 
   &__info
     @media(max-width: 767px)
-      margin-top: 20px
+      padding: 0
+      margin-top: 62px
+    // @media(max-width: 767px)
+      // margin-top: 20px
+    @media(min-width: 992px)
+      width: 301px
+      flex: auto
+      max-width: unset
 
   &__title
     color: #555555
     font-size: 20px
     border-bottom: 2px solid #707070
     margin-bottom: 24px
+    @media(max-width: 767px)
+      font-size: 15px
+      padding-bottom: 10px
     @media(min-width: 768px)
       font-size: 18px
     @media(min-width: 992px)
       font-size: 19px 
 
   &__subtitles
-    border-bottom: 1px solid #707070
+    border-bottom: 1px solid #70707075
     display: flex
+    align-items: center
     margin-bottom: 14px
     padding-bottom: 4px
+    @media(max-width: 767px)
+      padding-bottom: 17px
 
   &__name
     color: #555555
     font-size: 18px
+    @media(max-width: 767px)
+      width: 34%
+      display: grid
+      justify-content: center
+      font-size: 13px
     @media(min-width: 768px)
       font-size: 13px
     @media(min-width: 992px)
       font-size: 15px
 
     &-first
-      width: 40px
+      // width: 40px
+      @media(max-width: 767px)
+        display: grid
+        justify-content: center
+      @media(min-width: 992px)
+        width: 61px
   
   &__definition
     color: #555555
     font-size: 16px
     font-family: "NanumSquareRegular"
     margin-left: 30px
-    @media(min-width: 768px)
-      font-size: 12px
+    @media(max-width: 767px)
+      font-size: 13px
     @media(min-width: 992px)
       font-size: 14px
     
@@ -97,6 +156,9 @@
       color: #555555
       font-size: 16px
       font-family: "NanumSquareRegular"
+      @media(max-width: 767px)
+        margin-left: 26px
+        font-size: 13px
       @media(min-width: 768px)
         font-size: 12px
       @media(min-width: 992px)
@@ -104,9 +166,24 @@
 
   &-margin-30
     margin-left: 30px
+    @media(max-width: 767px)
+      width: 61%
+    @media(min-width: 992px)
+      margin-left: 32px
 
   &-margin-25
     margin-left: 25px
+    @media(max-width: 767px)
+      margin-left: 29px
 
   &-margin-35
     margin-left: 35px
+    @media(max-width: 767px)
+      margin-left: 27px
+    @media(min-width: 992px)
+      margin-left: 38px
+
+  &__carousel
+    display: flex
+    justify-content: center
+
