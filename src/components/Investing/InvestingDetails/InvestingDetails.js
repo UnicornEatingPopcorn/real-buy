@@ -155,7 +155,9 @@ const InvestingDetails = () => {
       <ProfitGraph />
       <AssetOverview />
       <div className="investing-details__safety">안전성 분석</div>
-      <div className="investing-details__links">{renderedSafetyLinks}</div>
+      <div className="investing-details__links-block">
+        <div className="investing-details__links">{renderedSafetyLinks}</div>
+      </div>
       {renderedSafetyRoutes}
 
       <div className="investing-details__safety">수익성 분석</div>

@@ -21,17 +21,18 @@
       padding: 10px 20px 0px 20px
       align-items: flex-end
     @media(min-width: 576px)
+      width: 516px
       padding: 20px 20px 0px 20px
     @media(min-width: 768px)
       padding: 39px 30px 0px 30px
-    @media(min-width: 992px)
-      padding: 39px 250px 0px 250px
-    @media(min-width: 1200px)    
-      padding: 39px 326px 0px 326px
+      width: 582px
 
     &-block
-      display: grid
-      justify-content: center
+      @media(min-width: 576px)
+        display: flex
+        width: 100%
+        justify-content: center
+        background-color: white
 
   &__link
     color: #555555
@@ -43,10 +44,13 @@
       width: 64px
       text-align: center
       padding-bottom: 3px
+      &:first-child
+        margin-left: -10px
     @media(min-width: 576px)
       padding-bottom: 20px
     @media(min-width: 768px)
       padding-bottom: 30px
+
 
     &:hover
       color:  #555555

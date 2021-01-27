@@ -76,90 +76,92 @@ const table3 = [
 const TenantAnalysis = () => {
   return (
     <div className="tenant-analysis__container">
-      <p className="tenant-analysis__lessor">임대인 개요</p>
-      <div className="tenant-analysis__icons-box_container">
-        <div className="tenant-analysis__icons-box">
-          <span className="tenant-analysis__square">Amazon.com, Inc.</span>
-          <div className="tenant-analysis__method">
-            <img
-              src={arrowRight}
-              className="tenant-analysis__arrow"
-              alt="arrow"
-            />
-            <span className="tenant-analysis__label">100% 소유</span>
+      <div className="tenant-analysis__container-block">
+        <p className="tenant-analysis__lessor">임대인 개요</p>
+        <div className="tenant-analysis__icons-box_container">
+          <div className="tenant-analysis__icons-box">
+            <span className="tenant-analysis__square">Amazon.com, Inc.</span>
+            <div className="tenant-analysis__method">
+              <img
+                src={arrowRight}
+                className="tenant-analysis__arrow"
+                alt="arrow"
+              />
+              <span className="tenant-analysis__label">100% 소유</span>
+            </div>
+            <span className="tenant-analysis__square">
+              Amazon Europe Core S.a.r.l
+            </span>
+            <div className="tenant-analysis__method">
+              <img
+                src={arrowRight}
+                className="tenant-analysis__arrow"
+                alt="arrow"
+              />
+              <span className="tenant-analysis__label">100% 소유</span>
+            </div>
+            <span className="tenant-analysis__square-last tenant-analysis__square">
+              <p>Amazon</p>
+              <p className="tenant-analysis__square-sm">
+                Logistik Mönchengladbach GmbH
+              </p>
+            </span>
           </div>
-          <span className="tenant-analysis__square">
-            Amazon Europe Core S.a.r.l
-          </span>
-          <div className="tenant-analysis__method">
-            <img
-              src={arrowRight}
-              className="tenant-analysis__arrow"
-              alt="arrow"
-            />
-            <span className="tenant-analysis__label">100% 소유</span>
-          </div>
-          <span className="tenant-analysis__square-last tenant-analysis__square">
-            <p>Amazon</p>
-            <p className="tenant-analysis__square-sm">
-              Logistik Mönchengladbach GmbH
-            </p>
-          </span>
         </div>
-      </div>
-      <p className="tenant-analysis__tables-name">임대차 계약 개요</p>
-      <div className="tenant-analysis__tables">
-        <table className="tenant-analysis__table">
-          <tbody>
-            {table1.map((tableRow, index) => {
-              return (
-                <tr className="tenant-analysis__row" key={index}>
-                  <td>{tableRow.title}</td>
-                  <td>{tableRow.definition}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        <table className="tenant-analysis__table">
-          <tbody>
-            {table2.map((tableRow, index) => {
-              return (
-                <tr className="tenant-analysis__row" key={index}>
-                  <td>{tableRow.title}</td>
-                  <td>{tableRow.definition}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+        <p className="tenant-analysis__tables-name">임대차 계약 개요</p>
+        <div className="tenant-analysis__tables">
+          <table className="tenant-analysis__table">
+            <tbody>
+              {table1.map((tableRow, index) => {
+                return (
+                  <tr className="tenant-analysis__row" key={index}>
+                    <td>{tableRow.title}</td>
+                    <td>{tableRow.definition}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <table className="tenant-analysis__table">
+            <tbody>
+              {table2.map((tableRow, index) => {
+                return (
+                  <tr className="tenant-analysis__row" key={index}>
+                    <td>{tableRow.title}</td>
+                    <td>{tableRow.definition}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
 
-      <p className="tenant-analysis__tables-name">Amazon 개요</p>
-      <div className="tenant-analysis__amazon-box">
-        <div className="tenant-analysis__amazon-pic-container">
-          <img
-            src={amazon}
-            alt="amazon"
-            className="tenant-analysis__amazon-pic"
-          />
+        <p className="tenant-analysis__tables-name">Amazon 개요</p>
+        <div className="tenant-analysis__amazon-box">
+          <div className="tenant-analysis__amazon-pic-container">
+            <img
+              src={amazon}
+              alt="amazon"
+              className="tenant-analysis__amazon-pic"
+            />
+          </div>
+          <table className="tenant-analysis__amazon-table">
+            <tbody>
+              {table3.map((tableRow, index) => {
+                return (
+                  <tr
+                    className="tenant-analysis__row tenant-analysis__amazon-row"
+                    key={index}
+                  >
+                    <td>{tableRow.money}</td>
+                    <td>{tableRow.prev}</td>
+                    <td>{tableRow.last}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
-        <table className="tenant-analysis__amazon-table">
-          <tbody>
-            {table3.map((tableRow, index) => {
-              return (
-                <tr
-                  className="tenant-analysis__row tenant-analysis__amazon-row"
-                  key={index}
-                >
-                  <td>{tableRow.money}</td>
-                  <td>{tableRow.prev}</td>
-                  <td>{tableRow.last}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
       </div>
     </div>
   );
