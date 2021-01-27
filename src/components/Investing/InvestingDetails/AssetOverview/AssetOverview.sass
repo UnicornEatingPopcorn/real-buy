@@ -7,10 +7,12 @@
       padding: 32px 14px
     @media(min-width: 576px) 
       padding: 50px 30px
+      display: flex
+      justify-content: center
     @media(min-width: 992px)
-      padding: 70px 100px    
+      padding: 70px 100px 110px 100px
     @media(min-width: 1200px)
-      padding: 70px 214px
+      padding: 70px 214px 110px 214px
 
     &-title
       color: #555555
@@ -23,9 +25,10 @@
         margin-bottom: 19px
 
     &-block
-      width: 770px
-      display: grid
-      justify-content: center
+      @media(min-width: 768px)
+        width: 770px
+        display: grid
+        justify-content: center
 
   &__row
     @media(max-width: 767px)
