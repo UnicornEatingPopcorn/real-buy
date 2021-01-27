@@ -9,7 +9,7 @@ const Footer = ({ mode }) => {
     <>
       {mode === "dark" ? (
         <div className="footer footer-dark">
-          <div className="row">
+          <div className="row footer__container">
             <div className="col footer__info">
               <p className="footer__info-title footer__info-title-dark ">
                 ㈜파이퍼블릭
