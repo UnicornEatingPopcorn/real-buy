@@ -163,20 +163,24 @@
       
 
   &-item
+    display: flex
+    justify-content: center
     @media(min-width: 768px)
       width: 79px
     @media(min-width: 992px)
       width: 98px
     @media(min-width: 1920px)
-      width: 114px
+      width: 152px
 
   &-long-item
+    display: flex
+    justify-content: center
     @media(min-width: 768px)
       width: 112px
     @media(min-width: 992px)    
       width: 119px
     @media(min-width: 1920px)
-      width: 150px
+      width: 195px
 
   &__navbar-toggler
     background-image: url("./../../assets/icons/toggler.svg")
@@ -205,6 +209,8 @@
     z-index: 2
     width: 438px
     height: 103px
+    @media(min-width: 1920px)
+      top: 106px
 
     &-visible
       display: flex

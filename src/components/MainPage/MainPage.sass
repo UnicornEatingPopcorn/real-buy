@@ -66,12 +66,13 @@
 
   &__titles-block
     position: absolute
-    top: 197px
     justify-content: center
     @media(max-width: 575px)
       top: 92px
     @media(min-width: 768px)
       top: 110px
+    @media(min-width: 992px) 
+      top: 197px
     @media(min-width: 1920px)
       top: 300px
 
@@ -86,6 +87,8 @@
     color: #ffffff
     @media(max-width: 575px)
       font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 43px
 
   &__subtitle
     margin-top: 22px
@@ -97,6 +100,9 @@
     @media(max-width: 575px)
       margin-top: 20px
       font-size: 13px
+    @media(min-width: 1920px)
+      font-size: 22px
+      margin-top: 33px
 
   &__offers
     display: flex

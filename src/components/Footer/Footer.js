@@ -48,7 +48,7 @@ const Footer = ({ mode }) => {
         </div>
       ) : (
         <div className="footer">
-          <div className="row">
+          <div className="row footer__container">
             <div className="col footer__info">
               <p className="footer__info-title">㈜파이퍼블릭</p>
               <p className="footer__info-subtitle">
