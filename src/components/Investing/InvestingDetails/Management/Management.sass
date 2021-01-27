@@ -6,34 +6,28 @@
     @media(max-width: 575px)
       padding: 20px 10px
     @media(min-width: 576px)
-      padding: 74px 10px
-    @media(min-width: 768px)
-      padding: 74px 140px
-    @media(min-width: 1200px)
-      padding: 74px 215px
+      padding: 74px 0px
+      display: grid
+      justify-content: center
 
   &__box
-    display: grid
     width: 373px
     height: 383px
     background: #FFFFFF
     margin-bottom: 20px
     @media(max-width: 575px)
       width: 100%
-    @media(min-width: 992px)
-      flex: 0 0 48%
-      margin-left: 0
-    @media(min-width: 1200px)
-      flex: 0 0 45%
-      margin-left: 0
+    @media(min-width: 576px)
+      width: 373px
   
   &__row
     display: flex
     justify-content: space-around
-    @media(max-width: 767px)
-      flex-wrap: wrap
+    @media(max-width: 575px)
+      width: 330px
     @media(min-width: 768px)
       flex-wrap: wrap
+      width: 770px
 
   &__title
     color: #7A7A7A
@@ -78,9 +72,6 @@
       margin-bottom: 20px
       margin-left: 0px
       width: 95%
-    // @media(min-width: 576px)
-      // margin-bottom: 20px
-      // margin-left: 3%
   
     &-row
       border-bottom: 1px solid #55555582         

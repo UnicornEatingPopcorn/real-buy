@@ -4,8 +4,10 @@ import structure from "./../../../../assets/icons/structure.png";
 
 const Structure = () => {
   return (
-    <div className="structure__container">
-      <img src={structure} className="structure__image" alt="structure" />
+    <div className="structure__container-block">
+      <div className="structure__container">
+        <img src={structure} className="structure__image" alt="structure" />
+      </div>
     </div>
   );
 };
