@@ -8,16 +8,14 @@
   @media(min-width: 576px)
     padding: 20px 20px
   @media(min-width: 768px)
-    padding: 40px 80px
-  @media(min-width: 992px)
-    padding: 60px 120px
-  @media(min-width: 1200px)
-    padding: 60px 216px
+    padding: 40px 0px
+    display: grid
+    justify-items: center
 
   &__row  
-    display: flex
-    justify-content: center
-    align-items: center
+    display: grid
+    justify-items: legacy
+    width: 770px
 
   &__first-tables-col
     flex: 0 0 99%

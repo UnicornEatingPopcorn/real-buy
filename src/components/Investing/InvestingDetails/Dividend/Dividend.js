@@ -152,15 +152,17 @@ const Dividend = () => {
         </div>
       </div>
 
-      <p className="dividend__title">향후 배당 수익률</p>
-      <div className="dividend__box">
-        <p className="dividend__box-text">
-          - 현재 독일 소비자 물가 상승률을 1.5% 수준으로 가정
-          <br /> - 물가 상승률 변동에 따라 배당수익률이 변화할 수 있음
-          <br /> - 물가 상승률이 변동하지 않을 경우
-          <span className="dividend__box-blue-text">최소 8.4%</span>의
-          배당수익률 가능
-        </p>
+      <div className="dividend__row">
+        <p className="dividend__title">향후 배당 수익률</p>
+        <div className="dividend__box">
+          <p className="dividend__box-text">
+            - 현재 독일 소비자 물가 상승률을 1.5% 수준으로 가정
+            <br /> - 물가 상승률 변동에 따라 배당수익률이 변화할 수 있음
+            <br /> - 물가 상승률이 변동하지 않을 경우
+            <span className="dividend__box-blue-text">최소 8.4%</span>의
+            배당수익률 가능
+          </p>
+        </div>
       </div>
       <div className="dividend__row">
         <div className="dividend__second-tables-col">
