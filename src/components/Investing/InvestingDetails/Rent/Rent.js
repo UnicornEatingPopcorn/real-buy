@@ -1,7 +1,6 @@
 import React from "react";
 import "./Rent.sass";
 import GraphRent from "./GraphRent";
-import rent from "./../../../../assets/icons/rent.png";
 
 const table = [
   {

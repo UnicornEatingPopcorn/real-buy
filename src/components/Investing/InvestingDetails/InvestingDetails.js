@@ -156,18 +156,24 @@ const InvestingDetails = () => {
       <AssetOverview />
       <div className="investing-details__safety">안전성 분석</div>
       <div className="investing-details__links-block">
-        <div className="investing-details__links">{renderedSafetyLinks}</div>
+        <div className="investing-details__links investing-details__links-safety">
+          {renderedSafetyLinks}
+        </div>
       </div>
       {renderedSafetyRoutes}
 
       <div className="investing-details__safety">수익성 분석</div>
       <div className="investing-details__links-block">
-        <div className="investing-details__links">{renderedProfitLinks} </div>
+        <div className="investing-details__links investing-details__links-profit">
+          {renderedProfitLinks}{" "}
+        </div>
       </div>
       {renderedProfitRoutes}
       <div className="investing-details__safety">리스크 분석</div>
       <div className="investing-details__links-block">
-        <div className="investing-details__links">{renderedRiskLinks} </div>
+        <div className="investing-details__links investing-details__links-risk">
+          {renderedRiskLinks}{" "}
+        </div>
       </div>
       {renderedRiskRoutes}
       <FundOverview />
