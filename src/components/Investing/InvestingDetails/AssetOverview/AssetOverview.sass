@@ -10,9 +10,9 @@
       display: flex
       justify-content: center
     @media(min-width: 992px)
-      padding: 70px 100px 110px 100px
+      padding: 70px 0px 110px 0px
     @media(min-width: 1200px)
-      padding: 70px 214px 110px 214px
+      padding: 70px 0px 110px 0px
 
     &-title
       color: #555555
@@ -23,12 +23,18 @@
         font-size: 15px
         margin-left: 0px
         margin-bottom: 19px
+      @media(min-width: 1920px)
+        font-size: 52px
+        margin-left: 0px
+        margin-bottom: 58px
 
     &-block
       @media(min-width: 768px)
         width: 770px
         display: grid
         justify-content: center
+      @media(min-width: 1920px)
+        width: 1155px
 
   &__row
     @media(max-width: 767px)
@@ -49,9 +55,13 @@
         width: 100%
       @media(min-width: 992px)
         width: 770px
+      @media(min-width: 1920px)
+        width: 1155px
 
     &_carousel
       @media(max-width: 575px)
+        padding: 0
+      @media(min-width: 768px)
         padding: 0
 
   &__picture
@@ -61,16 +71,18 @@
       height: 276px
       width: 340px
     @media(min-width: 576px)  
-      height: 308px
-      width: 420px
-    @media(min-width: 992px)
-      width: 431px
-      height: 308px
+      height: 279px
+      width: 372px
+    @media(min-width: 1920px)
+      width: 602px
+      height: 438px
 
   &__dots
     display: flex
     justify-content: center
     margin-top: 15px
+    @media(min-width: 1920px)
+      margin-top: 22px
 
   &__slider
     height: 269px
@@ -78,8 +90,12 @@
     @media(max-width: 575px)
       width: 339px
     @media(min-width: 576px)
-      height: 309px
-      width: 420px
+      height: 279px
+      width: 372px
+    @media(min-width: 1920px)
+      width: 602px
+      height: 438px
+      
    
   &__slide
     position: unset
@@ -94,16 +110,15 @@
     @media(max-width: 767px)
       padding: 0
       margin-top: 62px
-    // @media(max-width: 767px)
-      // margin-top: 20px
+    @media(min-width: 768px)
+      padding: 0px
+      // width: 301px
     @media(min-width: 992px)
       width: 301px
-      flex: auto
-      max-width: unset
+      padding: 0
 
   &__title
     color: #555555
-    font-size: 20px
     border-bottom: 2px solid #707070
     margin-bottom: 24px
     @media(max-width: 767px)
@@ -113,6 +128,11 @@
       font-size: 18px
     @media(min-width: 992px)
       font-size: 19px 
+    @media(min-width: 1200px)
+      font-size: 20px
+    @media(min-width: 1920px)
+      font-size: 30px
+      margin-bottom: 36px
 
   &__subtitles
     border-bottom: 1px solid #70707075
@@ -122,10 +142,12 @@
     padding-bottom: 4px
     @media(max-width: 767px)
       padding-bottom: 17px
+    @media(min-width: 1920px)
+      margin-bottom: 21px
+      padding-bottom: 6px
 
   &__name
     color: #555555
-    font-size: 18px
     @media(max-width: 767px)
       width: 34%
       display: grid
@@ -135,6 +157,10 @@
       font-size: 13px
     @media(min-width: 992px)
       font-size: 15px
+    @media(min-width: 1200px)
+      font-size: 18px
+    @media(min-width: 1920px)
+      font-size: 27px
 
     &-first
       // width: 40px
@@ -143,21 +169,26 @@
         justify-content: center
       @media(min-width: 992px)
         width: 61px
+      @media(min-width: 1920px)
+        width: 91px
   
   &__definition
     color: #555555
-    font-size: 16px
     font-family: "NanumSquareRegular"
     margin-left: 30px
     @media(max-width: 767px)
       font-size: 13px
     @media(min-width: 992px)
       font-size: 14px
+    @media(min-width: 1200px)
+      font-size: 16px
+    @media(min-width: 1920px)
+      font-size: 24px
+      margin-left: 45px
     
     &-last
       margin-left: 10px
       color: #555555
-      font-size: 16px
       font-family: "NanumSquareRegular"
       @media(max-width: 767px)
         margin-left: 26px
@@ -166,27 +197,38 @@
         font-size: 12px
       @media(min-width: 992px)
         font-size: 16px
+      @media(min-width: 1920px)
+        font-size: 24px
+        margin-left: 15px
 
   &-margin-30
-    margin-left: 30px
     @media(max-width: 767px)
       width: 61%
-    @media(min-width: 992px)
+    @media(min-width: 768px)
       margin-left: 32px
+    @media(min-width: 1920px)
+      margin-left: 48px
 
   &-margin-25
-    margin-left: 25px
     @media(max-width: 767px)
       margin-left: 29px
+    @media(min-width: 768px)
+      margin-left: 25px
+    @media(min-width: 1920px)
+      margin-left: 37px
 
   &-margin-35
     margin-left: 35px
     @media(max-width: 767px)
       margin-left: 27px
-    @media(min-width: 992px)
+    @media(min-width: 768px)
       margin-left: 38px
+    @media(min-width: 1920px)
+      margin-left: 57px
 
   &__carousel
     display: flex
     justify-content: center
+    @media(min-width: 768px)
+      justify-content: flex-start
 
