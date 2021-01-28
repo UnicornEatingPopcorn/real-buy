@@ -90,21 +90,24 @@ const CustomerSupport = () => {
         />
         <p className="customer-support-mobile__back-button_title">마이페이지</p>
       </div>
-      <p className="customer-support__title">자주하는 질문</p>
-      <div className="customer-support__links">
-        {links.map((link) => {
-          return (
-            <NavLink
-              to={link.path}
-              key={link.title}
-              activeClassName="customer-support__link-active"
-            >
-              {link.title}
-            </NavLink>
-          );
-        })}
+      <div className="customer-support__container">
+        <p className="customer-support__title">자주하는 질문</p>
+
+        <div className="customer-support__links">
+          {links.map((link) => {
+            return (
+              <NavLink
+                to={link.path}
+                key={link.title}
+                activeClassName="customer-support__link-active"
+              >
+                {link.title}
+              </NavLink>
+            );
+          })}
+        </div>
+        <div className="customer-support__block">{renderedItems}</div>
       </div>
-      <div className="customer-support__block">{renderedItems}</div>
     </div>
   );
 };
