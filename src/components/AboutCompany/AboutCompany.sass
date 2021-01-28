@@ -73,18 +73,28 @@
   width: 100%
   height: 100%
   background: #FFFFFF
-  display: grid
+  display: flex
   justify-content: center
   @media(max-width: 575px)
     padding: 40px 40px
   @media(min-width: 576px)
     padding: 45px 30px
   @media(min-width: 768px)
-    padding: 50px 80px
+    padding: 50px 0px
   @media(min-width: 992px)        
-    padding: 60px 150px
+    padding: 60px 0px
   @media(min-width: 1200px)
-    padding: 95px 215px
+    padding: 95px 0px
+  @media(min-width: 1920px)
+    padding: 142px 0px
+
+  &__container
+    display: grid
+    justify-content: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
 
   &__title
     color: #2A2A2A
@@ -104,6 +114,9 @@
     @media(min-width: 1200px)
       font-size: 35px
       margin-bottom: 56px
+    @media(min-width: 1920px)
+      font-size: 52px
+      margin-bottom: 84px
 
   &__graphs
     justify-content: center
@@ -114,12 +127,16 @@
       display: block
     @media(min-width: 768px)   
       display: flex
+    @media(min-width: 1920px)
+      margin-bottom: 63px
 
   &__col
     width: 100%
     margin: 10px
     @media(max-width: 575px)
       margin: 0px 0px 10px 0px
+    @media(min-width: 1920px)
+      margin: 0px 10px 15px 10px
 
   &__subtitle
     color: #555555
@@ -130,6 +147,9 @@
     @media(max-width: 575px)
       font-size: 14px
       margin-bottom: 20px
+    @media(min-width: 1920px)
+      font-size: 25px
+      margin-bottom: 63px
 
   &__inline
     display: inline-flex
@@ -141,9 +161,12 @@
   &__text
     color: #2E2E2E
     font-size: 19px
-    margin: 0px 10px
+    margin: 0px 4px
     @media(max-width: 575px)
       font-size: 15px
+    @media(min-width: 1920px)
+      font-size: 28px
+      margin: 0px 11px
 
     &-underline
       padding-bottom: 5px
@@ -152,25 +175,40 @@
   &__arrow
     transform: rotate(90deg)
     height: 17px
+    @media(min-width: 1920px)
+      height: 25px
 
 .goal
   width: 100%
   height: 100%
   background: #FAFBFE
-  display: grid
+  display: flex
   justify-content: center
   @media(max-width: 575px)
     padding: 40px 20px
   @media(min-width: 576px)
-    padding: 50px 70px
+    padding: 50px 0px
   @media(min-width: 768px)
-    padding: 60px 80px
+    padding: 60px 0px
   @media(min-width: 992px)        
-    padding: 60px 150px
+    padding: 60px 0px
   @media(min-width: 1200px)
-    padding: 95px 260px
+    padding: 95px 0px
+  @media(min-width: 1920px)
+    padding: 142px 0px
+
+  &__container
+    display: grid
+    justify-content: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
 
   &__pic
+    @media(min-width: 1920px)
+      width: 550px
+
     &-container
       display: flex
       justify-content: center
@@ -181,50 +219,83 @@
 
     &-big
       width: 100%
+      @media(min-width: 1920px)
+        width: 1100px
 
 .mission
   width: 100%
   height: 100%
   background: #676767
-  display: grid
+  display: flex
   justify-content: center
   @media(max-width: 575px)
     padding: 40px 20px
   @media(min-width: 576px)
     padding: 40px 70px 70px 70px
   @media(min-width: 768px)
-    padding: 60px 200px 100px 200px
+    padding: 60px 0px 100px 0px
   @media(min-width: 992px)        
-    padding: 70px 300px 130px 300px
+    padding: 70px 0px 130px 0px
   @media(min-width: 1200px)
-    padding: 80px 407px 130px 407px
+    padding: 80px 0px 130px 0px
+  @media(min-width: 1920px)
+    padding: 120px 0px 195px 0px
 
-  &__pic-container
-    display: flex
+  &__container
+    display: grid
     justify-content: center
-    margin-bottom: 28px
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
+
+  &__pic
+    width: 200px
+    @media(min-width: 1920px)
+      width: 300px
+
+    &-container
+      display: flex
+      justify-content: center
+      margin-bottom: 28px
+      @media(min-width: 1920px)
+        margin-bottom: 42px
 
   &__text
     color: white
     font-size: 30px
     text-align: center
+    @media(min-width: 1920px)
+      font-size: 45px
 
 .platform
   width: 100%
   height: 100%
   background: white
   padding: 96px 186px
+  display: flex
+  justify-content: center
   @media(max-width: 575px)
     padding: 40px 20px
   @media(min-width: 576px)
     padding: 40px 70px
   @media(min-width: 768px)
-    padding: 60px 100px
+    padding: 60px 0px
   @media(min-width: 992px)        
-    padding: 80px 140px
+    padding: 80px 0px
   @media(min-width: 1200px)
-    padding: 96px 186px
+    padding: 96px 0px
+  @media(min-width: 1920px)
+    padding: 144px 0px
   
+  &__container
+    display: grid
+    justify-content: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
+      
   &__title
     color: #2a2a2a
     margin-bottom: 42px
@@ -234,6 +305,9 @@
       font-size: 24px
     @media(min-width: 768px)
       font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
+      margin-bottom: 63px
 
   &__subtitle
     color: #2a2a2a
@@ -242,6 +316,9 @@
     margin-bottom: 11px
     @media(max-width: 575px)
       font-size: 15px
+    @media(min-width: 1920px)
+      font-size: 30px
+      margin-bottom: 16px
 
   &__pic
     width: 100%

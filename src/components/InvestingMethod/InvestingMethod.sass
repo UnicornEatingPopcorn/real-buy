@@ -3,9 +3,8 @@
   height: 100%
   background-color: #F6F8FF
   padding: 85px 215px
-  display: grid
-  justify-items: center
-
+  display: flex
+  justify-content: center
   @media(max-width: 575px)
     padding: 40px 40px
     display: block
@@ -18,6 +17,14 @@
     padding: 60px 100px
   @media(min-width: 1200px)
     padding: 95px 215px
+
+  &__container
+    display: grid
+    justify-items: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
 
   &__main-pic
     width: 68%
