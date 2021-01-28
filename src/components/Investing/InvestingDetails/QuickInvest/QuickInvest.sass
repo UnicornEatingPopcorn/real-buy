@@ -161,7 +161,7 @@
 
     &_icon
       height: 21px
-      margin-top: 5px
+      // margin-top: 5px
       @media(min-width: 1920px)
         height: 31px
         margin-top: 7px
@@ -190,6 +190,24 @@
         @media(min-width: 1920px)
           font-size: 19px
           margin-top: 10px
+
+      &-heart
+        background-size: cover
+        width: 28px
+        height: 24px
+        background-image: url("./../../../../assets/icons/InvestingDetails/heart-gray.svg")
+        &:hover
+          background-image: url("./../../../../assets/icons/InvestingDetails/heart.svg")
+          
+
+      &-bell
+        background-size: cover
+        width: 22px
+        height: 25px
+        background-image: url("./../../../../assets/icons/InvestingDetails/bell-gray.svg")
+        &:hover
+          background-image: url("./../../../../assets/icons/InvestingDetails/bell.svg")
+
 
     &_button
       width: 201px

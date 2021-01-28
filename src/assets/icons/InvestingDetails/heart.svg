@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71.971" height="61.443" viewBox="0 0 71.971 61.443">
+    <defs>
+        <linearGradient id="wilxd9sena" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#1ca9e9"/>
+            <stop offset="1" stop-color="#3182f5"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#wilxd9sena)" d="M38.136 15.071S32.98 4.083 21.378 4.083C8.7 4.083 2.042 14.826 2.042 25.566c0 17.832 36.094 39.96 36.094 39.96s35.877-21.913 35.877-39.96c0-10.957-6.873-21.483-19.119-21.483S38.136 15.071 38.136 15.071z" transform="translate(-2.042 -4.083)"/>
+</svg>

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./QuickInvest.sass";
-import heartGray from "./../../../../assets/icons/InvestingDetails/heart-gray.svg";
-import bellGray from "./../../../../assets/icons/InvestingDetails/bell-gray.svg";
 
 const QuickInvest = () => {
   const [percentage, setPercentage] = useState(0);
@@ -51,19 +49,11 @@ const QuickInvest = () => {
             </span>
             <div className="row">
               <div className="col quick__invest-info_icon-left">
-                <img
-                  src={heartGray}
-                  alt="heart gray"
-                  className="quick__invest-info_icon"
-                />
+                <svg className="quick__invest-info_icon quick__invest-info_icon-heart" />
                 <p className="quick__invest-info_icon-text">투자 찜하기</p>
               </div>
               <div className="col  quick__invest-info_icon-right">
-                <img
-                  src={bellGray}
-                  alt="bell gary"
-                  className="quick__invest-info_icon"
-                />
+                <svg className="quick__invest-info_icon  quick__invest-info_icon-bell" />
                 <p className="quick__invest-info_icon-text">알림설정</p>
               </div>
             </div>
@@ -94,10 +84,12 @@ const QuickInvest = () => {
         </span>
         <div className="row">
           <div className="col quick__invest-info_icon-right">
-            <img src={heartGray} alt="heart gray" />
+            <svg className="quick__invest-info_icon quick__invest-info_icon-heart" />
+            <p className="quick__invest-info_icon-text">투자 찜하기</p>
           </div>
           <div className="col  quick__invest-info_icon-left">
-            <img src={bellGray} alt="bell gray" />
+            <svg className="quick__invest-info_icon quick__invest-info_icon-heart" />
+            <p className="quick__invest-info_icon-text">알림설정</p>
           </div>
         </div>
         <span className="quick__invest-info_button-block">

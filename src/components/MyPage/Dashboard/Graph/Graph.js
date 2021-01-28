@@ -85,6 +85,11 @@ const Graph = () => {
       mode: "index",
       intersect: true,
     },
+    plugins: {
+      datalabels: {
+        display: false,
+      },
+    },
   };
 
   return (
@@ -102,12 +107,12 @@ const Graph = () => {
       </div>
 
       <div className="graph-decoration"></div>
-        <span className="graph-data__price">
-          <span className="graph-data__price-sum">+133.2</span>
-            <img src={won} alt="won" className="graph-data__price-won" />
-              <span className="graph-data__price-tick"></span>
-                <span className="graph-data__price-pointer"></span>
-        </span>
+      <span className="graph-data__price">
+        <span className="graph-data__price-sum">+133.2</span>
+        <img src={won} alt="won" className="graph-data__price-won" />
+        <span className="graph-data__price-tick"></span>
+        <span className="graph-data__price-pointer"></span>
+      </span>
       <div className="container graph__text-container">
         <div className="row">
           {graphInfo.map((graph, index) => {
