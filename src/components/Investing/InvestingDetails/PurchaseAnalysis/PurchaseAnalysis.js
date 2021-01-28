@@ -29,7 +29,7 @@ const PurchaseAnalysis = () => {
             <div>
               <Slider className="purchase-analysis__slider">
                 <Slide index={0}>
-                  <span className="purchase-analysis__title">
+                  <span className="purchase-analysis__title purchase-analysis__title-first ">
                     유럽 최대의 물류센터 투자 시장
                   </span>
                   <Graph1 />

@@ -211,6 +211,8 @@
     height: 103px
     @media(min-width: 1920px)
       top: 106px
+      width: 657px
+      height: 154px
 
     &-visible
       display: flex
@@ -222,6 +224,10 @@
       background: white
       padding: 20px 28px
       box-shadow: 0px 4px 15px #0540FF21
+      @media(min-width: 1920px)
+        top: 106px
+        width: 657px
+        height: 154px
 
       @media(max-width: 991px)
         display: none
@@ -239,8 +245,9 @@
     margin-bottom: 10px
     padding: 0px 0px 0px 5px
     border-left: 0.3px solid #707070
-    &:active
-      color: red
+    @media(min-width: 1920px)
+      font-size: 16px
+      margin-bottom: 15px
 
     &-first
       padding: 0px 0px 0px 5px
@@ -250,6 +257,9 @@
       font-size: 11px
       font-family: "NanumSquareRegular"
       border-left: 0.3px solid #707070
+      @media(min-width: 1920px)
+        font-size: 16px
+        padding-bottom: 15px
 
     &-container
       display: flex

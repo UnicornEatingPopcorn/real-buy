@@ -2,26 +2,36 @@
   width: 100%
   background-color: #FAFBFE
   padding: 60px 216px
+  display: flex
+  justify-content: center
+  align-items: flex-start
   @media(max-width: 575px)
     padding: 20px 10px
     height: 452px
   @media(min-width: 576px)
-    padding: 40px 60px
+    padding: 40px 0px
     height: 600px
-  @media(min-width: 768px)
-    padding: 60px 120px
-    height: 700px
-  @media(min-width: 992px)
-    padding: 60px 180px
-    height: 800px
-  @media(min-width: 1200px)
-    padding: 60px 216px
-    height: 886px
+  @media(min-width: 1920px)
+    padding: 90px 0px
+    height: 1050px
+
+  &__container
+    display: grid
+    justify-items: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px 
+
+  &__row
+    width: 100%
 
   &__title
     color: #555555
     font-size: 22px
     text-align: center
+    @media(min-width: 1920px)
+      font-size: 33px
 
   &__pic
     width: 100%

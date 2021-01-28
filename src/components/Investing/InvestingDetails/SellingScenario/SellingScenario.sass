@@ -11,21 +11,22 @@
     padding: 60px 0px
     display: grid
     justify-items: center
-
-  // @media(min-width: 992px)
-    // padding: 60px 180px
-  // @media(min-width: 1200px)
-    // padding: 60px 216px
+  @media(min-width: 1920px)
+    padding: 90px 0px 100px 0px
 
   &__row
     display: flex
     justify-content: center
     @media(min-width: 768px)
       width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
 
   &__col
     flex: 0 0 99%    
     margin-bottom: 30px
+    @media(min-width: 1920px)
+      margin-bottom: 45px
 
   &__box
     width: 100%
@@ -35,6 +36,8 @@
     padding: 29px 51px
     @media(max-width: 575px)
       padding: 14px 18px
+    @media(min-width: 1920px)
+      padding: 43px 76px
 
   &__number
     color: #7A7A7A
@@ -43,6 +46,9 @@
     margin-bottom: 5px
     @media(max-width: 575px)
       font-size: 11px
+      margin-bottom: 0
+    @media(min-width: 1920px)
+      font-size: 16px
       margin-bottom: 0
 
   &__title
@@ -55,10 +61,16 @@
       font-size: 16px
       margin-bottom: 20px
       padding-bottom: 10px
+    @media(min-width: 1920px)
+      font-size: 34px
+      margin-bottom: 23px
+      padding-bottom: 10px
 
   &__ul
     padding-left: 14px
     margin-bottom: 0
+    @media(min-width: 1920px)
+      padding-left: 21px
     li
       list-style-type: 0x00B7
       color: #555555
@@ -70,6 +82,8 @@
         padding-left: 0
         &:last-child
           margin-bottom: 0
+      @media(min-width: 1920px)
+        font-size: 22px
 
 
   &__subtitle
@@ -79,3 +93,5 @@
     @media(max-width: 575px)
       font-size: 12px
       margin-left: 12px
+    @media(min-width: 1920px)
+      font-size: 22px

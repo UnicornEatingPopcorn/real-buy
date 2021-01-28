@@ -4,6 +4,7 @@ import "./KeyRisks.sass";
 const KeyRisks = () => {
   return (
     <div className="key-risks">
+      <div className="key-risks__container">
       <div className="key-risks__row">
         <div className="key-risks__col">
           <div className="key-risks__box">
@@ -58,7 +59,7 @@ const KeyRisks = () => {
             </ul>
           </div>
         </div>
-      </div>
+          </div></div>
     </div>
   );
 };

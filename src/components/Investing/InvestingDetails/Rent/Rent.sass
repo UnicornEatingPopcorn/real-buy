@@ -11,10 +11,14 @@
     padding: 61px 0px 129px 0px
     display: grid
     justify-items: center
+  @media(min-width: 1920px)
+    padding: 91px 0px 193px
   
   &__row  
     @media(min-width: 768px)
       width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
   
   &__col
     flex: 0 0 99%
@@ -24,6 +28,10 @@
     font-size: 22px
     margin-bottom: 30px
     margin-top: 20px
+    @media(min-width: 1920px)
+      font-size: 33px
+      margin-bottom: 45px
+      margin-top: 30px
   
   &__table
     border-top: 2px solid #55555582
@@ -36,6 +44,8 @@
       margin-top: 20px
       @media(max-width: 317px)
         display: block
+      @media(min-width: 1920px)
+        margin-top: 30px
   
   &__table-row
     border-bottom: 1px solid #55555582
@@ -61,6 +71,9 @@
         padding: 5px 15px
       @media(min-width: 992px)
         font-size: 15px
+      @media(min-width: 1920px)
+        font-size: 22px
+        padding: 7px 22px
       
       &:first-child
         color: #555555      
@@ -74,6 +87,8 @@
           font-size: 15px
         @media(min-width: 992px)
           font-size: 16px
+        @media(min-width: 1920px)
+          font-size: 24px
 
       &:last-child
         border-right: none
@@ -88,6 +103,8 @@
       justify-content: center
       @media(min-width: 768px)
         width: 770px
+      @media(min-width: 1920px)
+        width: 1155px
 
       &_graph
         width: 100%
@@ -102,6 +119,9 @@
           max-height: 367px
         @media(min-width: 768px)
           max-height: 380px
+        @media(min-width: 1920px)
+          max-height: 570px
+          border-radius: 6px
 
         span
           position: absolute
@@ -113,6 +133,8 @@
           @media(max-width: 575px)
             right: 41px
             width: 26%
+          @media(min-width: 1920px)
+            right: 61px
 
           p
             color: #555555
@@ -128,9 +150,14 @@
               font-size: 11px
             @media(min-width: 992px)
               font-size: 12px
+            @media(min-width: 1920px)
+              font-size: 18px
+              padding-bottom: 3px
 
   &__comment
     color: #555555
     font-size: 12px
     font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      font-size: 18px
 

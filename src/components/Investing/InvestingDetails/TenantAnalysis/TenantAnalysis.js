@@ -126,7 +126,7 @@ const TenantAnalysis = () => {
             <tbody>
               {table2.map((tableRow, index) => {
                 return (
-                  <tr className="tenant-analysis__row" key={index}>
+                  <tr className="tenant-analysis__row-last" key={index}>
                     <td>{tableRow.title}</td>
                     <td>{tableRow.definition}</td>
                   </tr>

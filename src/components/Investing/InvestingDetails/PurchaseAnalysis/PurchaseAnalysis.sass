@@ -13,6 +13,8 @@
       justify-content: center
     @media(min-width: 768px)
       padding: 74px 0px
+    @media(min-width: 1920px)
+      padding: 111px 0px
 
   &__big-box
     height: 350px
@@ -22,9 +24,12 @@
       height: 246px
       width: 100%
       &:nth-child(2)
-        height: 426px
+        height: 359px
     @media(min-width: 576px)
       width: 373px
+    @media(min-width: 1920px)
+      width: 559px
+      height: 525px
 
   &__small-box
     width: 373px
@@ -36,7 +41,9 @@
     @media(min-width: 576px)
       margin-top: 20px
       width: 373px
-    @media(min-width: 768px)
+    @media(min-width: 1920px)
+      width: 559px
+      height: 426px
 
   &__terms
     flex: 0 0 50%
@@ -44,17 +51,21 @@
     margin-top: 24px
     @media(max-width: 767px)
       flex: 0 0 80%     
-      margin-left: 8%  
+      margin-left: 0%  
     @media(min-width: 768px)
       flex: 0 0 76%
       margin-left: 5%      
     @media(min-width: 992px)
       flex: 0 0 50%
       margin-left: 54%
+    @media(min-width: 1920px)
+      margin-left: 52%
 
     &-title
       color: #3769FC
       font-size: 15px
+      @media(min-width: 1920px)
+        font-size: 22px
 
     &-box
       width: 373px
@@ -63,20 +74,33 @@
       margin-top: 5px
       padding-top: 15px
       padding-left: 10px
+      @media(min-width: 1920px)
+        width: 559px
+        height: 103px
+        margin-top: 7px
+        padding-top: 22px
+        padding-left: 15px
 
     &-subtitle
       color: #3769fc
       font-size: 12px
       font-family: "NanumSquareRegular"
+      @media(min-width: 1920px)
+        font-size: 18px
 
   &__row
-    display: flex
-    justify-content: space-between
+    // display: flex
+    // justify-content: space-between
     @media(max-width: 575px)
-      width: 330px
+      width: 346px
     @media(min-width: 768px)
       flex-wrap: wrap
       width: 770px
+      display: flex
+      justify-content: space-between
+    @media(min-width: 1920px)
+      width: 1155px
+      
 
   &__title
     color: #7A7A7A
@@ -89,15 +113,25 @@
     justify-content: center
     align-items: center
 
+    &-first
+      @media(min-width: 1920px)
+        margin-bottom: 44px
+
   &__slider
     height: 312px
     @media(max-width: 575px)
       height: 212px
+    @media(min-width: 1920px)
+      height: 468px
 
   &__picture
     width: 353px
     height: 256px
     padding: 10px 0px 0px 20px
+    @media(min-width: 1920px)
+      width: 529px
+      height: 384px
+      padding: 15px 0px 0px 30px
 
   &__dots
     display: flex
@@ -111,6 +145,8 @@
     margin: 0px 5px
     @media(max-width: 575px)
       bottom: 104px
+    @media(min-width: 1920px)
+      bottom: 232px
 
   &__arrow
     border: none !important
@@ -118,26 +154,41 @@
   &__pic
     height: 25px
     width: 16px
+    @media(min-width: 1920px)
+      height: 37px
+      width: 24px
 
   &__subtitle
     color: #555555
     font-size: 15px
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__definition
     color: #555555
     font-size: 12px
     font-family: "NanumSquareRegular"    
     margin-left: 9px
+    @media(min-width: 1920px)
+      font-size: 18px
+      margin-left: 13px
 
   &__block-first
     padding: 39px 22px 22px 22px
+    @media(min-width: 1920px)
+      padding: 58px 33px 33px 33px
 
   &__block
     padding: 0px 22px 22px 22px
+    @media(min-width: 1920px)
+      padding: 0px 33px 33px 33px
 
   &__graph2
     width: 356px
     padding-top: 14px
+    @media(min-width: 1920px)
+      width: 534px
+      padding-top: 21px
 
   &__legend
     display: flex
@@ -145,6 +196,9 @@
     position: absolute
     top: 85px
     right: 33px
+    @media(min-width: 1920px)
+      top: 127px
+      right: 49px
 
     &-blue
       display: grid
@@ -154,24 +208,36 @@
         width: 22.8px
         border-bottom: solid 2px #3769fc
         margin-bottom: 5px
+        @media(min-width: 1920px)
+          margin-bottom: 7px
 
       p
         font-size: 7px
         font-family: "NanumSquareRegular"
+        @media(min-width: 1920px)
+          font-size: 10px    
 
     &-orange
       display: grid
       justify-items: center
       margin-left: 10px
+      @media(min-width: 1920px)
+        margin-left: 15px
         
       span
         width: 10px
         height: 10px
         border-radius: 5px
         border: solid 2px #fd7141
+        @media(min-width: 1920px)
+          width: 15px
+          height: 15px
+          border-radius: 7px
       p
         font-size: 7px
         font-family: "NanumSquareRegular"
+        @media(min-width: 1920px)
+          font-size: 10px
 
     &-label
       width: 73px
@@ -190,6 +256,12 @@
         width: 48px
         height: 18px
         font-size: 14px
+      @media(min-width: 1920px)
+        width: 109px
+        height: 36px
+        border-radius: 22px
+        font-size: 25px
+        top: 45px
 
       span
         height: 28px
@@ -198,6 +270,9 @@
         top: 22px
         @media(max-width: 575px)
           top: 0
+        @media(min-width: 1920px)
+          height: 42px
+          top: 33px
 
         span
           width: 10px
@@ -207,6 +282,10 @@
           top: 27px
           position: absolute
           right: -5px
+          @media(min-width: 1920px)
+            width: 15px
+            height: 15px
+            border-radius: 7px
         
       p
         color: #3769fc
@@ -217,7 +296,9 @@
         @media(max-width: 575px)
           top: 40px
           font-size: 10px
-
+        @media(min-width: 1920px)
+          font-size: 21px
+          top: 90px
 
 .carousel__next-button
   padding: 0px

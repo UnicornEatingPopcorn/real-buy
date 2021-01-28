@@ -11,26 +11,39 @@
     padding: 40px 0px
     display: grid
     justify-items: center
+  @media(min-width: 1920px)
+    padding: 60px 0px 91px 0px
 
   &__row  
-    display: grid
-    justify-items: legacy
-    width: 770px
+    @media(min-width: 768px)
+      display: grid
+      justify-items: legacy
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
 
   &__first-tables-col
     flex: 0 0 99%
     border-bottom: 1px solid #DEDEDE
     padding-bottom: 30px
+    @media(min-width: 1920px)
+      padding-bottom: 45px
 
   &__second-tables-col
     flex: 0 0 99%
     margin-top: 30px
+    @media(min-width: 1920px)
+      margin-top: 45px
 
   &__title
     color: #555555
     font-size: 22px
     margin-bottom: 30px
     margin-top: 20px
+    @media(min-width: 1920px)
+      font-size: 33px
+      margin-bottom: 45px
+      margin-top: 30px
 
   &__table
     border-top: 2px solid #55555582
@@ -43,6 +56,8 @@
       margin-top: 20px
       @media(max-width: 704px)
         display: block
+      @media(min-width: 1920px)
+        margin-top: 30px
 
   &__table-row
     border-bottom: 1px solid #55555582
@@ -71,6 +86,9 @@
         padding: 5px 15px
       @media(min-width: 992px)
         font-size: 15px
+      @media(min-width: 1920px)
+        font-size: 22px
+        padding: 7px 22px
       
       &:first-child
         color: #555555      
@@ -83,6 +101,8 @@
           font-size: 15px
         @media(min-width: 992px)
           font-size: 16px
+        @media(min-width: 1920px)
+          font-size: 24px
 
       &:last-child
         border-right: none
@@ -94,19 +114,28 @@
     box-shadow: 0px 5px 20px #9DADDE66
     border: 1px solid #85A2FF66
     padding: 21px 26px
+    @media(min-width: 1920px)
+      max-width: 610px
+      padding: 31px 39px
 
     &-text
       color: #555555
       font-size: 13px
       font-family: "NanumSquareRegular"
+      @media(min-width: 1920px)
+        font-size: 19px
 
     &-blue-text
       color: #3769FC
       font-size: 14px
       text-decoration: underline
+      @media(min-width: 1920px)
+        font-size: 21px
 
   &__comment
     color: #555555
     font-size: 12px
     font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      font-size: 18px
        
