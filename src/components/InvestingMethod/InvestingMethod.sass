@@ -3,8 +3,6 @@
   height: 100%
   background-color: #F6F8FF
   padding: 85px 215px
-  display: flex
-  justify-content: center
   @media(max-width: 575px)
     padding: 40px 40px
     display: block
@@ -14,23 +12,39 @@
     padding: 50px 42px  
     margin-top: 70px
   @media(min-width: 992px)        
-    padding: 60px 100px
-  @media(min-width: 1200px)
-    padding: 95px 215px
+    padding: 60px 0px
+  @media(min-width: 1920px)
+    padding: 95px 0px
 
   &__container
-    display: grid
-    justify-items: center
-    @media(min-width: 768px)
-      width: 770px
-    @media(min-width: 1920px)
-      width: 1155px
+    display: flex
+    width: 100%
+    justify-content: center
 
+    span
+      display: grid
+      justify-items: center
+
+    &-block
+      width: 100%
+      @media(min-width: 768px)
+        width: 770px
+      @media(min-width: 1920px)
+        width: 1326px
+
+      &-title
+        display: flex
+        justify-content: center
+            
   &__main-pic
     width: 68%
     margin-bottom: 80px
     @media(min-width: 768px)
-      width: 52%
+      width: 40%
+    @media(min-width: 1920px)
+      margin-bottom: 120px
+      width: 45%
+      height: 100%
 
   &__pic-block
     border-bottom: 2px solid #FFFFFF
@@ -38,26 +52,49 @@
     &:last-child
       border-bottom: none
       margin-bottom: 0
-      @media(min-width: 1400px)
-        margin-left: 9%
+      display: flex
+      justify-content: flex-start
+      @media(max-width: 767px)
+        display: block
+      @media(min-width: 1920px)
+        margin-left: 40px
 
     @media(max-width: 575px)
       display: grid
       justify-content: center
     @media(min-width: 768px)
       display: flex
+      justify-content: center
       padding-bottom: 30px
+    @media(min-width: 1920px)
+      padding-bottom: 45px
     
   &__full-img
     width: 100%
+    @media(min-width: 1920px)
+      width: 810px
+      height: 355px
 
   &__left-icon
     margin-right: 39px
+    @media(min-width: 1920px)
+      margin-right: 86px
+      width: 317px
+      height: 300px
 
   &__right-icon
     margin-left: 39px
     @media(max-width: 575px)
       margin-bottom: 24px
+    @media(min-width: 1920px)
+      margin-right: 86px
+      width: 317px
+      height: 300px
+
+    &-last
+      @media(max-width: 575px)
+        margin-bottom: 0
+     
 
   &__number-left
     @media(max-width: 575px)
@@ -67,6 +104,8 @@
       margin-left: 0
     @media(min-width: 865px)
       margin-left: 39px
+    @media(min-width: 1920px)
+      margin-left: 58px
 
   &__button
     width: 170px
@@ -78,6 +117,11 @@
     color: #FFFFFF
     font-size: 16px
     font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      width: 255px
+      height: 66px
+      border-radius: 7px
+      font-size: 24px
 
     &-right
       @media(max-width: 575px)
@@ -87,7 +131,15 @@
       @media(min-width: 768px)
         position: relative
         top: 125px
-        right: 453px
+        right: 63px
+      @media(min-width: 992px)
+        top: 130px
+      @media(min-width: 1200px)
+        top: 136px
+        right: 62px
+      @media(min-width: 1920px)
+        top: 228px
+        right: 78px
 
       &-container
         @media(min-width: 576px)
@@ -104,14 +156,34 @@
       @media(min-width: 768px)
         position: relative
         top: 131px
-        right: 407px
+        left: 60px
+      @media(min-width: 992px)
+        top: 126px
+      @media(min-width: 1200px)
+        left: 61px
+      @media(min-width: 1920px)
+        top: 232px
+        left: 86px
 
     &-last
-      margin-top: -61px
-      @media(min-width: 768px)
+      @media(max-width: 575px)
         position: relative
-        top: 182px
-        right: 680px
+        bottom: 68px
+        right: 49px
+      @media(min-width: 576px)
+        position: relative
+        bottom: 87px
+        right: 4px
+      @media(min-width: 768px)
+        top: 122px
+        left: 328px
+      @media(min-width: 865px)
+        left: 363px
+      @media(min-width: 1200px)
+        left: 368px
+      @media(min-width: 1920px)
+        top: 283px
+        left: 614px
 
     &-container
       display: flex
@@ -136,6 +208,9 @@
       @media(min-width: 768px)
         top: 9px
         right: 509px
+      @media(min-width: 1920px)
+        top: 62px
+        right: 852px
 
     &-title
       color: #0154C8
@@ -152,12 +227,15 @@
       @media(min-width: 768px)      
         margin-bottom: 11px
         width: 275px
+      @media(min-width: 1920px)
+        margin-bottom: 16px
+        width: 412px
 
     &-subtitle
       color: #555555
       text-align: end
       @media(max-width: 459px)
-        font-size: 12px
+        font-size: 13px
         margin-bottom: 6px
       @media(min-width: 460px)
         font-size: 15px
@@ -167,20 +245,26 @@
         margin-bottom: 12px
       @media(min-width: 768px)        
         margin-bottom: 20px   
+      @media(min-width: 1920px)
+        margin-bottom: 30px
+        font-size: 28px
 
     &-sub
       color: #555555
       font-family: "NanumSquareLight"
       text-align: end
       @media(max-width: 459px)
-        font-size: 11px
+        font-size: 12px
       @media(min-width: 460px)
         font-size: 14px
       @media(min-width: 503px)      
         font-size: 16px
+      @media(min-width: 1920px)
+        font-size: 24px
 
   &__container-large
     display: flex
+    position: absolute
     @media(max-width: 767px)
       display: none
       
