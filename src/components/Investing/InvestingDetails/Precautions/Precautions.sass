@@ -2,14 +2,26 @@
   &__container
     width: 100%
     height: 100%
+    display: flex
+    justify-content: center
     @media(max-width: 575px)
       background: white
       padding: 40px 10px
     @media(min-width: 576px)
       background: #DEDEDE
-      padding: 55px 50px
+      padding: 55px 0px
     @media(min-width: 992px)
-      padding: 70px 215px
+      padding: 70px 0px
+    @media(min-width: 1920px)
+      padding: 111px 0px
+
+  &__block
+    display: grid
+    justify-items: center
+    @media(min-width: 768px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1155px
       
   &__title
     color: #2E2E2E
@@ -27,6 +39,8 @@
       font-size: 25px
     @media(min-width: 992px)    
       font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
 
     &-wrapper  
       display: flex
@@ -41,6 +55,8 @@
         margin-bottom: 40px
       @media(min-width: 992px)    
         margin-bottom: 46px
+      @media(min-width: 1920px)
+        margin-bottom: 69px
 
   &__box
     width: 100%
@@ -54,6 +70,8 @@
       padding: 30px 40px   
     @media(min-width: 992px)    
       padding: 53px 60px
+    @media(min-width: 1920px)
+      padding: 79px 90px
 
   &__text
     color: #555555
@@ -63,11 +81,16 @@
       font-size: 10px
     @media(min-width: 576px)    
       font-size: 12px
+    @media(min-width: 1920px)
+      font-size: 18px
 
     li
       list-style-type: "-"
       padding-left: 10px
       line-height: 23px
+      @media(min-width: 1920px)
+        padding-left: 15px
+        line-height: 34px
 
   &__sub
     color: #555555
@@ -78,6 +101,8 @@
       font-size: 10px
     @media(min-width: 576px)    
       font-size: 12px
+    @media(min-width: 1920px)
+      font-size: 18px
 
   &__logo-wrapper
     display: flex
@@ -85,4 +110,6 @@
     margin-top: 58px
     @media(max-width: 575px)
       margin-top: 30px
+    @media(min-width: 1920px)
+      margin-top: 45px
 
