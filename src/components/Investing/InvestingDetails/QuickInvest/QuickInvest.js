@@ -23,7 +23,7 @@ const QuickInvest = () => {
   return (
     <div className="quick-block">
       <div className="quick-block-container">
-        <div className="row">
+        <div className="row quick-block-container-justify no-gutters">
           <div className="col-12 col-md-7 quick__pic-progress">
             <svg className="quick__pic-progress_label" />
             <svg className="quick__pic-progress-img" />
@@ -50,11 +50,21 @@ const QuickInvest = () => {
               </p>
             </span>
             <div className="row">
-              <div className="col quick__invest-info_icon-right">
-                <img src={heartGray} alt="heart gray" />
+              <div className="col quick__invest-info_icon-left">
+                <img
+                  src={heartGray}
+                  alt="heart gray"
+                  className="quick__invest-info_icon"
+                />
+                <p className="quick__invest-info_icon-text">투자 찜하기</p>
               </div>
-              <div className="col  quick__invest-info_icon-left">
-                <img src={bellGray} alt="bell gary" />
+              <div className="col  quick__invest-info_icon-right">
+                <img
+                  src={bellGray}
+                  alt="bell gary"
+                  className="quick__invest-info_icon"
+                />
+                <p className="quick__invest-info_icon-text">알림설정</p>
               </div>
             </div>
             <span className="quick__invest-info_button-block">

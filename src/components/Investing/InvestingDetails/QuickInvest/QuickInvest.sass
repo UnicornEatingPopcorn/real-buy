@@ -10,23 +10,28 @@
     @media(min-width: 576px)
       padding: 0px 10px
     @media(min-width: 768px)
-      padding: 33px 47px 33px 20px
+      padding: 33px 0px
     @media(min-width: 850px)
-      padding: 33px 60px 33px 30px
+      padding: 33px 0px
     @media(min-width: 992px)
-      padding: 66px 120px 84px 120px
-    @media(min-width: 1200px)
-      padding: 66px 215px 84px 215px
+      padding: 66px 0px 84px
+    @media(min-width: 1920px)
+      padding: 99px 0px 126px 0px
 
     &-container
       width: 770px
       @media(max-width: 575px)
         width: 100%
         padding: 0
+      @media(min-width: 1920px)
+        width: 1155px
+
+      &-justify
+        display: flex
+        justify-content: space-between
 
   &__pic-progress
     display: grid
-    justify-content: center
     margin-top: -35px
      
     &-img
@@ -41,6 +46,9 @@
         background-image: url("./../../../../assets/icons/InvestingDetails/quick-pic-medium.jpg")
       @media(min-width: 768px)
         background-image: url("./../../../../assets/icons/InvestingDetails/quick-pic-large.jpg")
+      @media(min-width: 1920px)
+        width: 667px
+        height: 453px
 
     &_label
       background-image: url("./../../../../assets/icons/InvestingDetails/popular-investment.svg")
@@ -59,6 +67,11 @@
         height: 50px
         top: 64px
         left: 15px
+      @media(min-width: 1920px)
+        width: 58px
+        height: 58px
+        top: 96px
+        left: 22px
     
     &-bar    
       box-shadow: 0px 3px 6px #00000029
@@ -70,6 +83,10 @@
       @media(min-width: 576px)
         width: 429px
         margin-left: 8px
+      @media(min-width: 1920px)
+        width: 643px
+        margin-left: 12px
+        height: 22px
 
   &__invest-info
     margin-top: 14px
@@ -77,9 +94,11 @@
       display: none
     @media(min-width: 768px)
       margin-top: 18px
+    @media(min-width: 1920px)
+      margin-top: 27px
 
     &_title
-      color: #555555
+      color: #555555  
       font-size: 20px
       border-bottom: 2px solid #707070
       margin-bottom: 24px
@@ -87,12 +106,18 @@
         font-size: 18px
       @media(min-width: 880px)
         font-size: 20px
+      @media(min-width: 1920px)
+        font-size: 30px
+        margin-bottom: 36px
 
     &_subtitles
       border-bottom: 1px solid #707070
       display: flex
       margin-bottom: 14px
       padding-bottom: 4px
+      @media(min-width: 1920px)
+        margin-bottom: 21px
+        padding-bottom: 6px
 
     &_name
       color: #555555
@@ -101,6 +126,8 @@
         font-size: 13px
       @media(min-width: 880px)
         font-size: 18px
+      @media(min-width: 1920px)
+        font-size: 27px
     
     &_definition
       color: #555555
@@ -111,6 +138,8 @@
         font-size: 12px
       @media(min-width: 880px)
         font-size: 16px
+      @media(min-width: 1920px)
+        font-size: 24px
       
       &-last
         margin-left: 16px
@@ -121,6 +150,9 @@
           font-size: 12px
         @media(min-width: 880px)
           font-size: 16px
+        @media(min-width: 1920px)
+          font-size: 24px
+          margin-left: 24px
 
     &-mobile
       margin-top: 35px
@@ -128,17 +160,36 @@
         display: none
 
     &_icon
-      &-right
-        display: flex
-        justify-content: flex-end
-        margin-top: 2px
-        padding: 0
-        margin-right: 15px
-  
+      height: 21px
+      margin-top: 5px
+      @media(min-width: 1920px)
+        height: 31px
+        margin-top: 7px
+
       &-left
-        display: flex
+        display: grid
+        justify-items: center
+        justify-content: flex-end
+        padding: 0
+  
+      &-right
+        display: grid
+        justify-items: center
         justify-content: flex-start
         padding: 0
+        margin-left: 48px 
+        @media(min-width: 1920px)
+          margin-left: 72px
+
+      &-text
+        font-size: 13px
+        font-family: "NanumSquareRegular"
+        color: #555555
+        text-align: center
+        margin-top: 5px
+        @media(min-width: 1920px)
+          font-size: 19px
+          margin-top: 10px
 
     &_button
       width: 201px
@@ -159,8 +210,12 @@
       @media(min-width: 768px)
         position: absolute
         margin-bottom: 0
+      @media(min-width: 1920px)
+        width: 301px
+        height: 82px
+        font-size: 27px
+        border-right: 4px
         
-
       &-block
         display: flex
         justify-content: center
@@ -171,6 +226,8 @@
   position: relative
   bottom: 57px
   transition: ease 1s
+  @media(min-width: 1920px)
+    bottom: 74px
 
   &__label
     width: 91px
@@ -189,6 +246,13 @@
       right: 40px
     @media(min-width: 576px)
       right: 44px
+    @media(min-width: 1920px)
+      width: 136px
+      height: 49px
+      right: 66px
+      bottom: 69px
+      border-radius: 25px
+      font-size: 24px
 
     &-line
       height: 24px
@@ -198,6 +262,9 @@
       position: relative
       bottom: 51px
       transition: ease 1s
+      @media(min-width: 1920px)
+        height: 36px
+        bottom: 71px
   
 
 

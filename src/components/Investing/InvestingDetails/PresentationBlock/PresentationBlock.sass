@@ -12,26 +12,37 @@
       padding: 50px 10px
       height: 274px
     @media(min-width: 768px)
-      padding: 127px 100px 57px 100px
-      height: 356px
+      padding: 127px 0px 57px 0px
+      height: 100%
     @media(min-width: 992px)
-      padding: 127px 215px 57px 215px  
+      padding: 127px 0px 57px 0px 
+    @media(min-width: 1920px)
+      padding: 190px 0px 85px 0px
 
     &-container
       width: 770px
+      @media(min-width: 1920px)
+        width: 1155px
 
   &__safety
     display: flex
     justify-content: flex-start
     margin-bottom: 13px
+    @media(min-width: 1920px)
+      margin-bottom: 19px
 
     &_text
       color: #FFFFFF
       font-size: 15px
       margin-right: 10px
+      @media(min-width: 1920px)
+        font-size: 22px
+        margin-right: 15px
 
     &-index
       height: 19px
+      @media(min-width: 1920px)
+        height: 28px
 
   &__name
     color: white
@@ -44,23 +55,33 @@
       margin-top: 20px
     @media(min-width: 576px)
       font-size: 28px
+    @media(min-width: 1920px)
+      font-size: 52px
+      margin-bottom: 90px
 
   &__hashtags
     color: white
     font-size: 15px
     font-family: "NanumSquareLight"
+    @media(min-width: 1920px)
+      font-size: 22px
 
   &__schedule
     color: white
     font-size: 12px
     text-align: center
     font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      font-size: 18px
 
     &-mobile
       color: #555555
       font-size: 12px    
       margin: 0px 23px
       font-family: "NanumSquareLight"
+      @media(min-width: 1920px)
+        font-size: 18px
+        margin: 0px 34px
 
   &__terms
     padding-bottom: 13px
@@ -73,6 +94,8 @@
       padding: 0px
       justify-content: space-between 
       padding-bottom: 8px
+    @media(min-width: 1920px)
+      padding-bottom: 19px
 
     &-col
       display: grid
@@ -80,25 +103,35 @@
       align-content: end
       @media(max-width: 575px)
         display: none
+      @media(min-width: 768px)
+        justify-content: center
 
     &_title
       color: white
       font-size: 18px
       font-family: "NanumSquareRegular"
+      @media(min-width: 1920px)
+        font-size: 27px
 
       &-num
         color: white
         font-size: 30px
         font-family: "GmarketSansMedium"
+        @media(min-width: 1920px)
+          font-size: 45px
 
       &-sign
         color: white
         font-size: 30px
+        @media(min-width: 1920px)
+          font-size: 45px
 
       &-subtitle
         color: white
         font-size: 22px
         font-family: "NanumSquareRegular"
+        @media(min-width: 1920px)
+          font-size: 33px
     
     &-flex
       display: flex

@@ -12,11 +12,15 @@ export const mapStateToProps = (state) => {
 const Graph4 = ({ stopSpinner }) => {
   let barBackground;
   if (stopSpinner) {
-    let context = document.getElementById("newGraph");
-    let gradient = context.getContext("2d");
-    barBackground = gradient.createLinearGradient(0, 0, 0, 300);
-    barBackground.addColorStop(0, "rgba(154, 227, 255, 0.6)");
-    barBackground.addColorStop(1, "rgba(180, 231, 254, 0)");
+    setTimeout(() => {
+      let context = document.querySelector("#newGraph").getContext("2d");
+
+      setTimeout(() => {
+        barBackground = context.createLinearGradient(0, 0, 0, 300);
+        barBackground.addColorStop(0, "rgba(154, 227, 255, 0.6)");
+        barBackground.addColorStop(1, "rgba(180, 231, 254, 0)");
+      }, 500);
+    }, 500);
   }
 
   const data = {
@@ -46,7 +50,6 @@ const Graph4 = ({ stopSpinner }) => {
         borderColor: "#3769fc",
         backgroundColor: barBackground,
         borderCapStyle: "butt",
-        // pointBackgroundColor: "#fff",
         pointRadius: 2,
         pointBackgroundColor: "#3769fc",
         borderWidth: 1,
