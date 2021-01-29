@@ -30,22 +30,30 @@ const MyPage = () => {
           <div className="visible-for-mobile">
             <MyPageMobileNav />
           </div>
+
           <div className="col-12 col-sm-4 col-md-2 col-lg-2 visible-for-desktop">
             <NavigateBar logOut={setIsLogout} logOutValue={isLogout} />
           </div>
-
-          <div className="col-12 col-sm-8 col-md-10 col-lg-10">
-            <Switch>
-              <Route path="/mypage/dashboard" component={Dashboard} />
-              <Route
-                path="/mypage/investment-details"
-                component={InvestmentDetails}
-              />
-              <Route path="/mypage/schedule" component={PaymentSchedule} />
-              <Route path="/mypage/my-account" component={MyAccount} />
-              <Route path="/mypage/member-information" component={MemberInfo} />
-              <Route path="/mypage/cart" component={Cart} />
-            </Switch>
+          <div className="mypage__second-column">
+            <div
+              className="col-12 col-sm-8 col-md-10 col-lg-10"
+              style={{ paddingRight: "0", paddingLeft: "7px" }}
+            >
+              <Switch>
+                <Route path="/mypage/dashboard" component={Dashboard} />
+                <Route
+                  path="/mypage/investment-details"
+                  component={InvestmentDetails}
+                />
+                <Route path="/mypage/schedule" component={PaymentSchedule} />
+                <Route path="/mypage/my-account" component={MyAccount} />
+                <Route
+                  path="/mypage/member-information"
+                  component={MemberInfo}
+                />
+                <Route path="/mypage/cart" component={Cart} />
+              </Switch>
+            </div>
           </div>
         </div>
       </div>

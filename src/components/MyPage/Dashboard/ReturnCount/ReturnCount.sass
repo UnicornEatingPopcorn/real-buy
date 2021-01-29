@@ -4,9 +4,15 @@
     width: 308px
     background: #FFFFFF
     box-shadow: 0px 7px 20px #0F143129
+    @media(min-width: 1920px)
+      height: 439px
+      width: 100%
 
   &-block
-    display: grid
+    display: grid    
+    padding: 0px 10px
+    @media(min-width: 1920px)
+      padding: 0px 20px
 
     &-divider
       border-bottom: 0.5px solid #BFBFBF
@@ -17,6 +23,9 @@
       text-align: center
       margin: 17px 0px 0px 0px
       font-family: "NanumSquare"
+      @media(min-width: 1920px)
+        font-size: 19px
+        margin: 32px 0px 0px 0px
 
     &__subtitle
       color: #555555
@@ -24,9 +33,15 @@
       text-align: center
       font-family: "NanumSquareRegular"
       margin-left: 5px
+      @media(min-width: 1920px)
+        font-size: 15px
+        margin-left: 7px
 
     &__amount
       color: #3769FC
       font-size: 17px
       text-align: center
       margin: 8px 0px 13px 0px
+      @media(min-width: 1920px)
+        font-size: 25px
+        margin: 12px 0px 19px 0px
