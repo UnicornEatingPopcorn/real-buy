@@ -5,7 +5,7 @@ import logoGray from "./../../../assets/icons/logo-gray.svg";
 import NoAccount from "./NoAccount/NoAccount";
 
 const MyAccount = () => {
-  const [isAccount] = useState(true);
+  const [isAccount] = useState(false);
 
   return (
     <div className="container my-account-container">
