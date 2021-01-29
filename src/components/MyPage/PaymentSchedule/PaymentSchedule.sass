@@ -5,6 +5,10 @@
 
   &-container
     max-width: 674px
+    @media(min-width: 576px)
+      margin-left: 16px
+    @media(min-width: 1920px)
+      max-width: 100%
 
   &-year
     color: #232323
@@ -14,18 +18,24 @@
       font-size: 17px
     @media(min-width: 992px)
       font-size: 22px
+    @media(min-width: 1920px)
+      font-size: 34px
 
   &-row
     @media(max-width: 575px)
       margin: 20px 0px 20px 0px
     @media(min-width: 768px)
-      margin: 10px 0px 30px 30px
+      margin: 10px 0px 0px 0px
     @media(min-width: 992px)
       margin: 10px 0px 20px 0px
+    @media(min-width: 1920px)
+      margin: 10px 0px 20px 75px
 
   &-graph
     width: 100%
     margin-top: 40px
+    @media(min-width: 1920px)
+      margin-top: 60px
 
     &-name
       display: flex
@@ -55,16 +65,25 @@
     font-size: 17px
   @media(min-width: 992px)
     font-size: 21px
+  @media(min-width: 1920px)
+    font-size: 31px
 
 .pointer
   &-blue
     width: 10px
     height: 10px
+    @media(min-width: 1920px)
+      width: 15px
+      height: 15px
 
   &-gray
     width: 13px
     height: 13px
     margin-left: 4px
+    @media(min-width: 1920px)
+      width: 19px
+      height: 19px
+      margin-left: 6px
 
 .legend
   color: #555555
@@ -74,6 +93,9 @@
     font-size: 12px
   @media(min-width: 992px)
     font-size: 14px
+  @media(min-width: 1920px)
+    font-size: 21px
+    margin-left: 4px
 
 .profit-repayment
   color: #3769FC
@@ -82,11 +104,12 @@
   @media(max-width: 575px)
     padding-bottom: 3px
     border-bottom: 1px solid #3769FC
-
   @media(min-width: 768px)
     font-size: 12px
   @media(min-width: 992px)
     font-size: 14px
+  @media(min-width: 1920px)
+    font-size: 21px
 
 .principal-payment
   color: #939393
@@ -95,6 +118,8 @@
     font-size: 12px
   @media(min-width: 992px)
     font-size: 14px
+  @media(min-width: 1920px)
+    font-size: 21px
 
 .info-column
   justify-content: flex-end
@@ -121,6 +146,9 @@
     height: 148px
   @media(min-width: 768px)
     height: 294px
+  @media(min-width: 1920px)
+    max-width: 1022px
+    height: 482px
       
 
   &-title
@@ -128,6 +156,8 @@
     font-size: 17px
     @media(max-width: 575px)
       font-size: 11px
+    @media(min-width: 1920px)
+      font-size: 25px
 
   &-row
     display: flex
@@ -135,12 +165,18 @@
     margin-top: 25px
     padding-bottom: 25px 
     border-bottom: 1px solid #BFBFBF
+    @media(min-width: 1920px)
+      margin-top: 37px
+      padding-bottom: 37px
 
 .add-block
   max-width: 674px
   height: 294px
   background: #FFFFFF
   box-shadow: 0px 7px 20px #0F143129
+  @media(min-width: 1920px)
+    max-width: 1022px
+    height: 482px
   
 .today
   align-items: baseline
@@ -156,6 +192,9 @@
   font-size: 14px
   text-align: center
   margin-top: 80px
+  @media(min-width: 1920px)
+    font-size: 21px
+    margin-top: 120px
 
 .mobile-visible
   display: flex
@@ -163,6 +202,7 @@
   margin-top: 20px
   @media(min-width: 576px)
     margin-bottom: 20px
+    justify-content: unset
 
   @media(min-width: 768px)
     display: none

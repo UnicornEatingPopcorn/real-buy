@@ -73,6 +73,11 @@ const PaymentSchedule = () => {
       mode: "index",
       intersect: true,
     },
+    plugins: {
+      datalabels: {
+        display: false,
+      },
+    },
   };
   return (
     <div className="container schedule-container">

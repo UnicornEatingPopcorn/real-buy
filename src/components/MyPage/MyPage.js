@@ -25,7 +25,7 @@ const MyPage = () => {
       ) : (
         <div></div>
       )}
-      <div className="mypage-container container">
+      <div className="mypage-container">
         <div className="mypage row no-gutters">
           <div className="visible-for-mobile">
             <MyPageMobileNav />
